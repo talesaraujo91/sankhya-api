@@ -375,7 +375,42 @@ def build_dataset(openapi: Dict[str, Any], *, readme_schema: Optional[Dict[str, 
                 schema_to_endpoints[schema_name].add(operation_id)
 
     # Build edges
-    edges: List[Dict[str, Any]] = []
+    # Note: multiple heuristics can connect the same endpoint pair (e.g. both shared tag and shared schema).
+    # Cytoscape will render parallel edges as multiple arrows, which looks like duplicates.
+    # De-duplicate by (source, target), while preserving the set of edge types/keys.
+    edges_by_pair: Dict[Tuple[str, str], Dict[str, Any]] = {}
+
+    def _add_edge(source: str, target: str, edge_type: str, key: str) -> None:
+        pair = (source, target)
+        existing = edges_by_pair.get(pair)
+        if existing is None:
+            edges_by_pair[pair] = {
+                "source": source,
+                "target": target,
+                "type": edge_type,
+                "types": [edge_type],
+                "key": key,
+                "keys": [key],
+            }
+            return
+
+        types = existing.get("types")
+        if not isinstance(types, list):
+            types = []
+        if edge_type not in types:
+            types.append(edge_type)
+        existing["types"] = types
+
+        keys = existing.get("keys")
+        if not isinstance(keys, list):
+            keys = []
+        if key not in keys:
+            keys.append(key)
+        existing["keys"] = keys
+
+        # Back-compat fields used by older viewers
+        existing["type"] = "+".join(sorted({t for t in types if isinstance(t, str)}))
+        existing["key"] = ", ".join([k for k in keys if isinstance(k, str)])
 
     def add_edges_from_groups(groups: Dict[str, Set[str]], edge_type: str) -> None:
         for key, ids in groups.items():
@@ -384,10 +419,12 @@ def build_dataset(openapi: Dict[str, Any], *, readme_schema: Optional[Dict[str, 
                 continue
             # connect in a chain to avoid O(n^2) explosion
             for a, b in zip(ids_list, ids_list[1:]):
-                edges.append({"source": a, "target": b, "type": edge_type, "key": key})
+                _add_edge(a, b, edge_type, key)
 
     add_edges_from_groups(tag_to_endpoints, "tag")
     add_edges_from_groups(schema_to_endpoints, "schema")
+
+    edges: List[Dict[str, Any]] = list(edges_by_pair.values())
 
     return {
         "info": _jsonable(openapi.get("info", {})),

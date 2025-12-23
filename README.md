@@ -23,7 +23,15 @@ C:/Users/tales/Documents/Projetos/sankhya-api/.venv/Scripts/python.exe scripts/b
 
 3) Open the interactive viewer
 
-Open `viewer/index.html` in your browser.
+Start a local server from the repo root (so the viewer can `fetch` the dataset):
+
+```powershell
+C:/Users/tales/Documents/Projetos/sankhya-api/.venv/Scripts/python.exe -m http.server 8000
+```
+
+Then open:
+
+- http://localhost:8000/viewer/index.html
 
 ## Outputs
 
