@@ -1,0 +1,2361 @@
+openapi: 3.0.3
+info:
+  title: API Sankhya - Legada
+  description: >
+    API de Integrações Sankhya
+
+
+    Esta documentação apresenta os serviços disponíveis para cada objetivo e
+    entidade. Você encontrará explicações sobre as regras de negócio,
+    demonstrações de uso dos serviços e detalhes dos campos e opções.
+
+
+    A API é baseada em chamadas HTTP ou HTTPS, utilizando os métodos POST e GET,
+    com corpo no formato JSON. Qualquer sistema capaz de realizar uma chamada
+    HTTP pode utilizar os serviços.
+
+
+    O método PUT não é utilizado, pois as operações de inclusão ou atualização
+    são feitas pelo método POST. Se a chave primária (PK) já existir, será feito
+    um UPDATE; se não, um INSERT.
+
+
+    O que é uma Entidade?
+
+    "Entidade" refere-se a tudo que pode ser cadastrado, editado, consultado ou
+    excluído no Sankhya. Por exemplo, um "Produto" pode ser cadastrado, editado,
+    consultado ou excluído.
+
+
+    **Exemplo de URL de Requisição:**
+
+    A URL de requisição segue um padrão fixo:
+
+
+    **URL padrão:**
+
+    https://api.sankhya.com.br/gateway/v1/[modulo]/service.sbr?serviceName=[nomedoserviço]&outputType=json
+
+
+    **Módulos Utilizados:**
+
+
+    **MGE:**
+
+    Este módulo é para consulta e gravação de dados de cadastros.
+
+
+    Exemplos de Serviços no MGE:
+
+    - CRUDServiceProvider.loadRecords
+
+    - CRUDServiceProvider.saveRecord
+
+    - DbExplorerSP.executeQuery
+
+
+    URL padrão MGE:
+
+    https://api.sankhya.com.br/gateway/v1/mge/service.sbr?serviceName=[nomedoserviço]&outputType=json
+
+
+    **MGECOM:**
+
+    O módulo Comercial é para consulta e gravação de movimentações, como pedidos
+    e compras.
+
+
+    Exemplos de Serviços no MGECOM:
+
+    - CACSP.IncluirNota
+
+    - CACSP.incluirAlterarItemNota
+
+    - CACSP.excluirItemNota
+
+    - CACSP.cancelarNota
+
+    - SelecaoDocumentoSP.faturar
+
+
+    URL padrão MGECOM:
+
+    https://api.sankhya.com.br/gateway/v1/mgecom/service.sbr?serviceName=CACSP.IncluirNota&outputType=json
+
+
+    Importante:
+
+    Os serviços são específicos para cada módulo. Os serviços do módulo MGECOM
+    são exclusivos e não funcionarão se a URL for para o módulo MGE, e
+    vice-versa.
+
+
+    Para utilizar todos os serviços, é necessário realizar o login conforme
+    descrito na documentação.
+  termsOfService: 'https://www.sankhya.com.br/'
+  license:
+    name: Licença Sankhya
+    url: 'https://www.sankhya.com.br/'
+  version: '1.0'
+servers:
+  - url: 'https://api.sankhya.com.br'
+    description: Produção
+  - url: 'https://api.sandbox.sankhya.com.br'
+    description: Sandbox
+externalDocs:
+  description: Saiba mais sobre a API Sankhya
+  url: >-
+    https://developer.sankhya.com.br/reference/api-de-integra%C3%A7%C3%B5es-sankhya
+tags:
+  - name: Como consultar dados?
+    description: Realizando consultas utilizando loadRecords
+  - name: Como incluir/alterar dados?
+    description: Realizando a inclusão e alteração de dados
+  - name: Log de Alterações
+    description: Consultas de Histórico de Entidades
+  - name: Serviços Especialistas
+    description: Serviços especialistas disponiveis no SankhyaOm
+paths:
+  /IncluiMovimentos:
+    post:
+      tags:
+        - Serviços Especialistas
+      summary: 'Incluir Movimentos (pedidos, notas, etc)'
+      description: >
+        <h1>Regras de negócio</h1>
+
+        O cadastro de pedidos no sistema, permite que você registre e gerencie o
+        que foi vendido e precisa ser faturado e entregue indicando, para qual
+        cliente ou parceiro, quais as condições comerciais e financeiras
+        negociadas e demais informações, proporcionando uma clara visão do que
+        está em cada etapa do processo.<br />
+
+        <b>OBS:</b> Caso tenha alguma necessidade de configuração do ERP procure
+        “Consultor” ou acesso o link de apoio:<br />
+        https://ajuda.sankhya.com.br/hc/pt-br/articles/360044612654-Portal-de-Vendasbr
+
+        <h3>Dependências</h3> Para realizar a inclusão do pedido, os seguintes
+        itens são obrigatórios:<br />
+
+        <b>1) </b>Logar no sistema utilizando o Serviço de Login descrito nesta
+        documentação em Login;<br />  <b>2) </b>Produtos/Serviços  preeviamente
+        cadastrados e ativos;<br />  <b>3) </b>Empresas previamente cadastradas
+        e ativas;<br /> <b>4) </b>Top's configuradas devidamente tipo de
+        movimentação <b>\"Pedido de venda\"</b>;<br />  <b>5) </b>Tipo de
+        negociação cadastrados seja  a vista, a prazo, parcelada, cheque.<br /> 
+        <b>6) </b>O parceiro deve estar cadastrado e ativo antes da geração do
+        pedido.<br />
+
+        <h3>Detalhes Técnicos</h3> 
+
+        O serviço utilizado para inclusão de notas é o CACSP.IncluirNota que
+        instancia as entidades principais para o envio de pedido, as entidades
+        que este serviço utiliza são: <br />
+
+        <b>• CabecalhoNota;</b><br /> <b>• ItemNota.</b><br />
+
+        Os campos obrigatórios dependem estritamente da configuração de
+        TOP,empresa, produto, etc. Portanto, neste exemplo colocamos os campos
+        tipicamente obrigatórios em todos os casos de uso. Este exemplo não
+        tenta exaurir as possibilidades,que são muitas, então em alguns casos a
+        chamada a esse serviço pode resultar em mensagem de erro exigindo que
+        outros campos sejam enviados. Apenas um pedido/nota pode ser enviado por
+        vez. <br />
+
+        Para realizar a inclusão do pedido através do Json, os campos abaixo são
+        obrigatórios:<br /><br /> <b>CABEÇALHO DO PEDIDO</b>
+
+          - NUNOTA – Numero Único da nota;
+          - CODPARC – Código do Parceiro;
+          - DTNEG – Data de Negociação;
+          - CODTIPOPER – Código do Tipo de Operação;
+          - CODTIPVENDA – Tipo de Negociação;
+          - CODVEND – Código do vendedor;
+          - CODEMP – Código da Empresa;
+          - TIPMOV – Tipo de Movimento.
+
+
+        <b>ITENS DO PEDIDO</b>
+
+          - CODPROD – Código do Produto;
+          - QTDNEG – Quantidade;
+          - CODLOCALORIG – Código local de Origem;
+          - CODVOL – Código do Volume;
+          - IGNOREDESCPROMOQTD - Quando "True" garante que os valores enviados na API não serão alterados devido a algum disconto promocional vigente.
+
+        Conforme explicado  anteriormente, os campos enviados acima são
+        obrigatórios e são os campos padrões. Os campos abaixo só serão
+        obrigatórios se na requisição o campo \"<b><font
+        color=red>INFORMARPRECO</font>\"</b> for igual a <b>true</b>, caso
+        contrário  os campos abaixo não serão obrigatórios.<br/><br />  <b>•
+        VLRUNIT</b> – Valor  Unitário;<br /> <b>• PERCDESC</b> – Percentual de
+        desconto;<br /><br />
+
+        <b><font  color=red>IMPORTANTE</font>:</b> O atributo
+        <b>INFORMARPRECO</b> serve para enviar o pedido com os valores já
+        negociados e neste caso, o preço e o desconto terão que serem enviados
+        para serem calculados. Caso o campo <b>informarPreço</b> = N então o ERP
+        irá utilizar  valor da tabela de preços vigente no momento da inclusão
+        do pedido.
+
+        <h3>Descritivo de Campos das Entidades</h3>
+
+        Acesse [aqui](http://swagger.sankhya.com.br/tabelas/TGFCAB.html) o
+        dicionário de dados da tabela <b>TGFCAB</b><br />  Acesse
+        [aqui](http://swagger.sankhya.com.br/tabelas/TGFITE.html) o dicionário
+        de dados da tabela <b>TGFITE</b><br />
+
+        <h3>Exemplo de uso:</h3> <ul>
+          <li>URL Gateway Produção: https://api.sankhya.com.br/</li>
+          <li>URL Gateway Sandbox: https://api.sandbox.sankhya.com.br/</li>
+        </ul> <b>URL de chamada</b>:
+        https://[URL_GATEWAY]/gateway/v1/mgecom/service.sbr?serviceName=CACSP.incluirNota&outputType=json
+        <br /><br />
+
+        </b>Corpo de requisição</b>
+
+            {
+               "serviceName":"CACSP.incluirNota",
+               "requestBody":{
+                  "nota":{
+                     "cabecalho":{
+                        "NUNOTA":{
+                        },
+                        "CODPARC":{
+                           "$":"1"
+                        },
+                        "DTNEG":{
+                           "$":"09/12/2022"
+                        },
+                        "CODTIPOPER":{
+                           "$":"2000"
+                        },
+                        "CODTIPVENDA":{
+                           "$":"12"
+                        },
+                        "CODVEND":{
+                           "$":"0"
+                        },
+                        "CODEMP":{
+                           "$":"1"
+                        },
+                        "TIPMOV":{
+                           "$":"O"
+                        }
+                     },
+                     "itens":{
+                        "INFORMARPRECO":"True",
+                        "item":[
+                              {
+                               "NUNOTA":{
+                              },
+                              "IGNOREDESCPROMOQTD": {
+                                  "$": "True"
+                              },
+                              "CODPROD":{
+                                 "$":"8"
+                              },
+                              "QTDNEG":{
+                                 "$":"1"
+                              },
+                              "CODLOCALORIG":{
+                                 "$":"0"
+                              },
+                              "CODVOL":{
+                                 "$":"UN"
+                              },
+                              "PERCDESC": {
+                                "$": "0"
+                              },
+                             "VLRUNIT": {
+                                "$": "1.75"
+                              }
+                           }               
+                        ]
+                     }
+                  }
+               }
+            }
+
+
+        <b>Retorno:</b><br />
+
+
+            {
+                "serviceName": "CACSP.incluirNota",
+                "status": "1",
+                "pendingPrinting": "false",
+                "transactionId": "1484EE05236C4B33DE6355DAA8443EFF",
+                "responseBody": {
+                    "pk": {
+                        "NUNOTA": {
+                            "$": "740"
+                        }
+                    }
+                }
+            }
+
+        <b><font color=red>IMPORTANTE</font>:</b> Este é apenas um exemplo de
+        requisição baseado em um ambiente de teste. Todos os atributos devem ser
+        revistos e ajustados considernado o ambiente do seu caso de uso.
+      responses:
+        '201':
+          description: Inclusão de pedidos realizada com sucesso!
+        '400':
+          description: Requisição inválida
+        '500':
+          description: Erro interno do servidor
+  /IncAltItemMovimento:
+    post:
+      tags:
+        - Serviços Especialistas
+      summary: Incluir e Alterar Itens de Movimentos
+      description: >
+        "<h1>Regras de negócio</h1> O objetivo é incluir no ERP um <b>pedido de
+        venda</b> ou <b>pedido de compra</b> negociado, por exemplo em 01/01
+        para ser entregue em até 31/12, durante esse prazo de negociação,
+        ocorrem algumas variações do preço na quantidade dos itens, assim como
+        itens excluídos e incluídos na negociação, por isso existe a necessidade
+        de manter um <b>pedido de venda</b> faturado parcialmente e que poderá
+        sofrer manutenções/alterações.<br />\nPara realizar configuração no
+        sistema com o <b><u>tipo de operação - Top</u></b> e habilitar algumas
+        marcações \"Permitir Alteração após confirmar\" e \"Permite alterar
+        itens após faturar parcialmente\" e \"Gravar histórico de alterações do
+        pedido\" que possibilita a alteração do <b>pedido de compra</b> ou
+        <b>pedido de venda</b>, faturado parcialmente no sistema.<br
+        />\n<b>OBS:</b> Caso tenha alguma necessidade de configuração do ERP
+        procure “Consultor” ou acesso o link de apoio:<br />
+        https://ajuda.sankhya.com.br/hc/pt-br/articles/360045109773-Altera%C3%A7%C3%A3o-de-Pedidos-Parcialmente-Faturados#prefer%C3%AAncias<br
+        />\n<h3>Dependências</h3> Para realizar a inclusão ou alteração de itens
+        no pedido, os seguintes itens são obrigatórios:<br />\n<b>1) </b>Logar
+        no sistema utilizando o Serviço de Login descrito nesta documentação em
+        Login; <br /> <b>2) </b>Produtos/Serviços  preeviamente cadastrados e
+        ativos;<br /> <b>3) </b>Empresas previamente cadastradas e ativas;<br />
+        <b>4) </b>Top's configuradas devidamente tipo de movimentação
+        <b>\"Pedido de venda\"</b>;<br /> <b>5) </b>Tipo de operação(TOP)
+        utilizado no pedido deve estar configurada para permitir a alteração do
+        <b>\"pedido\"</b> após a <b>\"confirmação\"</b> do mesmo. <br
+        />\n<h3>Detalhes Técnicos</h3> O serviço utilizado para inclusão e
+        alteração de itens no pedido  é o <b>CACSP.incluirAlterarItemNota</b>
+        que instancia as entidades principais para o envio de item no pedido, as
+        entidades que este serviço utiliza são: <br />\n  <b>•
+        CabecalhoNota;</b>\n  <b>• ItemNota.</b><br />\n  Os campos obrigatórios
+        dependem estritamente da configuração de TOP,empresa, produto, etc.
+        Portanto, neste exemplo colocamos os campos tipicamente obrigatórios em
+        todos os casos de uso. Este exemplo não tenta exaurir as
+        possibilidades,que são muitas, então em alguns casos a chamada a esse
+        serviço pode resultar em mensagem de erro exigindo que outros campos
+        sejam enviados. <br />\n  Apenas um item pedido/nota pode ser enviado
+        por vez. <br />\n  Para realizar a inclusão do item no pedido através do
+        Json, os campos abaixo são obrigatórios:<br /><br />
+
+        <b>CABEÇALHO DO PEDIDO</b><br />
+
+          - CODPROD – Código do Produto;
+          - QTDNEG – Quantidade;
+          - CODLOCALORIG – Código local de Origem;
+          - CODVOL – Código do Volume;
+          - SEQUENCIA - Sequência do item no pedido;
+          - VLRUNIT - Valor Unitário;
+          - VLRTOT - Valor total do item(QTDNEG x VLRUNIT);
+          - VLRDESC - Valor do Desconto;
+          - PERCDESC - Percentual de Desconto.
+
+
+        <h3></h3> Para realizar a alteração de itens do pedido basta informar o
+        número da SEQUÊNCIA do item a ser alterado pelo JSON, segue exemplo:
+
+            "SEQUENCIA":{
+              "$":"10"
+            }
+
+        <h3>Descritivo de Campos das Entidades</h3>
+
+        Acesse [aqui](http://swagger.sankhya.com.br/tabelas/TGFCAB.html) o
+        dicionário de dados da tabela <b>TGFCAB</b><br />  Acesse
+        [aqui](http://swagger.sankhya.com.br/tabelas/TGFITE.html) o dicionário
+        de dados da tabela <b>TGFITE</b><br />
+
+
+        <h3>Exemplo de uso:</h3> <ul>
+          <li>URL Gateway Produção: https://api.sankhya.com.br/</li>
+          <li>URL Gateway Sandbox: https://api.sandbox.sankhya.com.br/</li>
+        </ul> <b>URL de chamada</b>:
+        https://[URL_GATEWAY]/gateway/v1/mgecom/service.sbr?serviceName=CACSP.incluirAlterarItemNota&outputType=json<br
+        />
+
+        <b>Corpo de Requisição Padrão para Inclusão:</b>
+
+            {
+               "serviceName":"CACSP.incluirAlterarItemNota",
+               "requestBody":{
+                  "nota":{
+                     "NUNOTA":"7468",
+                     "itens":{
+                        "item":{
+                           "CODPROD":{
+                              "$":"129"
+                           },
+                           "NUNOTA":{
+                              "$":"7468"
+                           },
+                           "SEQUENCIA":{
+                              "$":""
+                           },
+                           "QTDNEG":{
+                              "$":"10"
+                           },
+                           "VLRUNIT":{
+                              "$":"10"
+                           },
+                           "VLRTOT":{
+                              "$":"432.38"
+                           },
+                           "CODVOL":{
+                              "$":"UN"
+                           },
+                           "VLRDESC":{
+                              "$":"0"
+                           },
+                           "PERCDESC":{
+                              "$":"0"
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+
+
+        <b>Corpo de Requisição Padrão para Alteração:</b>
+
+            {
+               "serviceName":"CACSP.incluirAlterarItemNota",
+               "requestBody":{
+                  "nota":{
+                     "NUNOTA":"7468",
+                     "itens":{
+                        "item":{
+                           "CODPROD":{
+                              "$":"129"
+                           },
+                           "NUNOTA":{
+                              "$":"7468"
+                           },
+                           "SEQUENCIA":{
+                              "$":"10"
+                           },
+                           "QTDNEG":{
+                              "$":"8"
+                           },
+                           "VLRUNIT":{
+                              "$":"10"
+                           },
+                           "VLRTOT":{
+                              "$":"432.38"
+                           },
+                           "CODVOL":{
+                              "$":"UN"
+                           },
+                           "VLRDESC":{
+                              "$":"0"
+                           },
+                           "PERCDESC":{
+                              "$":"0"
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+
+
+
+        <b>Retorno:</b><br />
+
+            {
+                "serviceName": "CACSP.incluirAlterarItemNota",
+                "status": "1",
+                "pendingPrinting": "false",
+                "transactionId": "46457EBA87743376561485A6021C8D8A",
+                "responseBody": {
+                    "pk": {
+                        "NUNOTA": {
+                            "$": "7468"
+                        },
+                        "SEQUENCIA": {
+                            "$": "8"
+                        }
+                    }
+                }
+            }
+      responses:
+        '201':
+          description: Inclusão / Alteração de itens realizada com sucesso!
+        '400':
+          description: Requisição inválida
+        '500':
+          description: Erro interno do servidor
+  /ExcluiItemMovimento:
+    post:
+      tags:
+        - Serviços Especialistas
+      summary: Excluir Itens de Movimentos
+      description: >
+        <h1>Regras de negócio</h1> O objetivo é incluir um <b>pedido de 
+        venda</b> ou <b>pedido de compra</b> negociado, por exemplo em 01/01
+        para ser entregue em até 31/12, durante esse prazo de negociação,
+        ocorrem algumas variações do preço e quantidade dos itens, assim como
+        itens excluídos e incluídos na negociação, por isso existe a necessidade
+        de manter um <b>pedido de venda</b> faturado parcialmente e que poderá
+        sofrer manutenções/alterações.<br />
+
+        Será necessário efetuar algumas, configurações como do tipo de operação
+        - top e habilitar algumas marcações \"Permitir Alteração após
+        confirmar\" e \"Permite alterar itens após faturar parcialmente\" e
+        \"Gravar histórico de alterações do pedido\" que possibilita a alteração
+        do <b>pedido de compra</b> ou <b>pedido de venda</b>, faturado
+        parcialmente no sistema.<br />
+
+        <b>OBS:</b> Caso tenha  alguma necessidade de configuração do ERP
+        procure “Consultor” ou acesso o link de apoio:<br />
+        https://ajuda.sankhya.com.br/hc/pt-br/articles/360045109773-Altera%C3%A7%C3%A3o-de-Pedidos-Parcialmente-Faturados#prefer%C3%AAncias<br
+        />
+
+        <h3>Dependências</h3> 
+
+        Para realizar a exclusão de itens no pedido, os  seguintes itens são
+        obrigatórios:<br />
+
+        <b>1) </b>Logar no sistema utilizando  o Serviço de Login descrito nesta
+        documentação em Login;<br /> <b>2) </b>Produtos/Serviços preeviamente
+        cadastrados e ativos;<br />  <b>3) </b>Empresas previamente cadastradas
+        e ativas;<br />  <b>4) </b>Top's configuradas devidamente tipo de
+        movimentação <b>\"Pedido de venda\"</b>;<br />  <b>5) </b>Tipo de
+        operação(TOP) utilizado no pedido deve estar configurada para permitir a
+        alteração do <b>\"pedido\"</b> após a <b>\"confirmação\"</b> do mesmo.
+        <br />
+
+        <h3>Detalhes Técnicos</h3> O serviço utilizado para exclusão de itens no
+        pedido  é o <b>CACSP.excluirItemNota</b> que instancia as entidades
+        principais para exclusão de item no pedido, as entidades que este
+        serviço utiliza são: <br />
+
+        <b>• CabecalhoNota;</b> <b>• ItemNota.</b><br />
+
+        Os campos obrigatórios dependem estritamente da configuração de
+        TOP,empresa, produto, etc. Portanto, neste exemplo colocamos os campos
+        tipicamente obrigatórios em todos os casos de uso. Este exemplo não
+        tenta exaurir as possibilidades,que são muitas, então em alguns casos a
+        chamada a esse serviço pode resultar em mensagem de erro exigindo que
+        outros campos sejam enviados. <br />
+
+        Apenas um item pedido/nota pode ser enviado por vez. <br /> Para
+        realizar a exclusão do item no pedido através do Json, os campos abaixo
+        são obrigatórios:<br /><br />
+
+        <b>CABEÇALHO DO PEDIDO</b><br />
+
+          - NUNOTA – Numero Único da nota;
+
+        <b>ITENS DO PEDIDO</b><br />
+
+          - SEQUENCIA - Sequência do item no pedido;
+
+
+        <h3>Descritivo de Campos das Entidades</h3>
+
+        Acesse [aqui](http://swagger.sankhya.com.br/tabelas/TGFCAB.html) o
+        dicionário de dados da tabela <b>TGFCAB</b><br />  Acesse
+        [aqui](http://swagger.sankhya.com.br/tabelas/TGFITE.html) o dicionário
+        de dados da tabela <b>TGFITE</b><br />
+
+        <h3>Exemplo de uso:</h3>
+
+        <b>URL de chamada</b>: <ul>
+          <li>URL Gateway Produção: https://api.sankhya.com.br/</li>
+          <li>URL Gateway Sandbox: https://api.sandbox.sankhya.com.br/</li>
+        </ul> <b>URL de chamada</b>:
+        https://[URL_GATEWAY]/gateway/v1/mgecom/service.sbr?serviceName=CACSP.excluirItemNota&outputType=json
+        <br />
+
+        <b>Corpo de Requisição Padrão para Inclusão:</b>
+
+
+            {
+               "serviceName":"CACSP.excluirItemNota",
+               "requestBody":{
+                  "nota":{
+                     "itens":{
+                        "item":{
+                           "NUNOTA":{
+                              "$":"7468"
+                           },
+                           "SEQUENCIA":{
+                              "$":"4"
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+
+        <b>Retorno:</b><br />
+
+            {
+              "serviceName": "CACSP.excluirItemNota",
+              "status": "1",
+              "pendingPrinting": "false",
+              "transactionId": "6E87F2164B6D912C169CA006E6FACC2F",
+              "responseBody": {}
+            }
+      responses:
+        '201':
+          description: Exclusão de item realizada com sucesso!
+        '400':
+          description: Requisição inválida
+        '500':
+          description: Erro interno do servidor
+  /CancelaMovimento:
+    post:
+      tags:
+        - Serviços Especialistas
+      summary: Cancelamento de Movimentos
+      description: >
+        <h1>Regras de negócio</h1>
+
+        Para realizar o cancelamento de pedidos no ERP será necessário efetuar
+        criação de um filtro para acessar os títulos que precisam ser cancelados
+        e efetuar o preenchimento dos dados necessários para efetuar o
+        cancelamento.No ERP a partir do momento que é cancelada uma nota fiscal,
+        não é mais possível reverter este processo, sendo necessário lançar a
+        nota fiscal novamente.<br />
+
+        <b>OBS:</b> Caso tenha alguma necessidade de configuração do ERP procure
+        “Consultor” ou acesso o link de apoio:<br
+        />\nhttps://ajuda.sankhya.com.br/hc/pt-br/articles/360045107913-Notas-Canceladas<br
+        />
+
+        <h3>Dependências</h3> Para realizar o cancelameno do pedido, os
+        seguintes itens são obrigatórios:<br />
+
+        <b>1) </b>Logar no sistema utilizando o Serviço de Login descrito nesta
+        documentação em Login; <br />  <b>2) </b>O pedido deve estar confirmado
+        no ERP Sankhya-Om;<br />  <b>3) </b>É obrigatório informar o número
+        único da nota<br /> <b>4) </b>É obrigatorio informar a justificativa de
+        cancelamento</b>.<br />
+
+        <h3>Detalhes Técnicos</h3>
+
+        O serviço utilizado para cancelamento de notas é o CACSP.cancelarNota
+        que utiliza a entidade  CabecalhoNota que por sua vez instancia a tabela
+        TGFCAB.<br />
+
+        Para usar serviços de módulos auxiliares, como é o caso do mgecom
+        devemos enviar um parâmetro adicional na URL, cujo nome é mgeSession e o
+        valor será o ID adquirido no serviço de autenticação. Isso não se aplica
+        para serviços do módulo mge, que é o principal.<br />
+
+        Para realizar a exclusão do pedido através do Json, o campo abaixo é
+        obrigatório:<br /><br />
+
+          - NUNOTA – Numero Único da nota;
+          
+        A partir do momento em que a nota é cancelada, a nota é inserida na
+        tabela <b>TGFCAN</b> que por sua vez é instanciada pela entidade
+        <b>\"NotaCancelada\"</b>, esta tabela é responsável por armazenar todas
+        as notas que foram confirmadas mas por algum motivo ou divergência, foi
+        cancelada.
+
+
+        <h3>Descritivo de Campos das Entidades</h3>
+
+        Acesse [aqui](http://swagger.sankhya.com.br/tabelas/TGFCAB.html) o
+        dicionário de dados da tabela <b>TGFCAB</b><br />  Acesse
+        [aqui](http://swagger.sankhya.com.br/tabelas/TGFCAN.html) o dicionário
+        de dados da tabela <b>TGFCAN</b><br />
+
+        <h3>Exemplo de uso:</h3>  <ul>
+          <li>URL Gateway Produção: https://api.sankhya.com.br/</li>
+          <li>URL Gateway Sandbox: https://api.sandbox.sankhya.com.br/</li>
+        </ul> <b>URL de chamada</b>:
+        https://[URL_GATEWAY]/gateway/v1/mgecom/service.sbr?serviceName=CACSP.cancelarNota&outputType=json
+        <br />
+
+        <b>Corpo de requisição</b>
+
+            {
+               "serviceName":"CACSP.cancelarNota",
+               "requestBody":{
+                  "notasCanceladas":{
+                     "nunota":[
+                        {
+                           "$":"3713703"
+                        }
+                     ],
+                     "justificativa":"lançamento indevido",
+                     "validarProcessosWmsEmAndamento":"true"
+                  }
+                }
+            }
+
+
+        <b>Retorno:</b><br />
+
+            {
+                "serviceName": "CACSP.cancelarNota",
+                "status": "1",
+                "pendingPrinting": "false",
+                "transactionId": "BA6F5CEB2F1ED4B27E3E66F98C4BE084",
+                "responseBody": {
+                    "resultadoCancelamento": {
+                        "totalNotasCanceladas": "1"
+                    }
+                }
+            }
+      responses:
+        '201':
+          description: Cancelamento de pedidos realizada com sucesso!
+        '400':
+          description: Requisição inválida
+        '500':
+          description: Erro interno do servidor
+  /FaturaMovimento:
+    post:
+      tags:
+        - Serviços Especialistas
+      summary: Faturamento de Movimentos
+      description: >
+        <h1>Regras de negócio</h1> 
+
+        Para finalizar uma venda, o pedido de vendas precisa ser faturado, ou
+        seja, transformado em nota fiscal ou Ordem de Entrega.<br />
+
+        O conceito prático de faturamento, consiste em transformar um pedido de
+        venda em uma nota fiscal de Venda; porém, na passagem de um orçamento
+        para um pedido de venda, pode-se entender que também houve um
+        faturamento, mas não com as mesmas validações mencionadas acima.<br />
+
+        <b>Vale ressaltar que, os comportamentos citados, poderão variar de
+        acordo com o processo de cada empresa.</b><br />
+
+        <b>OBS:</b> Caso tenha alguma necessidade de configuração do ERP procure
+        “Consultor” ou acesso o link de apoio:<br />
+        https://ajuda.sankhya.com.br/hc/pt-br/articles/360044612654-Portal-de-Vendas#faturamento-comofazer<br
+        />
+
+        <h3>Dependências</h3> Para realizar o faturamento do pedido, os
+        seguintes itens são obrigatórios:<br />
+
+        <b>1) </b>Logar no sistema utilizando o Serviço de Login descrito nesta
+        documentação em Login; <br />  <b>2) </b>O pedido deve estar confirmado
+        no ERP Sankhya-Om;<br />  <b>3) </b>É obrigatório informar o número
+        único do pedido.<br />  <b>4) </b>É obrigatório configurar o tipo de
+        operação(TOP) para atender a requisição de faturamento vindo do json<br
+        />  <b>5) </b>É obrigatório informar o tipo de operação(TOP) de
+        faturamento para a nota fiscal.<br />
+
+        <b>OBS:</b> O faturamento pelo json passa pelas mesmas regras definidas
+        e configuradas nas TOPs do ERP.<br /> 
+
+        <h3>Detalhes Técnicos</h3>
+
+        O serviço utilizado para o faturamento de pedidos é o
+        SelecaoDocumentoSP.faturar que utiliza a entidade CabecalhoNota que por
+        sua vez instancia a tabela TGFCAB.<br />
+
+        Para realizar o faturamento do pedido o campo abaixo é obrigatório:<br
+        /><br /> <b>• NUNOTA</b> – Numero Único da nota;<br /><br />
+
+        Ao realizar o faturamento deve-se passar no campo <b>NUNOTA</b> o número
+        do pedido que deseja faturar.<br />
+
+        Após o serviço executar o faturamento no ERP ele retorna o NUNOTA da
+        nota fiscal gerada. ( Lembrando que o <b>NUNOTA</b> não é o número da
+        nota e sim apenas a chave (PK) interna que identifica o documento na
+        tabela TGFCAB ).<br />
+
+        Para obter os dados da nota fiscal gerada, deve-se fazer chamada ao
+        serviço de consulta de <b>pedidos/notas</b> passando como parâmetro o
+        NUNOTA da nota fiscal que foi retornado durante a chamada do serviço de
+        faturamento.<br />
+
+        Assim conseguirá obter todas as informações da nota fiscal que foi
+        gerada no faturamento.<br />\n  Importante: A nota faturada fica ligada
+        com o pedido pela tabela <b>TGFVAR</b> ( ver serviço de consulta de
+        \"Ligação Nota x Pedido\" )<br /><br /><br />
+
+        <b>Opções de Faturamento (atributo: tipoFaturamento):</b>
+          - Faturamento normal (FaturamentoNormal): Faturamento da nota independente dos itens, ao utilizar esta opção o faturamento é realizado juntamente com a quantidade total de itens na nota.
+
+                ...
+                "notas": {
+                  "codTipOper": 167,
+                  "dtFaturamento": "04/02/2021",
+                  "tipoFaturamento": "FaturamentoNormal",
+                  "dataValidada": true,
+                  "notasComMoeda": {
+                  
+                  },         
+                  "nota": [
+                    {
+                      "$": 7434
+                    }
+                  ],
+                  "faturarTodosItens": true
+                }
+                ...
+                
+          - Faturamento por Item e por quantidade: Faturamento por item, permite selecionar o item que será faturado e a sua quantidade, permitindo assim, faturar parcialmente um pedido ou um item.
+          
+                ...
+                "nota": [
+                  {
+                    "NUNOTA": "7432",
+                    "itens": {
+                      "item": [
+                        {
+                          "QTDFAT": 2,
+                          "$": 1
+                        }
+                      ],
+                      "faturarTodosItens": false,
+                    }
+                  }
+                ],
+                ...
+          
+          
+          - Faturamento por Estoque: Para realizar o faturamento por estoque o parâmetro <b>FATEST-RESERV</b> deverá estar desligado no ERP.
+          
+                ...
+                "notas": {
+                  "codTipOper": 167,
+                  "dtFaturamento": "04/02/2021",
+                  "serie": "",
+                  "dtSaida": "04/02/2021",
+                  "hrSaida": "",
+                  "tipoFaturamento": "FaturamentoEstoque",
+                  "dataValidada": true,
+                  "notasComMoeda": {
+                  
+                  },         
+                  "nota": [
+                    {
+                      "$": 7434
+                    }
+                  ],
+                  "faturarTodosItens": true
+                }
+                ...
+          
+          - Faturamento por Estoque deixando pendente: Faturar pelo estoque deixando pendente, serve para atender os itens que possuem estoque, sendo assim, os itens que não possuem estoque ficam como pendentes para serem atendidos posteriormente em um novo faturamento. Para realizar o faturamento por estoque o parâmetro <b>FATEST-RESERV</b> deverá estar desligado no ERP.
+          
+                ...
+                "notas": {
+                  "codTipOper": 167,
+                  "dtFaturamento": "04/02/2021",
+                  "serie": "",
+                  "dtSaida": "04/02/2021",
+                  "hrSaida": "",
+                  "tipoFaturamento": "FaturamentoEstoqueDeixandoPendente",
+                  "dataValidada": true,
+                  "notasComMoeda": {
+                  
+                  },         
+                  "nota": [
+                    {
+                      "$": 7439
+                    }
+                  ],
+                  "faturarTodosItens": true
+                }
+                ...
+          
+          - Faturamento Direto:
+
+                ...
+                "notas": {
+                  "codTipOper": 28600,
+                  "dtFaturamento": "27/07/2021",
+                  "tipoFaturamento": "FaturamentoDireto",
+                  "dataValidada": true,
+                  "serie": "1",
+                  "tipoFaturamento": "FaturamentoDireto",
+                  "notasComMoeda": {
+                  
+                  },         
+                  "nota": [
+                    {
+                      "$": 7439
+                    }
+                  ],
+                  "faturarTodosItens": true
+                }
+                ...
+
+
+        OBSERVAÇÃO: Nota-se que que nas opções de por estoque a tag
+        <b>tipoFaturamento</b> é alterada para <b>\"FaturamentoEstoque\"</b> ou
+        <b>\"FaturamentoEstoqueDeixandoPendente\"</b> nos demais tag fica com a
+        opção <b>FaturamentoNormal</b>. <br />
+
+        <h3>Descritivo de Campos das Entidades</h3>
+
+        Acesse [aqui](http://swagger.sankhya.com.br/tabelas/TGFCAB.html) o
+        dicionário de dados da tabela <b>TGFCAB</b><br /> 
+
+
+
+
+        <h3>Exemplo de uso:</h3>
+
+        <b>URL de chamada</b>: <ul>
+          <li>URL Gateway Produção: https://api.sankhya.com.br/</li>
+          <li>URL Gateway Sandbox: https://api.sandbox.sankhya.com.br/</li>
+        </ul> <b>URL de chamada</b>:
+        https://[URL_GATEWAY]/gateway/v1/mgecom/service.sbr?serviceName=SelecaoDocumentoSP.faturar&outputType=json<br
+        />
+
+        <b>Corpo de requisição</b>
+
+            {
+               "serviceName":"SelecaoDocumentoSP.faturar",
+               "requestBody":{
+                  "notas":{
+                     "codTipOper":167,
+                     "dtFaturamento":"04/02/2021",
+                     "tipoFaturamento":"FaturamentoNormal",
+                     "dataValidada":true,
+                     "notasComMoeda":{
+                        
+                     },
+                     "nota":[
+                        {
+                           "$":7434
+                        }
+                     ],
+                     "codLocalDestino":"",
+                     "faturarTodosItens":true,
+                     "umaNotaParaCada":"false",
+                     "ehWizardFaturamento":true,
+                     "dtFixaVenc":"",
+                     "ehPedidoWeb":false,
+                     "nfeDevolucaoViaRecusa":false
+                  }
+               }
+            }
+
+
+        <b>Retorno:</b><br />
+
+            {
+                "serviceName": "SelecaoDocumentoSP.faturar",
+                "status": "1",
+                "pendingPrinting": "false",
+                "transactionId": "C688DB3E5193312092DC853D04B7BBE2",
+                "responseBody": {
+                    "codUsuLogado": {
+                        "$": "0"
+                    },
+                    "notas": {
+                        "tipMov": "V",
+                        "nota": {
+                            "$": "7435"
+                        }
+                    }
+                }
+            }
+      responses:
+        '201':
+          description: Cancelamento de pedidos realizada com sucesso!
+        '400':
+          description: Requisição inválida
+        '500':
+          description: Erro interno do servidor
+  /Salve:
+    post:
+      tags:
+        - Como incluir/alterar dados?
+      summary: Incluir e Alterar Dados
+      description: >
+        <h1>Regras de negócio</h1> 
+
+        Utilizando a API é possível realizar a inclusão, ou atualização, de
+        dados no SankhyaOm. Para isso, utilizamos o serviço \"DatasetSP.save\".
+        O mesmo serviço é utilizado para ambos os casos, o que vai indicar se é
+        inclusão ou atualização é o envio da chave primária do registro ou não,
+        ou seja, ao enviar a chave primária indica a necessidade de atualização,
+        e caso a chave primária não seja enviada, a API entende que é necessário
+        fazer a inclusão do registro.<br /><br />
+
+        <h3>Exemplo de uso</h3> <ul>
+          <li>URL Gateway Produção: https://api.sankhya.com.br/</li>
+          <li>URL Gateway Sandbox: https://api.sandbox.sankhya.com.br/</li>
+        </ul> <b>URL de chamada</b>:
+        https://[URL_GATEWAY]/gateway/v1/mge/service.sbr?serviceName=DatasetSP.save&outputType=json<br
+        /><br />
+
+        <b>Vejamos agora a estrutura base da requisição para incluir e atualizar
+        dados via API:</b>
+
+
+            {
+               "serviceName":"DatasetSP.save",
+               "requestBody":{
+                  "entityName":"NomeDaEntidade",
+                  "standAlone":false,
+                  "fields":[ "CAMPO_1",
+                    "CAMPO_2",
+                    "CAMPO_N"
+                  ],
+                  "records":[
+                     {
+                        "pk":{  // deve ser enviado apenas para situação de atualização
+                           "NOME_PK":"VALOR_PK"
+                        },
+                        "values":{
+                           "0": "VALOR_1",
+                           "1": "VALOR_2",
+                           "2": "VALOR_N"
+                        }
+                     }
+                  ]
+               }
+            }
+
+
+        <br /> Esta estrutura é padrão, e permite fazer inclusão, e atualização,
+        em qualquer entidade existente no SankhyaOm. Para isso, basta indicar a
+        Entidade (entityName), os campos (fields) e os respectivos valores
+        (records).<br /> Veremos a seguir 2 exemplos práticos de inclusão e
+        atualização de registros. <br /><br /><br />
+
+        <h2>Como fazer a inclusão de dados?</h2>  Agora que temos a estrutura
+        base da requisição para incluir e atualizar dados via API, vamos
+        apresentar um exemplo de inclusão utilizando registros com PK simples e
+        com PK composta. Veja a seguir a inclusão de um Parceiro e seu
+        contato.<br /><br /> <b>Exemplo para incluir parceiro:</b>
+
+
+            {
+               "serviceName":"DatasetSP.save",
+               "requestBody":{
+                  "entityName":"Parceiro",
+                  "standAlone":false,
+                  "fields":[
+                     "CODPARC",
+                     "NOMEPARC",
+                     "ATIVO",
+                     "TIPPESSOA",
+                     "CODCID",
+                     "CODREG",
+                     "CLASSIFICMS",
+                     "ComplementoParc.SUGTIPNEGENTR",
+                     "ComplementoParc.SUGTIPNEGSAID"
+                  ],
+                  "records":[
+                     {
+                        "values":{
+                           "1":"NOME DO PARCEIRO BEM AQUI",
+                           "2":"S",
+                           "3":"F",
+                           "4":"1",
+                           "5":"0",
+                           "6":"C",
+                           "7":"13",
+                           "8":"13"
+                        }
+                     }
+                  ]
+               }
+            }
+
+        <b>Retorno:</b>
+
+            {
+                "serviceName": "DatasetSP.save",
+                "status": "1",
+                "pendingPrinting": "false",
+                "transactionId": "EAE26797DAF8A192B2FFF990097337A7",
+                "responseBody": {
+                    "total": "1",
+                    "result": [
+                        [
+                            "4454",
+                            "NOME DO PARCEIRO BEM AQUI",
+                            "S",
+                            "F",
+                            "1",
+                            "0",
+                            "C",
+                            "13",
+                            "13"
+                        ]
+                    ]
+                }
+            }
+
+        <br />No retorno, a primeira linha da requisição indica o Código
+        atribuído a este parceiro (neste exemplo 4454).<br /> Agora, vamos fazer
+        a inclusão de múltiplos registros utilizando PK do parceiro como chave
+        de ligação para registros de detalhe. O json a seguir inclui dois
+        contatos para o parceiro na entidade Contato que possui PK composta
+        (CODPARC, CODCONTATO). Segue json para incluir os contatos para o
+        parceiro recém incluído:<br /><br />
+
+        <b>Exemplo para incluir os contatos do parceiro:</b>
+
+            {
+               "serviceName":"DatasetSP.save",
+               "requestBody":{
+                  "entityName":"Contato",
+                  "standAlone":false,
+                  "fields":[
+                     "CODCONTATO",
+                     "ATIVO",
+                     "NOMECONTATO",
+                     "EMAIL",
+                     "CELULAR"
+                  ],
+                  "records":[
+                     {
+                        "foreignKey":{
+                           "CODPARC":"4454"
+                        },
+                        "values":{
+                           "1":"S",
+                           "2":"Nome do Contato 1",
+                           "4":"33  999998888"
+                        }
+                     },
+                     {
+                        "foreignKey":{
+                           "CODPARC":"4454"
+                        },
+                        "values":{
+                           "1":"S",
+                           "2":"Nome do Contato 2",
+                           "4":"33  999998888"
+                        }
+                     }
+                  ]
+               }
+            }
+
+        <b>Retorno:</b><br/>
+
+            {
+                "serviceName": "DatasetSP.save",
+                "status": "1",
+                "pendingPrinting": "false",
+                "transactionId": "A0B2291C8ED35C5DD22E42B36B98BE97",
+                "responseBody": {
+                    "total": "2",
+                    "result": [
+                        [
+                            "1",
+                            "S",
+                            "NOME DO CONTATO 1",
+                            "",
+                            "33  999998888"
+                        ],
+                        [
+                            "2",
+                            "S",
+                            "NOME DO CONTATO 2",
+                            "",
+                            "33  999998888"
+                        ]
+                    ]
+                }
+            }
+
+
+        <br />Dessa forma, com uma requisição conseguimos realizar múltiplas
+        inclusões. Note que incluirmos o contato código 1 e 2 para o parceiro
+        4454.\n<br />Vale ressaltar que não é necessário enviar todos os dados
+        (records) indicados na seção de campos (fields). O exemplo acima indica
+        5 campos, mas envia apenas 3 informações para realizar a inclusão do
+        parceiro.<br /><br />
+
+        <h2>Como fazer alterações em dados?</h2>  Agora que vimos como incluir
+        registros, vamos fazer algumas atualizações nos cadastros incluídos
+        recentemente. Vamos atualizar o nome do parceiro e adicionar e-mails aos
+        contatos que foram vinculados ao parceiro.<br />
+
+        Para realizar uma atualização de cadastro, basta indicar a PK forte do
+        registro desejado. Vejamos a seguir o json para atualizar o cadastro do
+        parceiro 4454:<br />
+
+            {
+               "serviceName":"DatasetSP.save",
+               "requestBody": {
+                  "entityName":"Parceiro",
+                  "standAlone":false,
+                  "fields": [
+                     "CODPARC",
+                     "NOMEPARC",
+                     "ATIVO",
+                     "TIPPESSOA"
+                  ],
+                  "records":[
+                     {
+                        "pk": {
+                           "CODPARC":"4454"
+                        },
+                        "values": {
+                           "1":"JOSE DA SILVA XAVIER"
+                        }
+                     }
+                  ]
+               }
+            }
+
+
+
+
+        <b>Retorno:</b><br />
+
+            {
+                "serviceName": "DatasetSP.save",
+                "status": "1",
+                "pendingPrinting": "false",
+                "transactionId": "E5526480FF334FF05DC6118028A60AE0",
+                "responseBody": {
+                    "total": "1",
+                    "result": [
+                        [
+                            "4454",
+                            "JOSE DA SILVA XAVIER",
+                            "S",
+                            "F"
+                        ]
+                    ]
+                }
+            }
+
+
+        <br />Agora vamos atualizar o cadastro dos dois contatos, adicionando
+        e-mails aos mesmos. Segue json para realizar a requisição:<br />
+
+            {
+               "serviceName":"DatasetSP.save",
+               "requestBody":{
+                  "entityName":"Contato",
+                  "standAlone":false,
+                  "fields":[
+                     "CODCONTATO",
+                     "ATIVO",
+                     "NOMECONTATO",
+                     "EMAIL",
+                     "CELULAR"
+                  ],
+                  "records":[
+                     {
+                        "pk":{
+                           "CODPARC":"4454",
+                           "CODCONTATO":"1"
+                        },
+                        "values":{
+                           "3":"financeiro@empresa.com.br"
+                        }
+                     },
+                     {
+                        "pk":{
+                           "CODPARC":"4454",
+                           "CODCONTATO":"2"
+                        },
+                        "values":{
+                           "3":"comercial@empresa.com.br"
+                        }
+                     }
+                  ]
+               }
+            }
+
+
+
+        <b>Retorno:</b><br />
+
+            {
+                "serviceName": "DatasetSP.save",
+                "status": "1",
+                "pendingPrinting": "false",
+                "transactionId": "42C865B17822AC52F3F58DFEA7394BE5",
+                "responseBody": {
+                    "total": "2",
+                    "result": [
+                        [
+                            "1",
+                            "S",
+                            "NOME DO CONTATO 1",
+                            "financeiro@empresa.com.br",
+                            "33  999998888"
+                        ],
+                        [
+                            "2",
+                            "S",
+                            "NOME DO CONTATO 2",
+                            "comercial@empresa.com.br",
+                            "33  999998888"
+                        ]
+                    ]
+                }
+            }
+      responses:
+        '201':
+          description: Cadastro efetuado com sucesso
+        '400':
+          description: Requisição inválida
+        '500':
+          description: Erro interno do servidor
+  /loadRecords:
+    get:
+      tags:
+        - Como consultar dados?
+      summary: Consultas com loadRecords (para vários registros)
+      description: >-
+        <h1>Regras de negócio</h1> A API possui um serviço genérico para aplicar
+        consultas em todas as Entidades disponíveis no ERP:
+        <b>CRUDServiceProvider.loadRecords</b>. Por definição, uma entidade
+        mapeia uma tabela que está no banco de dados, vejamos a seguir alguns
+        exemplos de Entidade:<br /> <b>•</b> Entidade Produtos mapena a tabela
+        TGFPRO<br /> <b>•</b> Entidade Parceiros mapeia a tabela TGFPAR<br />
+
+
+        <br /> <h3>Exemplo de uso:</h3>
+
+        <ul>
+          <li>URL Gateway Produção: https://api.sankhya.com.br/</li>
+          <li>URL Gateway Sandbox: https://api.sandbox.sankhya.com.br/</li>
+        </ul>
+
+        <b>URL de chamada</b>:
+        https://[URL_GATEWAY]/gateway/v1/mge/service.sbr?serviceName=CRUDServiceProvider.loadRecords&outputType=json
+
+        <br />Vejamos a seguir a estrutura completa de uma requisição do serviço
+        loadRecords:
+
+            {
+                "serviceName": "CRUDServiceProvider.loadRecords",
+                "requestBody": {
+                    "dataSet": {
+                        "rootEntity": "Produto",
+                        "ignoreCalculatedFields": "true",
+                        "useFileBasedPagination": "true",
+                        "includePresentationFields": "N",
+                        "tryJoinedFields": "true",
+                        "modifiedSince": "2024-04-16T12:59:59",
+                        "offsetPage": "0",
+                        "criteria": {
+                            "expression": {
+                              "$": "CODPROD IN ( ?, ? ) AND DESCRPROD LIKE '%?%'"
+                            },
+                            "parameter": [
+                                {
+                                    "$": "1",
+                                    "type": "I"
+                                },
+                                {
+                                    "$": "2",
+                                    "type": "I"
+                                },
+                                {
+                                    "$": "QUEIJO",
+                                    "type": "S"
+                                }
+                            ]
+                        },
+                        "entity": [
+                            {
+                                "path": "",
+                                "fieldset": {
+                                    "list": "CODPROD, DESCRPROD"
+                                }
+                            },
+                            {
+                                "path": "GrupoProduto",
+                                "fieldset": {
+                                    "list": "CODGRUPOPROD, DESCRGRUPOPROD"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+
+        Agora, vamos detalhar as propriedades utilizadas:<br /> <ul>
+          <li>serviceName: nome do serviço e por padrão, sempre será: CRUDServiceProvider.loadRecords
+        rootEntity: nome da entidade a ser consultada.</li>
+          <li>modifiedSince: faz referência a funcionalidade de logAlteracoesTabelas (<a href="https://developer.sankhya.com.br/reference/get_logalteracoestabelas">clique aqui</a> para mais detalhes sobre o recurso de LogAlteracoesTabelas). Quando esta funcionalidade está habilitada, é possível trazer apenas registros que tiveram alteração a partir de uma determinada data/hora. Vale ressaltar que este parâmetro é opcional, e ao enviar valores o serviço irá considerar “apenas” registros contidos no logAlteracoesTabelas. Caso não tenha informações logadas no sistema, o retorno do serviço será vazio (ZERO registros).</li>
+          <li>ignoreCalculatedFields: quando configurado como `true`, os campos calculados são ignorados e apenas os campos persistidos em banco são retornados, reduzindo o volume de processamento e aumentando a performance da consulta. O valor padrão é false, ou seja, por padrão os campos calculados são incluídos no resultado.</li>
+          <li>useFileBasedPagination: este atributo habilita a paginação baseada em disco. O padrão é utilizar memória do servidor para fazer paginações. É indicado para consultas com grande volume de dados (superior a 1000 páginas). Quando configurado como `true`, o processamento passa a ser realizado em disco, garantindo maior estabilidade e performance em cenários massivos. O valor padrão é false, mantendo a paginação tradicional para consultas comuns.</li>
+          <li>offsetPage: indica a página a ser retornada. A página tem início em 0 (zero) e novas requisições devem ser realizadas, incrementando este valor, sempre que o retorno indicar mais registros através do parametro "hasMoreResult" com valor "true".</li>
+          <li>criteria -> expression: condição da consulta. Sempre que houver "parâmetros" variáveis, deve ser utilizado os parâmetros (parameter) para indicar os valores para critério da consulta.</li>
+          <li>criteria -> parameter: deve ser informado os valores para os parâmetros utilizados na consulta (clique aqui para mais detalhes sobre o recurso de critérios nos filtros).</li>
+          <li>entity: são indicados os campos a serem retornados na consulta. Os campos estão disponíveis no <a href="https://ajuda.sankhya.com.br/hc/pt-br/articles/360044597294-Dicion%C3%A1rio-de-Dados">Dicionário de Dados</a> para identificar quais campos serão necessários em cada entidade consultada. Esta propriedade também permite obter informações de entidades com ligação direta ao registro consultado. Ex.: para buscar um parceiro, através do CODBAI é possível trazer na consulta o nome do bairro. Isso se aplica a qualquer informação com ligação similar a esta (cidade, endereço, perfil, etc.). Clique aqui e para mais detalhes sobre "join" de dados nas consultas.</li>
+        </ul>
+
+        <br />Vejamos agora um exemplo de consulta de parceiros do tipo
+        "Cliente" realizado na entidade "Parceiro":
+
+            {
+                "serviceName": "CRUDServiceProvider.loadRecords",
+                "requestBody": {
+                    "dataSet": {
+                        "rootEntity": "Parceiro",
+                        "ignoreCalculatedFields": "true",
+                        "useFileBasedPagination": "true",
+                        "includePresentationFields": "N",
+                        "tryJoinedFields": "true",
+                        "offsetPage": "0",
+                        "criteria": {
+                            "expression": {
+                              "$": "CLIENTE = ?"
+                            },
+                            "parameter": [
+                                {
+                                    "$": "S",
+                                    "type": "S"
+                                }
+                            ]
+                        },
+                        "entity": [
+                            {
+                                "path": "",
+                                "fieldset": {
+                                    "list": "CODPARC, NOMEPARC, NUMEND, COMPLEMENTO, CEP"
+                                }
+                            },
+                            {
+                                "path": "Endereco",
+                                "fieldset": {
+                                    "list":"CODEND, TIPO, NOMEEND"
+                                }
+                            },
+                            {
+                                "path": "Bairro",
+                                "fieldset": {
+                                    "list": "CODBAI, NOMEBAI"
+                                }
+                            },
+                            {
+                                "path": "Cidade",
+                                "fieldset": {
+                                    "list": "CODCID, NOMECID, UF"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+      responses:
+        '201':
+          description: Consulta efetuada com sucesso
+        '400':
+          description: Requisição inválida
+        '500':
+          description: Erro interno do servidor
+  /loadRecord:
+    get:
+      tags:
+        - Como consultar dados?
+      summary: Consultas com loadRecord (para registro único)
+      description: >-
+        <h1>Regras de negócio</h1> A API possui um serviço genérico para aplicar
+        consultas em todas as Entidades disponíveis no ERP:
+        <b>CRUDServiceProvider.loadRecord</b> com o objetivo de obter 1
+        registro. O escopo da requisição é mais simples que
+        <b>CRUDServiceProvider.loadRecord</b> e exige apenas o envio dos
+        critérios por meio da tag "rows".
+
+
+        <br /> <h3>Exemplo de uso:</h3>
+
+        <ul>
+          <li>URL Gateway Produção: https://api.sankhya.com.br/</li>
+          <li>URL Gateway Sandbox: https://api.sandbox.sankhya.com.br/</li>
+        </ul>
+
+        <b>URL de chamada</b>:
+        https://[URL_GATEWAY]/gateway/v1/mge/service.sbr?serviceName=CRUDServiceProvider.loadRecord&outputType=json
+
+        <br />Vejamos a seguir a estrutura completa de uma requisição do serviço
+        loadRecords:
+
+            {
+               "serviceName": "CRUDServiceProvider.loadRecord",
+               "requestBody": {
+                  "dataSet": {
+                     "rootEntity": "Produto",
+                     "entity": [
+                        {
+                           "path": "",
+                           "fieldset": {
+                              "list": "CODPROD, DESCRPROD"
+                           }
+                        },
+                        {
+                           "path": "GrupoProduto",
+                           "fieldset": {
+                              "list": "CODGRUPOPROD, DESCRGRUPOPROD"
+                           }
+                        },
+                        {
+                           "path": "AliquotaIPI",
+                           "fieldset": {
+                              "list": "CODIPI, PERCENTUAL"
+                           }
+                        }
+                     ],
+                     "rows": {
+                        "row": {
+                           "CODPROD": {
+                              "$": "4"
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+
+        O retorno para esta requisição é:<br />
+
+            {
+                "serviceName": "CRUDServiceProvider.loadRecord",
+                "status": "1",
+                "pendingPrinting": "false",
+                "transactionId": "2B265FCF92393625B097EDE09B031295",
+                "responseBody": {
+                    "entities": {
+                        "total": "1",
+                        "entity": {
+                            "GrupoProduto_CODGRUPOPROD": {
+                                "$": "10401"
+                            },
+                            "AliquotaIPI_PERCENTUAL": {
+                                "$": "3"
+                            },
+                            "GrupoProduto_DESCRGRUPOPROD": {
+                                "$": "REVENDA DE PRODUTO IMPORTADO"
+                            },
+                            "_rmd": {
+                                "CODPROD": {
+                                    "$": "{\"decVlr\":2,\"decQtd\":0,\"controle\":{\"tipoContEst\":\"N\",\"listaContEst\":[\"\"],\"usaMascara\":false}}",
+                                    "provider": "PRODUTORMP"
+                                }
+                            },
+                            "DESCRPROD": {
+                                "$": "AGUA TONICA "
+                            },
+                            "CODPROD": {
+                                "$": "4"
+                            },
+                            "AliquotaIPI_CODIPI": {
+                                "$": "2"
+                            }
+                        }
+                    }
+                }
+            }
+      responses:
+        '201':
+          description: Consulta efetuada com sucesso
+        '400':
+          description: Requisição inválida
+        '500':
+          description: Erro interno do servidor
+  /logAlteracoesTabelas:
+    get:
+      tags:
+        - Log de Alterações
+      summary: Histórico de Alterações (LOG de Tabelas)
+      description: >
+        <h1>Regras de negócio</h1> 
+
+        Esse serviço permite consultar a data de alteração de um período
+        específico que seja passado no campo dhAlter e entidades específicas
+        passadas no campo Entidade. <br /><br />
+
+        Para utilizar a API, deve-se fazer uma requisição <b>POST</b> para o
+        endpoint correspondente ao serviço desejado. <br />
+
+        <h3>Dependências</h3>
+
+        <br>Da versão `4.35 (ou superior) do SankhyaOm`, basta seguir [este
+        guia](https://ajuda.sankhya.com.br/hc/pt-br/articles/34538747408407-Log-de-Altera%C3%A7%C3%B5es-para-API-como-ativar-desativar-e-acompanhar-os-registros-de-altera%C3%A7%C3%A3o)
+        para para ativar a rotina.
+
+
+
+
+        <br> <br>Da versão 4.34, ou anterior, o processo é conforme segue:
+        <br>1) Para que o serviço retorne informações, é necessário habilitar o
+        parametro <b>LOGTABOPER</b> disponível nas Preferencias do SankhyaOm.
+        Este liga ou desliga a funcionalidade de Log.<br /> ![Parâmetro para
+        ativação da rotina](https://images2.imgbox.com/44/7b/MmiPYv6O_o.png)
+
+
+        <b>IMPORTANTE:</b> Ao ativar este parâmetro, serão criados gatilhos
+        (triggers) no Banco de Dados. Durante o processo de ativação, pode haver
+        um bloqueio temporário das tabelas, o que pode impactar a performance do
+        SankhyaOM. Para minimizar qualquer impacto negativo no desempenho do
+        sistema, recomendamos que a ativação do parâmetro seja realizada fora do
+        horário de operação. <br>
+
+        <br /> 2) Temos também o parâmetro <b>LOGTABMAXAGE</b> que permite
+        alterar a quantidade de dias que o Log ficará disponível. Por padrão, o
+        tempo é de 3 dias corridos e este parâmetro permite alterar para até 7
+        dias corridos. Vale ressaltar que não é possível guardar os logs por
+        mais de 7 dias. <br />
+
+        ![Parâmetro para definição de tempo para armazenar os
+        logs](https://images2.imgbox.com/62/0b/eaPMSbWT_o.png)
+
+
+
+
+        <h3>Entidades e tabelas logadas</h3>
+
+        Ao habilitar o parâmetro LOGTABOPER as seguintes entidades terão suas
+        inserções, edições ou deleções logadas para consulta pela API Gateway:
+        [link](https://developer.sankhya.com.br/reference/entidades-para-log-de-altera%C3%A7%C3%A3o)</br></br> 
+
+        <h3>Detalhes Técnicos</h3> O campo <u>entidades</u> é
+        <b>obrigatório</b>. Ao menos uma entidade deve ser requisitada. <br />O
+        campo <u>dhAlter</u> não é <b>obrigatório</b>. Quando não especificado,
+        todos os logs referentes às entidades são consultados. Ao especificar a
+        data e hora de alteração, são retornados os logs cuja a data de
+        alteração é maior ou igual à dhAlter. <br/><br/>
+
+        <b>Importante:</b> O parâmetro modifiedSince recebe o padrão da data da
+        RFC3339: “YYYY-MM-DDTHH24:MI:SS”<br />
+
+        <h3>Requisitos Mínimos</h3>
+
+        Versões do SankhyaOM:
+          - 4.25b188;
+          - 4.26b109;
+          - 4.27 até 4.34;
+          - A partir da 4.35 esta rotina é ativada através da tela <b>[Configurações » Rotinas » Log de Alterações para API](https://developer.sankhya.com.br/reference/entidades-para-log-de-altera%C3%A7%C3%A3o)</b> no SankhyaOm;
+          - Banco de dados Oracle 11G ou superior;
+          - Banco de Dados SQL Server 2017 ou superior.
+
+        <br /> Para realizarmos a busca através do Json, utilizamos o serviço
+        <i><b>\"GatewayServiceProviderSP.logAlteracoesTabelas\".</b></i><br />
+
+        <h3>Exemplo de uso:</h3> <ul>
+          <li>URL Gateway Produção: https://api.sankhya.com.br/</li>
+          <li>URL Gateway Sandbox: https://api.sandbox.sankhya.com.br/</li>
+        </ul> <b>URL de chamada</b>:
+        https://[URL_GATEWAY]/gateway/v1/mge/service.sbr?serviceName=GatewayServiceProviderSP.logAlteracoesTabelas&outputType=json
+
+        <br /><br /><b>Corpo de requisição</b>
+
+            {
+              "serviceName": "GatewayServiceProviderSP.logAlteracoesTabelas",
+              "status": "1",
+              "requestBody": {
+              "dhAlter": "2023-01-27T11:00:28",
+              "size":17,
+              "page":0,
+              "entidades": [
+                  {
+                    "nome": "Produto"
+                   },
+                   {
+                    "nome": "CabecalhoNota"
+                   },
+                   {
+                    "nome": "ItemNota"
+                   },
+                   {
+                    "nome": "Estoque"
+                   }
+                  ]
+               }
+            }
+
+
+        <b>Retorno:</b>
+
+            {
+                "serviceName": "GatewayServiceProviderSP.logAlteracoesTabelas",
+                "status": "1",
+                "pendingPrinting": "false",
+                "transactionId": "2F153D4BD713800F9B770DCC4FA1FE12",
+                 "responseBody": {
+                    "registros": [
+                        {
+                          "entidade": "Produto",
+                          "dtAlter": "2023-02-27T08:14:46",
+                          "evento": "CHANGE",
+                          "pk": [
+                             {
+                              "nomeColumnPk": "CODPROD",
+                              "valorPk": 1254
+                             }
+                           ]
+                        },
+                        {
+                          "entidade": "CabecalhoNota",
+                          "dtAlter": "2023-02-27T08:14:46",
+                          "evento": "CHANGE",
+                          "pk": [
+                             {
+                              "nomeColumnPk": "NUNOTA",
+                              "valorPk": 2144
+                             }
+                          ]
+                        },
+                        {
+                            "entidade": "ItemNota",
+                            "dtAlter": "2023-02-27T09:00:12",
+                            "evento": "CHANGE",
+                            "pk": [
+                                {
+                                    "nomeColumnPk": "NUNOTA",
+                                    "valorPk": 27283
+                                },
+                                {
+                                    "nomeColumnPk": "SEQUENCIA",
+                                    "valorPk": 1
+                                }
+                            ]
+                        },
+                        {
+                            "entidade": "Estoque",
+                            "dtAlter": "2023-02-27T09:01:14",
+                            "evento": "CHANGE",
+                            "pk": [
+                                {
+                                    "nomeColumnPk": "CONTROLE",
+                                    "valorPk": "018-23-76800"
+                                },
+                                {
+                                    "nomeColumnPk": "TIPO",
+                                    "valorPk": "P"
+                                },
+                                {
+                                    "nomeColumnPk": "CODPARC",
+                                    "valorPk": 0
+                                },
+                                {
+                                    "nomeColumnPk": "CODLOCAL",
+                                    "valorPk": 70180000
+                                },
+                                {
+                                    "nomeColumnPk": "CODPROD",
+                                    "valorPk": 504
+                                },
+                                {
+                                    "nomeColumnPk": "CODEMP",
+                                    "valorPk": 1
+                                }
+                            ]
+                        }
+                    ]
+                 }
+            }
+
+        Além disso, existe uma forma de otimizar o processo e utilizar um
+        parametro na requisição direta no loadRecords para puxar apenas
+        registros que foram alterados a partir de um determinado momento. Basta
+        inclui a propriedade <i><b>\"modifiedSince\".</b></i> na requisição. <br
+        />
+
+        <h3>Exemplo de uso direto no end-point loadRecords</h3>
+
+            {
+              "serviceName": "CRUDServiceProvider.loadRecords",
+              "requestBody": {
+                "dataSet": {
+                  "rootEntity": "Parceiro",
+                  "includePresentationFields": "N",
+                  "offsetPage": "0",
+                  "modifiedSince":"2024-04-16T12:59:59",
+                  "criteria": {
+                    "expression": {
+                      "$": ""
+                    }
+                  },
+                  "entity": {
+                    "fieldset": {
+                      "list": "CODPARC,NOMEPARC,FORNECEDOR,CLIENTE,CODCID,CLIENTE,CLASSIFICMS"
+                    }
+                  }
+                }
+              }
+            }
+
+        <br />O exemplo acima retorna todos os Parceiroso  que foram editados a
+        partir de 16/04/2024 12:59:59, conforme indicado no parametro
+        <i><b>\"modifiedSince\".</b></i> presente na requisição.
+      responses:
+        '201':
+          description: Consulta efetuada com sucesso
+        '400':
+          description: Requisição inválida
+        '500':
+          description: Erro interno do servidor
+  /CriteriosLoadRecords:
+    get:
+      tags:
+        - Como consultar dados?
+      summary: Critérios em Consultas loadRecords
+      description: >-
+        Quando temos parâmetros variáveis, como é o caso da expressão aqui
+        usada, devemos colocar um '?' onde o valor do parâmetro será injetado.
+        Para cada '?' na expressão devemos ter um elemento 'parameter'. Os
+        possíveis valores para o atributo 'type' são: <ul>
+          <li>D = Data sem horário</li>
+          <li>H = Data com horário (no seguinte formato: DD/MM/AAAA HH:MM:SS)</li>
+          <li>F = Número decimal (decimal separado por '.')</li>
+          <li>I = Número inteiro</li>
+          <li>S = Texto</li>
+        </ul> <br />IMPORTANTE: Sempre usar parâmetro para critérios do tipo
+        data, pois colocar a data direto no SQL pode não funcionar corretamente
+        devido ao charset, formato e tipo do banco de dados.
+
+
+        <h3>Segue exemplo utilizando filtro com parâmetros</h3>
+
+        <ul>
+          <li>URL Gateway Produção: https://api.sankhya.com.br/</li>
+          <li>URL Gateway Sandbox: https://api.sandbox.sankhya.com.br/</li>
+        </ul>
+
+        <b>URL de chamada</b>:
+        https://[URL_GATEWAY]/gateway/v1/mge/service.sbr?serviceName=CRUDServiceProvider.loadRecords&outputType=json
+        <br /><br />
+
+
+        <b>Corpo de requisição</b>
+
+
+            {
+                "serviceName": "CRUDServiceProvider.loadRecords",
+                "requestBody": {
+                    "dataSet": {
+                        "rootEntity": "Produto",
+                        "includePresentationFields": "N",
+                        "tryJoinedFields":"true",
+                        "offsetPage": "0",
+                        "criteria": {
+                            "expression": {
+                              "$": "CODPROD IN ( ?, ? )"
+                            },
+                            "parameter":
+                                [
+                                    {
+                                        "$": "1",
+                                        "type": "I"
+                                    },
+                                    {
+                                        "$": "2",
+                                        "type": "I"
+                                    }
+                                ]
+                        },
+                        "entity": {
+                            "fieldset": {
+                                "list": "CODPROD, DESCRPROD"
+                            }
+                        }
+                    }
+                }
+            }
+
+        <br />Este exemplo retorna os produtos com código 1 e 2. A seguir um
+        exemplo de utilização com cada tipo de parâmetro, focando na tag
+        “criteria” onde a mudança é necessária:
+
+        <br />Aplicando filtro com número inteiro:
+
+            ...
+                        "criteria": {
+                            "expression": {
+                              "$": "NUNOTA = ?"
+                            },
+                            "parameter": [
+                                {
+                                    "$": "9120",
+                                    "type": "I"
+                                }
+                            ]
+                        },
+            ...
+
+        <br />Aplicando filtro com número inteiro utilizando IN:
+
+            ...
+                        "criteria": {
+                            "expression": {
+                              "$": "NUNOTA IN (?, ?, ?)"
+                            },
+                            "parameter": [
+                                {
+                                    "$": "9120",
+                                    "type": "I"
+                                },
+                                {
+                                    "$": "9141",
+                                    "type": "I"
+                                },
+                                {
+                                    "$": "9159",
+                                    "type": "I"
+                                }
+                            ]
+                        },
+            ...
+
+        <br />Aplicando filtro com data e hora:
+
+            ...
+                        "criteria": {
+                            "expression": {
+                              "$": "DTFATUR >= ?"
+                            },
+                            "parameter": [
+                                {
+                                    "$": "20/05/2022 09:31:43",
+                                    "type": "H"
+                                }
+                            ]
+                        },
+            ...
+
+        <br />Aplicando filtro entre datas:
+
+            ...
+                        "criteria": {
+                            "expression": {
+                              "$": "DHBAIXA IS NULL AND DTVENC BETWEEN ? AND ?"
+                            },
+                            "parameter": [
+                                {
+                                    "$": "01/05/2022",
+                                    "type": "D"
+                                },
+                                {
+                                    "$": "31/05/2022",
+                                    "type": "D"
+                                }
+                            ]
+                        },
+            ...
+
+        <br />Aplicando filtro com texto:
+
+            ...
+                        "criteria": {
+                            "expression": {
+                              "$": "USOPROD = ? AND DESCRPROD LIKE '%?%'"
+                            },
+                            "parameter": [
+                                {
+                                    "$": "V",
+                                    "type": "S"
+                                },
+                                {
+                                    "$": "CHEVE",
+                                    "type": "S"
+                                }
+                            ]
+                        },
+            ...
+      responses:
+        '201':
+          description: Cadastro efetuado com sucesso
+        '400':
+          description: Requisição inválida
+        '500':
+          description: Erro interno do servidor
+  /PrecoProduto:
+    get:
+      tags:
+        - Serviços Especialistas
+      summary: Consulta de Preços
+      description: >
+        <h1>Regras de negócio</h1> 
+
+        Para realizar consulta “Tabela de Preço” no carregamento das
+        regras/exceções da tabela de preço, o sistema irá trazer os registros de
+        forma paginada, ou seja, os dados não irão ser carregados todos de uma
+        vez só. O sistema irá trazer aos poucos os registros, para que você
+        possa ir utilizando a tela enquanto as informações não são totalmente
+        carregadas.<br />
+
+        Além disso, é possível que seja editado um registro (somente no modo
+        formulário) enquanto os demais registros são carregados na tela. Quando
+        estiver sendo feita a edição de um registro e o carregamento de todos os
+        registros for concluído, o sistema irá emitir uma mensagem para 
+        confirmação da edição.<br />
+
+        <b>OBS:</b> Caso tenha alguma necessidade de configuração do ERP procure
+        “Consultor” ou acesso o link de apoio:<br />
+        https://ajuda.sankhya.com.br/hc/pt-br/articles/360044603854-Tabelas-de-Pre%C3%A7os<br
+        />
+
+        <h3>Dependências</h3> <b><font color=red>Não possui
+        dependências</font></b><br />
+
+        <h3>Detalhes Técnicos</h3> A entidade utilizada é a <b>TabelaPreco</b>
+        que por sua vez instancia a tabela TGFTAB mapeando os campos
+        principais.<br />
+
+        Para realizarmos a busca através do Json, utilizamos o serviço
+        <i><b>\"CRUDServiceProvider.loadRecords\"</b></i><br /><br />
+
+        O serviço CRUDServiceProvider.loadRecords é um otimo serviço para ser
+        utilizado para consulta de dados através do JSON.<br /><br /> 
+
+        No exemplo abaixo foi utilizado o campo NUTAB, porém você pode utilizar
+        outros campos da entidade na consulta .<br /><br /> 
+
+        Para utilizar o filtro, basta acrescentar o corpo da requisição o código
+        abaixo utilizando o criteria:
+
+            ...
+            "criteria": {
+              "expression": {
+                "$": "this.NUTAB = ?"
+              },
+              "parameter":[
+                {
+                   "type":"I",
+                   "value":"607"
+                }
+              ]
+            }
+            ...
+
+        <b><font color=red>Importante:</font></b> O elemento criterio motrado
+        acima é utilizado para inserção do filtro desejado. O filtro pode ser de
+        acordo com o campo de pesquisa desejado, como por exemplo:<br /><br /> 
+        <b>• NUTAB</b> Número da Tabela de Preço.<br />
+
+        Para melhor performance sempre utilize nas suas consultas apenas os
+        campos necessários, para evitar tráfego de dados que não serão
+        utilizados.<br />
+
+        <h3>Descritivo de campos da entidade</h3> Clique
+        [aqui](http://swagger.sankhya.com.br/tabelas/TGFTAB.html) e acesse o
+        dicionário de dados da tabela TGFTAB<br />
+
+
+        <h3>Exemplo de uso:</h3> <ul>
+          <li>URL Gateway Produção: https://api.sankhya.com.br/</li>
+          <li>URL Gateway Sandbox: https://api.sandbox.sankhya.com.br/</li>
+        </ul> <b>URL de chamada</b>:
+        https://[URL_GATEWAY]/gateway/v1/mgecom/service.sbr?serviceName=ConsultaProdutosSP.consultaProdutos&outputType=json
+        <br />
+
+        <b>Corpo de requisição</b>
+
+            {
+                "serviceName": "ConsultaProdutosSP.consultaProdutos",
+                  "requestBody": {
+                      "filtros": {
+                          "criterio": {
+                              "resourceID": "br.com.sankhya.com.cons.consultaProdutos",
+                              "PERCDESC": "0",
+                              "CODPROD": {
+                                  "$": "6"
+                              }
+                          },
+                          "isPromocao": {
+                              "$": "false"
+                          },
+                          "isLiquidacao": {
+                              "$": "false"
+                    }
+                  }
+                }
+              }
+            }
+
+        <b>Retorno:</b><br />
+
+            {
+                "serviceName": "ConsultaProdutosSP.consultaProdutos",
+                  "status": "1",
+                  "pendingPrinting": "false",
+                  "transactionId": "DA7090050593CA45FA74E760480BAA0B",
+                  "responseBody": {
+                      "produtos": {
+                          "maxregconsprod": {
+                              "$": "0"
+                          },
+                          "produto": {
+                              "ISPROMOCAO": "false",
+                              "ISLIQUIDACAO": "false",
+                              "Cadastro_COMPLDESC": {},
+                              "Cadastro_CODPROD": {
+                                  "$": "6"
+                              },
+                              "Cadastro_DESCRPROD": {
+                                  "$": "AR CONDICIONADO YORK 18.000 BTU'S"
+                              },
+                              "TIPCONTEST": {
+                                  "$": "N"
+                              },
+                              "TIPLANCNOTA": {
+                                  "$": "A"
+                              },
+                              "Preço_1": {
+                                  "$": "0.00",
+                                  "PRECOBASE_Preço_1": "0"
+                              },
+                              "DECQTD": {
+                                  "$": "0"
+                              },
+                              "ORDEMMEDIDA": {
+                                  "$": "0"
+                              },
+                              "Estoque_1": {},
+                              "DECVLR": {
+                                  "$": "2"
+                              },
+                              "CODVOL": {
+                                  "$": "UN"
+                              },
+                              "DESCRPROD": {
+                                  "$": "AR CONDICIONADO YORK 18.000 BTU'S"
+                              },
+                              "CODPROD": {
+                                  "$": "6"
+                              },
+                              "TEMIMAGEM": {
+                                  "$": "N"
+                              },
+                              "PRECOBASE": {
+                                  "$": "0.00"
+                            }
+                        }
+                    }
+                }
+            }
+      responses:
+        '201':
+          description: Cadastro efetuado com sucesso
+        '400':
+          description: Requisição inválida
+        '500':
+          description: Erro interno do servidor
+  /loadView:
+    get:
+      tags:
+        - Como consultar dados?
+      summary: Consultas com loadView (não tem paginação)
+      description: >
+        A API disponibiliza o serviço loadView (CRUDServiceProvider.loadView)
+        para realizar consulta em VIEWs.<br /> Existem algumas considerações
+        importantes que devem ser levadas em consideração antes de sua
+        utilização. Seguem:  <ul>
+          <li>O serviço não possui paginação nativa, portanto, a paginação deve ser feita pelo integrador que realiza a requisição.</li>
+          <li>Caso a view não seja performática, é indicado a utilização de mecanismos de indexação para que a performance seja adequada, como Materialized Views (fique atento com as regras de atualização dos dados desse tipo de objeto).</li>
+          <li>Para um volume muito grande de dados, pode ser utilizado um indicador de linha para criar a paginação de maneira mais simples. Segue um exemplo para ORACLE e SQL Server:</li>
+        </ul>
+
+        <b>Oracle</b>
+
+            CREATE VIEW VW_ITENS_PEDIDO 
+            AS
+            SELECT T.* 
+            FROM (
+                SELECT ROWNUM AS LINHA
+                , PRO.CODPROD
+                , PRO.DESCRPROD
+                , ITE.NUNOTA
+                , ITE.SEQUENCIA
+                , ITE.QTDNEG
+                , ITE.VLRUNIT
+                , ITE.VLRTOT
+                FROM TGFITE ITE
+                INNER JOIN TGFPRO PRO ON PRO.CODPROD = ITE.CODPROD
+            ) T
+
+        <b>SQL Server</b>
+
+            CREATE VIEW VW_ITENS_PEDIDO 
+            AS
+            SELECT T.* 
+            FROM (
+                SELECT ROW_NUMBER() OVER(ORDER BY NUNOTA, SEQUENCIA) AS LINHA
+                , PRO.CODPROD
+                , PRO.DESCRPROD
+                , ITE.NUNOTA
+                , ITE.SEQUENCIA
+                , ITE.QTDNEG
+                , ITE.VLRUNIT
+                , ITE.VLRTOT
+                FROM TGFITE ITE
+                INNER JOIN TGFPRO PRO ON PRO.CODPROD = ITE.CODPROD
+            ) T
+
+
+        Nos exemplos acima foi utilizado a TGFITE que detém um grande volume de
+        dados, na maioria das vezes.<br /> Segue exemplo de utilização do
+        serviço com a VIEW criada no exemplo acima:
+
+        <h3>Exemplo de uso</h3> <ul>
+          <li>URL Gateway Produção: https://api.sankhya.com.br/</li>
+          <li>URL Gateway Sandbox: https://api.sandbox.sankhya.com.br/</li>
+        </ul> <b>URL de chamada</b>:
+        https://[URL_GATEWAY]/gateway/v1/mge/service.sbr?serviceName=CRUDServiceProvider.loadView&outputType=json
+
+        <br /><br /><b>Corpo de requisição</b>
+
+            {
+                "serviceName": "CRUDServiceProvider.loadView",
+                "requestBody": {
+                    "query": {
+                        "viewName": "VW_ITENS_PEDIDO",
+                        "where": {
+                            "$": "LINHA BETWEEN 15000 AND 15499"
+                        },
+                        "fields": {
+                            "field": {
+                                "$": "CODPROD, DESCRPROD, NUNOTA, SEQUENCIA, QTDNEG, VLRUNIT, VLRTOT"
+                            }
+                        }
+                    }
+                }
+            }
+
+        <br />A requisição acima retorna 500 registros, considerando linhas de
+        15.000 a 15.499.
+      responses:
+        '201':
+          description: Consulta efetuada com sucesso
+        '400':
+          description: Requisição inválida
+        '500':
+          description: Erro interno do servidor
+  /AnexaArquivos:
+    get:
+      tags:
+        - Serviços Especialistas
+      summary: Anexar Arquivos
+      description: >-
+        <h1>Anexando documentos em registros específicos</h1>
+
+        A maioria das entidades do sistema permite anexar documentos em suas
+        respectivas telas (ex.: cadastro de parceiros, cadastro de produtos,
+        item da nota, contratos, etc.). O objetivo deste tutorial é apresentar
+        como isso pode ser feito via API.
+
+        O processo é realizado em duas etapas: <ul>
+          <li>o primeiro passo é enviar o arquivo para o servidor.</li>
+          <li>o segundo passo salva o anexo e endereça ao respectivo registro.</li>
+        </ul>
+
+        Para ilustrar, apresentamos a seguir as duas requisições, detalhando o
+        objetivo e impacto de cada ação, bem como o papel de cada atributo
+        utilizado nas requisições.  
+
+        <br /><br /> 
+
+        <h2>Observação Importante</h2>
+
+        Este serviço de anexos é destinado para envio de anexos para entidades
+        que utilizam o componente padrão de anexos (componente do "clipe") na
+        interface do SankhyaOm.
+
+        Entidades que não exibem o ícone de clipe na tela - como, por exemplo, o
+        Cabeçalho de Nota, Ordem de Serviço - não são compatíveis com este
+        mecanismo de anexos destacado aqui.
+
+        <br /><br /> 
+
+        <h2>Parte 1: Envio do arquivo</h2>
+
+        A requisição basicamente faz um POST de um formulário do tipo multipart,
+        enviando o documento utilizando uma sessionKey que será utilizada
+        posteriormente, no serviço de endereçamento do anexo ao registro
+        desejado. Seguem os principais atributos dessa requisição:<br /> 
+
+        <ul>
+          <li>URL Gateway Produção: https://api.sankhya.com.br/</li>
+          <li>URL Gateway Sandbox: https://api.sandbox.sankhya.com.br/</li>
+        </ul>
+
+        <b>URL de chamada</b>:
+        https://[URL_GATEWAY]/gateway/v1/mge/sessionUpload.mge<br /> Com os
+        seguintes parâmetros na URL: <ul>
+          <li>sessionkey=ANEXO_SISTEMA_ItemNota_2097_1</li>
+          <li>fitem=S</li>
+          <li>salvar=S</li>
+          <li>useCache=N</li>
+        </ul>
+
+        Dentre esses atributos, o parâmetro mais importante é o sessionkey, que
+        sempre varia. Este parâmetro deve ser enviado no seguinte formato:<br
+        /><br /> ANEXO_SISTEMA: sempre fixo<br /> nomeEntidade<br />
+        pkRegistro<br /> <br /> No exemplo acima, a entidade é ItemNota e a PK
+        do item nota (que é composto) é NUNOTA 2097 e SEQUENCIA 1. Com isso
+        temos: ANEXO_SISTEMA_ItemNota_2097_1<br /><br />
+
+        Em seguida, é necessário preparar o "formulário", onde o tipo
+        (Content-Type) deve ser "multipart/form-data" com uma variável chamada
+        "arquivo" contendo o endereço do anexo a ser enviado.<br /><br />
+
+        Veja a seguir um exemplo prático desta requisição em formato curl:<br
+        /><br />
+
+            curl --location 'https://[URL_GATEWAY]/gateway/v1/mge/sessionUpload.mge?sessionkey=ANEXO_SISTEMA_ItemNota_2097_1&fitem=S&salvar=S&useCache=N' \
+            --header 'appkey: APPKEY_DA_SUA_APLICACAO_BEM_AQUI' \
+            --header 'Content-Type: application/json' \
+            --header 'Authorization: Bearer BEAR_TOKEN_VALIDO_BEM_AQUI' \
+            --header 'Accept: text/html' \
+            --header 'Content-Type: multipart/form-data' \
+            --form 'arquivo=@"MtBz0s5kk/foto_atualizada.jpg"'
+
+
+        <br /> Nesta requsição, estamos enviando a imagem "foto_atualizada.jpg".
+        <br /><br /> <h2>Parte 2: Salvar  e Vincular anexo ao registro</h2>
+        Agora que o anexo foi enviado para o servidor, é hora de realizar o
+        “vínculo” do mesmo com o respectivo registro desejado.<br />
+
+        Veja os principais parâmetros variáveis desta requisição:<br />
+
+        <ul>
+          <li>Nome do serviço: AnexoSistemaSP.salvar</li>
+          <li>pkEntity: chave primária da entidade. No caso de chave composta, separa com _</li>
+          <li>keySession: utilizar exatamente a mesma utilizada no serviço anterior.</li>
+          <li>nameEntity: nome da entidade</li>
+          <li>description: descrição desejada para anexo (texto com até 20 caracteres).</li>
+          <li>nameAttach: nome para o anexo. Sugestão de enviar o mesmo nome que o documento tem, ao utilizar o serviço de enviar o anexo.</li>
+        </ul> Os demais parâmetros contidos na requisição, devem permanecer
+        sempre fixos, conforme exemplo a seguir. <br /><br /> A seguir um
+        exemplo da requisição:<br /> URL POST:
+        https://[URL_GATEWAY]/gateway/v1/mge/service.sbr?serviceName=AnexoSistemaSP.salvar&outputType=json
+
+            {
+               "serviceName":"AnexoSistemaSP.salvar",
+               "requestBody":{
+                  "params":{
+                     "pkEntity":"2097_1",
+                     "keySession":"ANEXO_SISTEMA_ItemNota_2097_1",
+                     "nameEntity":"ItemNota",
+                     "description":"Foto Atualizada 1",
+                     "keyAttach":"",
+                     "typeAcess":"ALL",
+                     "typeApres":"GLO",
+                     "nuAttach":"",
+                     "nameAttach":"foto_atualizada.jpg",
+                     "fileSelect":1,
+                     "oldFile":""
+                  }
+               }
+            }
+      responses:
+        '201':
+          description: Consulta efetuada com sucesso
+        '400':
+          description: Requisição inválida
+        '500':
+          description: Erro interno do servidor
