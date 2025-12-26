@@ -163,10 +163,13 @@
 
         const nodes = dataset.endpoints.map((e) => {
           const primaryTag = Array.isArray(e.tags) && e.tags.length ? String(e.tags[0] ?? '') : '';
+          const hasSummary = typeof e.summary === 'string' && e.summary.trim();
+          const title = hasSummary ? e.summary.trim() : `${e.method} ${e.path}`;
+          const label = hasSummary ? `${e.method}\n${title}` : title;
           return {
             data: {
               id: e.id,
-              label: `${e.method} ${e.path}`,
+              label,
               endpoint: e,
               tag: primaryTag,
               color: colorForTag(primaryTag),
