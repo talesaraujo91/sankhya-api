@@ -104,6 +104,24 @@
     </div>
 
     <script>
+      function hashString(str) {
+        // Simple deterministic hash for stable colors across refreshes.
+        let hash = 0;
+        for (let i = 0; i < str.length; i++) {
+          hash = (hash << 5) - hash + str.charCodeAt(i);
+          hash |= 0;
+        }
+        return hash;
+      }
+
+      function colorForTag(tag) {
+        const t = typeof tag === 'string' ? tag.trim() : '';
+        if (!t) return '#60a5fa';
+        const hue = Math.abs(hashString(t)) % 360;
+        // Cytoscape reliably supports the comma-separated HSL syntax.
+        return `hsl(${hue}, 70%, 55%)`;
+      }
+
       function esc(s) {
         return String(s)
           .replaceAll('&', '&amp;')
@@ -143,13 +161,18 @@
         const metaEl = document.getElementById('meta');
         metaEl.textContent = `${info.title || 'OpenAPI'}${info.version ? ' • ' + info.version : ''}`;
 
-        const nodes = dataset.endpoints.map((e) => ({
-          data: {
-            id: e.id,
-            label: `${e.method} ${e.path}`,
-            endpoint: e,
-          },
-        }));
+        const nodes = dataset.endpoints.map((e) => {
+          const primaryTag = Array.isArray(e.tags) && e.tags.length ? String(e.tags[0] ?? '') : '';
+          return {
+            data: {
+              id: e.id,
+              label: `${e.method} ${e.path}`,
+              endpoint: e,
+              tag: primaryTag,
+              color: colorForTag(primaryTag),
+            },
+          };
+        });
 
         const edges = (dataset.edges || []).map((e, idx) => ({
           data: {
@@ -168,7 +191,7 @@
             {
               selector: 'node',
               style: {
-                'background-color': '#60a5fa',
+                'background-color': 'data(color)',
                 label: 'data(label)',
                 color: '#e5e7eb',
                 'font-size': 9,

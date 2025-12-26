@@ -421,8 +421,50 @@ def build_dataset(openapi: Dict[str, Any], *, readme_schema: Optional[Dict[str, 
             for a, b in zip(ids_list, ids_list[1:]):
                 _add_edge(a, b, edge_type, key)
 
-    add_edges_from_groups(tag_to_endpoints, "tag")
+    def _is_param_segment(seg: str) -> bool:
+        return seg.startswith("{") and seg.endswith("}")
+
+    def _path_segments(path: str) -> List[str]:
+        return [s for s in path.strip("/").split("/") if s]
+
+    def _is_direct_child_path(parent: str, child: str) -> bool:
+        # Example: /v1/naturezas -> /v1/naturezas/{codigoNatureza}
+        p = _path_segments(parent)
+        c = _path_segments(child)
+        if len(c) != len(p) + 1:
+            return False
+        if c[: len(p)] != p:
+            return False
+        return _is_param_segment(c[-1])
+
+    # Prefer meaningful edges:
+    # - schema: endpoints that share response component schema refs
+    # - resource: list/detail style parent-child path relationship
+    # Tag chaining was removed because it creates arbitrary, misleading edges.
     add_edges_from_groups(schema_to_endpoints, "schema")
+
+    # Resource edges: connect /x to /x/{id} for the same method.
+    by_method: defaultdict[str, List[Dict[str, Any]]] = defaultdict(list)
+    for ep in endpoints:
+        by_method[str(ep.get("method", ""))].append(ep)
+
+    for method, eps in by_method.items():
+        # map by path for quick lookup
+        by_path: Dict[str, str] = {}
+        for ep in eps:
+            p = ep.get("path")
+            eid = ep.get("id")
+            if isinstance(p, str) and isinstance(eid, str):
+                by_path[p] = eid
+
+        paths_list = sorted(by_path.keys())
+        for parent in paths_list:
+            parent_id = by_path[parent]
+            for child in paths_list:
+                if child == parent:
+                    continue
+                if _is_direct_child_path(parent, child):
+                    _add_edge(parent_id, by_path[child], "resource", f"{method} path")
 
     edges: List[Dict[str, Any]] = list(edges_by_pair.values())
 

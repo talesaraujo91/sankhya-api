@@ -8100,1582 +8100,337 @@
   ],
   "edges": [
     {
-      "source": "POST /authenticate",
-      "target": "POST /login",
-      "type": "tag",
+      "source": "addAbreCaixaPDV",
+      "target": "addCfeSat",
+      "type": "schema",
       "types": [
-        "tag"
+        "schema"
       ],
-      "key": "Autenticação",
+      "key": "retorno400, retorno40X_50X, retorno404",
       "keys": [
-        "Autenticação"
+        "retorno400",
+        "retorno40X_50X",
+        "retorno404"
       ]
     },
     {
       "source": "addCfeSat",
-      "target": "cancelaCfeSat",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Vendas CF-e/SAT",
-      "keys": [
-        "Vendas CF-e/SAT"
-      ]
-    },
-    {
-      "source": "cancelaCfeSat",
-      "target": "inutilizaCfeSat",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Vendas CF-e/SAT",
-      "keys": [
-        "Vendas CF-e/SAT"
-      ]
-    },
-    {
-      "source": "addNfce",
-      "target": "autorizaCfeSat",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Vendas NFC-e",
-      "keys": [
-        "Vendas NFC-e"
-      ]
-    },
-    {
-      "source": "autorizaCfeSat",
-      "target": "cancelaNfce",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Vendas NFC-e",
-      "keys": [
-        "Vendas NFC-e"
-      ]
-    },
-    {
-      "source": "cancelaNfce",
-      "target": "inutilizaNfce",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Vendas NFC-e",
-      "keys": [
-        "Vendas NFC-e"
-      ]
-    },
-    {
-      "source": "addAbreCaixaPDV",
       "target": "addFechaCaixaPDV",
-      "type": "schema+tag",
+      "type": "schema",
       "types": [
-        "tag",
         "schema"
       ],
-      "key": "Vendas Gestão de Caixa, retornoCaixaAberto",
+      "key": "retorno400, retorno40X_50X, retorno404",
       "keys": [
-        "Vendas Gestão de Caixa",
-        "retornoCaixaAberto"
+        "retorno400",
+        "retorno40X_50X",
+        "retorno404"
       ]
     },
     {
       "source": "addFechaCaixaPDV",
-      "target": "addRecebimentoCaixaPDVbaixa",
-      "type": "tag",
+      "target": "addNfce",
+      "type": "schema",
       "types": [
-        "tag"
+        "schema"
       ],
-      "key": "Vendas Gestão de Caixa",
+      "key": "retorno400, retorno40X_50X, retorno404",
       "keys": [
-        "Vendas Gestão de Caixa"
+        "retorno400",
+        "retorno40X_50X",
+        "retorno404"
+      ]
+    },
+    {
+      "source": "addNfce",
+      "target": "addPedido",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retorno400, retorno40X_50X",
+      "keys": [
+        "retorno400",
+        "retorno40X_50X"
+      ]
+    },
+    {
+      "source": "addPedido",
+      "target": "addRecebimentoCaixaPDVbaixa",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retorno400, retorno40X_50X",
+      "keys": [
+        "retorno400",
+        "retorno40X_50X"
       ]
     },
     {
       "source": "addRecebimentoCaixaPDVbaixa",
       "target": "addRecebimentoCaixaPDVinc",
-      "type": "schema+tag",
+      "type": "schema",
       "types": [
-        "tag",
         "schema"
       ],
-      "key": "Vendas Gestão de Caixa, retorno40X_50X, retorno404, retorno400, retornoMovimento",
+      "key": "retorno400, retornoMovimento, retorno40X_50X, retorno404",
       "keys": [
-        "Vendas Gestão de Caixa",
-        "retorno40X_50X",
-        "retorno404",
         "retorno400",
-        "retornoMovimento"
+        "retornoMovimento",
+        "retorno40X_50X",
+        "retorno404"
       ]
     },
     {
       "source": "addRecebimentoCaixaPDVinc",
       "target": "addSangriaCaixaPDV",
-      "type": "schema+tag",
+      "type": "schema",
       "types": [
-        "tag",
         "schema"
       ],
-      "key": "Vendas Gestão de Caixa, retorno40X_50X, retorno404, retorno400, retornoMovimento",
+      "key": "retorno400, retornoMovimento, retorno40X_50X, retorno404",
       "keys": [
-        "Vendas Gestão de Caixa",
-        "retorno40X_50X",
-        "retorno404",
         "retorno400",
-        "retornoMovimento"
+        "retornoMovimento",
+        "retorno40X_50X",
+        "retorno404"
       ]
     },
     {
       "source": "addSangriaCaixaPDV",
       "target": "addSuprimentoCaixaPDV",
-      "type": "schema+tag",
+      "type": "schema",
       "types": [
-        "tag",
         "schema"
       ],
-      "key": "Vendas Gestão de Caixa, retorno40X_50X, retorno404, retorno400, retornoMovimento",
+      "key": "retorno400, retornoMovimento, retorno40X_50X, retorno404",
       "keys": [
-        "Vendas Gestão de Caixa",
-        "retorno40X_50X",
-        "retorno404",
         "retorno400",
-        "retornoMovimento"
+        "retornoMovimento",
+        "retorno40X_50X",
+        "retorno404"
       ]
     },
     {
       "source": "addSuprimentoCaixaPDV",
-      "target": "getCaixaAberto",
-      "type": "tag",
+      "target": "autorizaCfeSat",
+      "type": "schema",
       "types": [
-        "tag"
+        "schema"
       ],
-      "key": "Vendas Gestão de Caixa",
+      "key": "retorno400, retornoMovimento, retorno40X_50X, retorno404",
       "keys": [
-        "Vendas Gestão de Caixa"
+        "retorno400",
+        "retornoMovimento",
+        "retorno40X_50X",
+        "retorno404"
+      ]
+    },
+    {
+      "source": "autorizaCfeSat",
+      "target": "cancelaCfeSat",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retorno400, retornoMovimento, retorno40X_50X, retorno404",
+      "keys": [
+        "retorno400",
+        "retornoMovimento",
+        "retorno40X_50X",
+        "retorno404"
+      ]
+    },
+    {
+      "source": "cancelaCfeSat",
+      "target": "cancelaNfce",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retorno400, retornoMovimento, retorno40X_50X, retorno404",
+      "keys": [
+        "retorno400",
+        "retornoMovimento",
+        "retorno40X_50X",
+        "retorno404"
+      ]
+    },
+    {
+      "source": "cancelaNfce",
+      "target": "getCaixaAberto",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retorno400, retorno40X_50X, retorno404",
+      "keys": [
+        "retorno400",
+        "retorno40X_50X",
+        "retorno404"
+      ]
+    },
+    {
+      "source": "getCaixaAberto",
+      "target": "getPrecoContexto",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retorno400, retorno404",
+      "keys": [
+        "retorno400",
+        "retorno404"
       ]
     },
     {
       "source": "getPrecoContexto",
       "target": "getPrecoProduto",
-      "type": "schema+tag",
+      "type": "schema",
       "types": [
-        "tag",
         "schema"
       ],
-      "key": "Preços, retorno40X_50X, retorno404, retorno400",
+      "key": "retorno400, retorno40X_50X, retorno404",
       "keys": [
-        "Preços",
+        "retorno400",
         "retorno40X_50X",
-        "retorno404",
-        "retorno400"
+        "retorno404"
       ]
     },
     {
       "source": "getPrecoProduto",
       "target": "getPrecoProdutoTabela",
-      "type": "schema+tag",
+      "type": "schema",
       "types": [
-        "tag",
         "schema"
       ],
-      "key": "Preços, retorno40X_50X, retorno404, retorno400, retornoPrecosProdutoTabela",
+      "key": "retorno400, retorno40X_50X, retorno404, retornoPrecosProdutoTabela",
       "keys": [
-        "Preços",
+        "retorno400",
         "retorno40X_50X",
         "retorno404",
-        "retorno400",
         "retornoPrecosProdutoTabela"
       ]
     },
     {
       "source": "getPrecoProdutoTabela",
       "target": "getPrecoTabela",
-      "type": "schema+tag",
+      "type": "schema",
       "types": [
-        "tag",
         "schema"
       ],
-      "key": "Preços, retorno40X_50X, retorno404, retorno400, retornoPrecosProdutoTabela",
+      "key": "retorno400, retorno40X_50X, retorno404, retornoPrecosProdutoTabela",
       "keys": [
-        "Preços",
+        "retorno400",
         "retorno40X_50X",
         "retorno404",
-        "retorno400",
         "retornoPrecosProdutoTabela"
       ]
     },
     {
-      "source": "GET /v1/funcionarios/admissao/{codigoRequisicaoAdmissao}",
-      "target": "GET /v1/pessoal/atrasos",
-      "type": "tag",
+      "source": "getPrecoTabela",
+      "target": "inutilizaCfeSat",
+      "type": "schema",
       "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/atrasos",
-      "target": "GET /v1/pessoal/carga-horaria",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/carga-horaria",
-      "target": "GET /v1/pessoal/carga-horaria-historica",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/carga-horaria-historica",
-      "target": "GET /v1/pessoal/cargos",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/cargos",
-      "target": "GET /v1/pessoal/cargos/{codigoCargo}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
         "schema"
       ],
-      "key": "HCM Cadastros, Cargo",
+      "key": "retorno400, retorno40X_50X, retorno404",
       "keys": [
-        "HCM Cadastros",
-        "Cargo"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/cargos/{codigoCargo}",
-      "target": "GET /v1/pessoal/departamentos",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/departamentos",
-      "target": "GET /v1/pessoal/departamentos/{codigoDepartamento}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "HCM Cadastros, Departamento",
-      "keys": [
-        "HCM Cadastros",
-        "Departamento"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/departamentos/{codigoDepartamento}",
-      "target": "GET /v1/pessoal/empresas",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/empresas",
-      "target": "GET /v1/pessoal/empresas/{codigoEmpresa}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "HCM Cadastros, EmpresasEmpresa",
-      "keys": [
-        "HCM Cadastros",
-        "EmpresasEmpresa"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/empresas/{codigoEmpresa}",
-      "target": "GET /v1/pessoal/faltas",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/faltas",
-      "target": "GET /v1/pessoal/ferias",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/ferias",
-      "target": "GET /v1/pessoal/funcoes",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/funcoes",
-      "target": "GET /v1/pessoal/funcoes/{codigoFuncao}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "HCM Cadastros, Funcao",
-      "keys": [
-        "HCM Cadastros",
-        "Funcao"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/funcoes/{codigoFuncao}",
-      "target": "GET /v1/pessoal/historicos-ocorrencia",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/historicos-ocorrencia",
-      "target": "GET /v1/pessoal/historicos-ocorrencia/{codigoHistoricoOcorrencia}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "HCM Cadastros, HistoricosOcorrencia",
-      "keys": [
-        "HCM Cadastros",
-        "HistoricosOcorrencia"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/historicos-ocorrencia/{codigoHistoricoOcorrencia}",
-      "target": "GET /v1/pessoal/identificacao-carga-horaria",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/identificacao-carga-horaria",
-      "target": "GET /v1/pessoal/identificacao-carga-horaria/{codigoCargaHoraria}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "HCM Cadastros, IdentificacaoCargaHoraria",
-      "keys": [
-        "HCM Cadastros",
-        "IdentificacaoCargaHoraria"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/identificacao-carga-horaria/{codigoCargaHoraria}",
-      "target": "GET /v1/pessoal/locais-ponto",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/locais-ponto",
-      "target": "GET /v1/pessoal/locais-ponto/{codigoLocalPonto}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "HCM Cadastros, LocalPonto",
-      "keys": [
-        "HCM Cadastros",
-        "LocalPonto"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/locais-ponto/{codigoLocalPonto}",
-      "target": "GET /v1/pessoal/movimentos",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/movimentos",
-      "target": "GET /v1/pessoal/ocorrencias",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/ocorrencias",
-      "target": "GET /v1/pessoal/sindicatos",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/sindicatos",
-      "target": "GET /v1/pessoal/sindicatos/{codigoSindicato}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "HCM Cadastros, SindicatoSindicato",
-      "keys": [
-        "HCM Cadastros",
-        "SindicatoSindicato"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/sindicatos/{codigoSindicato}",
-      "target": "GET /v1/pessoal/tomadores",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/tomadores",
-      "target": "GET /v2/funcionarios/admissao/{codigoRequisicaoAdmissao}",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v2/funcionarios/admissao/{codigoRequisicaoAdmissao}",
-      "target": "POST /v1/funcionarios/admissao",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Cadastros",
-      "keys": [
-        "HCM Cadastros"
-      ]
-    },
-    {
-      "source": "POST /v1/funcionarios/admissao",
-      "target": "POST /v2/funcionarios/admissao",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "HCM Cadastros, retorno40X_50X, retorno404, Requisicao_de_Admissaoretorno400, RequisicaoAdmissaoResponse",
-      "keys": [
-        "HCM Cadastros",
+        "retorno400",
         "retorno40X_50X",
-        "retorno404",
-        "Requisicao_de_Admissaoretorno400",
-        "RequisicaoAdmissaoResponse"
+        "retorno404"
       ]
     },
     {
-      "source": "POST /v1/fiscal/impostos/calculo",
-      "target": "POST /v1/fiscal/servicos-tomados/nfse",
-      "type": "schema+tag",
+      "source": "inutilizaCfeSat",
+      "target": "inutilizaNfce",
+      "type": "schema",
       "types": [
-        "tag",
         "schema"
       ],
-      "key": "Fiscal, retorno40X_50X",
+      "key": "retorno400, retornoMovimento, retorno40X_50X, retorno404",
       "keys": [
-        "Fiscal",
-        "retorno40X_50X"
+        "retorno400",
+        "retornoMovimento",
+        "retorno40X_50X",
+        "retorno404"
       ]
     },
     {
-      "source": "addPedido",
+      "source": "inutilizaNfce",
       "target": "postCancelaPedido",
-      "type": "schema+tag",
+      "type": "schema",
       "types": [
-        "tag",
         "schema"
       ],
-      "key": "Vendas Pedidos, Pedido_de_Vendasretorno404, retornoPedido",
+      "key": "retorno400, retorno40X_50X",
       "keys": [
-        "Vendas Pedidos",
-        "Pedido_de_Vendasretorno404",
-        "retornoPedido"
+        "retorno400",
+        "retorno40X_50X"
       ]
     },
     {
       "source": "postCancelaPedido",
       "target": "putPedido",
-      "type": "schema+tag",
+      "type": "schema",
       "types": [
-        "tag",
         "schema"
       ],
-      "key": "Vendas Pedidos, retorno400, Pedido_de_Vendasretorno404, retornoPedido",
+      "key": "retorno400, Pedido_de_Vendasretorno404, retornoPedido",
       "keys": [
-        "Vendas Pedidos",
         "retorno400",
         "Pedido_de_Vendasretorno404",
         "retornoPedido"
       ]
     },
     {
-      "source": "getCliente",
-      "target": "postCliente",
-      "type": "tag",
+      "source": "addCfeSat",
+      "target": "addNfce",
+      "type": "schema",
       "types": [
-        "tag"
-      ],
-      "key": "Clientes",
-      "keys": [
-        "Clientes"
-      ]
-    },
-    {
-      "source": "postCliente",
-      "target": "postContato",
-      "type": "schema+tag",
-      "types": [
-        "tag",
         "schema"
       ],
-      "key": "Clientes, retorno40X_50X, Clientes_e_Estoqueretorno404, Clientes_e_Estoqueretorno400",
+      "key": "retornoMovimento",
       "keys": [
-        "Clientes",
-        "retorno40X_50X",
-        "Clientes_e_Estoqueretorno404",
-        "Clientes_e_Estoqueretorno400"
+        "retornoMovimento"
       ]
     },
     {
-      "source": "postContato",
-      "target": "putCliente",
-      "type": "schema+tag",
+      "source": "addNfce",
+      "target": "addRecebimentoCaixaPDVbaixa",
+      "type": "schema",
       "types": [
-        "tag",
         "schema"
       ],
-      "key": "Clientes, retorno40X_50X, Clientes_e_Estoqueretorno404, Clientes_e_Estoqueretorno400",
+      "key": "retornoMovimento, retorno404",
       "keys": [
-        "Clientes",
-        "retorno40X_50X",
-        "Clientes_e_Estoqueretorno404",
-        "Clientes_e_Estoqueretorno400"
+        "retornoMovimento",
+        "retorno404"
       ]
     },
     {
-      "source": "putCliente",
-      "target": "putContatoCliente",
-      "type": "schema+tag",
+      "source": "cancelaNfce",
+      "target": "inutilizaCfeSat",
+      "type": "schema",
       "types": [
-        "tag",
         "schema"
       ],
-      "key": "Clientes, retorno40X_50X, Clientes_e_Estoqueretorno404, Clientes_e_Estoqueretorno400",
+      "key": "retornoMovimento",
       "keys": [
-        "Clientes",
-        "retorno40X_50X",
-        "Clientes_e_Estoqueretorno404",
-        "Clientes_e_Estoqueretorno400"
+        "retornoMovimento"
       ]
     },
     {
-      "source": "GET /v1/estoque/locais",
-      "target": "GET /v1/estoque/locais/{codigoLocal}",
-      "type": "schema+tag",
+      "source": "POST /v1/fiscal/impostos/calculo",
+      "target": "POST /v1/fiscal/servicos-tomados/nfse",
+      "type": "schema",
       "types": [
-        "tag",
         "schema"
       ],
-      "key": "Estoque, LocalEstoque",
+      "key": "retorno40X_50X",
       "keys": [
-        "Estoque",
-        "LocalEstoque"
-      ]
-    },
-    {
-      "source": "GET /v1/estoque/locais/{codigoLocal}",
-      "target": "getEstoquePorProduto",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Estoque",
-      "keys": [
-        "Estoque"
-      ]
-    },
-    {
-      "source": "getEstoquePorProduto",
-      "target": "getEstoqueProdutos",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Estoque, retorno40X_50X, Clientes_e_Estoqueretorno404, Clientes_e_Estoqueretorno400, estoqueResponseSingle",
-      "keys": [
-        "Estoque",
-        "retorno40X_50X",
-        "Clientes_e_Estoqueretorno404",
-        "Clientes_e_Estoqueretorno400",
-        "estoqueResponseSingle"
-      ]
-    },
-    {
-      "source": "GET /v1/bairros",
-      "target": "GET /v1/bairros/{codigoBairro}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Cadastros Básicos, BairrosBairro",
-      "keys": [
-        "Cadastros Básicos",
-        "BairrosBairro"
-      ]
-    },
-    {
-      "source": "GET /v1/bairros/{codigoBairro}",
-      "target": "GET /v1/centros-resultado",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Cadastros Básicos",
-      "keys": [
-        "Cadastros Básicos"
-      ]
-    },
-    {
-      "source": "GET /v1/centros-resultado",
-      "target": "GET /v1/centros-resultado/{codigoCentroResultado}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Cadastros Básicos, CentroResultado",
-      "keys": [
-        "Cadastros Básicos",
-        "CentroResultado"
-      ]
-    },
-    {
-      "source": "GET /v1/centros-resultado/{codigoCentroResultado}",
-      "target": "GET /v1/cidades",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Cadastros Básicos",
-      "keys": [
-        "Cadastros Básicos"
-      ]
-    },
-    {
-      "source": "GET /v1/cidades",
-      "target": "GET /v1/cidades/{codigoCidade}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Cadastros Básicos, CidadesCidade",
-      "keys": [
-        "Cadastros Básicos",
-        "CidadesCidade"
-      ]
-    },
-    {
-      "source": "GET /v1/cidades/{codigoCidade}",
-      "target": "GET /v1/empresas",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Cadastros Básicos",
-      "keys": [
-        "Cadastros Básicos"
-      ]
-    },
-    {
-      "source": "GET /v1/empresas",
-      "target": "GET /v1/empresas/{codigoEmpresa}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Cadastros Básicos, Empresa1",
-      "keys": [
-        "Cadastros Básicos",
-        "Empresa1"
-      ]
-    },
-    {
-      "source": "GET /v1/empresas/{codigoEmpresa}",
-      "target": "GET /v1/logradouros",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Cadastros Básicos",
-      "keys": [
-        "Cadastros Básicos"
-      ]
-    },
-    {
-      "source": "GET /v1/logradouros",
-      "target": "GET /v1/logradouros/{codigoLogradouro}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Cadastros Básicos, Logradouro",
-      "keys": [
-        "Cadastros Básicos",
-        "Logradouro"
-      ]
-    },
-    {
-      "source": "GET /v1/logradouros/{codigoLogradouro}",
-      "target": "GET /v1/naturezas",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Cadastros Básicos",
-      "keys": [
-        "Cadastros Básicos"
-      ]
-    },
-    {
-      "source": "GET /v1/naturezas",
-      "target": "GET /v1/naturezas/{codigoNatureza}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Cadastros Básicos, Natureza",
-      "keys": [
-        "Cadastros Básicos",
-        "Natureza"
-      ]
-    },
-    {
-      "source": "GET /v1/naturezas/{codigoNatureza}",
-      "target": "GET /v1/projetos",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Cadastros Básicos",
-      "keys": [
-        "Cadastros Básicos"
-      ]
-    },
-    {
-      "source": "GET /v1/projetos",
-      "target": "GET /v1/projetos/{codigoProjeto}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Cadastros Básicos, Projeto",
-      "keys": [
-        "Cadastros Básicos",
-        "Projeto"
-      ]
-    },
-    {
-      "source": "GET /v1/projetos/{codigoProjeto}",
-      "target": "GET /v1/regioes",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Cadastros Básicos",
-      "keys": [
-        "Cadastros Básicos"
-      ]
-    },
-    {
-      "source": "GET /v1/regioes",
-      "target": "GET /v1/regioes/{codigoRegiao}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Cadastros Básicos, Regiao",
-      "keys": [
-        "Cadastros Básicos",
-        "Regiao"
-      ]
-    },
-    {
-      "source": "GET /v1/regioes/{codigoRegiao}",
-      "target": "GET /v1/tipos-operacao",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Cadastros Básicos",
-      "keys": [
-        "Cadastros Básicos"
-      ]
-    },
-    {
-      "source": "GET /v1/tipos-operacao",
-      "target": "GET /v1/tipos-operacao/{codigoTipoOperacao}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Cadastros Básicos, TipoOperacao",
-      "keys": [
-        "Cadastros Básicos",
-        "TipoOperacao"
-      ]
-    },
-    {
-      "source": "GET /v1/tipos-operacao/{codigoTipoOperacao}",
-      "target": "GET /v1/usuarios",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Cadastros Básicos",
-      "keys": [
-        "Cadastros Básicos"
-      ]
-    },
-    {
-      "source": "GET /v1/usuarios",
-      "target": "GET /v1/usuarios/{codigoUsuario}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Cadastros Básicos, Usuario",
-      "keys": [
-        "Cadastros Básicos",
-        "Usuario"
-      ]
-    },
-    {
-      "source": "GET /v1/usuarios/{codigoUsuario}",
-      "target": "GET /v1/veiculos",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Cadastros Básicos",
-      "keys": [
-        "Cadastros Básicos"
-      ]
-    },
-    {
-      "source": "GET /v1/veiculos",
-      "target": "GET /v1/veiculos/{codigoVeiculo}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Cadastros Básicos, Veiculo",
-      "keys": [
-        "Cadastros Básicos",
-        "Veiculo"
-      ]
-    },
-    {
-      "source": "GET /v1/veiculos/{codigoVeiculo}",
-      "target": "GET /v1/vendedores",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Cadastros Básicos",
-      "keys": [
-        "Cadastros Básicos"
-      ]
-    },
-    {
-      "source": "GET /v1/vendedores",
-      "target": "GET /v1/vendedores/{codigoVendedor}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Cadastros Básicos, Vendedor",
-      "keys": [
-        "Cadastros Básicos",
-        "Vendedor"
-      ]
-    },
-    {
-      "source": "GET /v1/financeiros/bandeiras-tef",
-      "target": "GET /v1/financeiros/contas-bancaria",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Financeiros Cadastros",
-      "keys": [
-        "Financeiros Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/financeiros/contas-bancaria",
-      "target": "GET /v1/financeiros/contas-bancaria/{codigoContaBancaria}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Financeiros Cadastros, ContaBancaria",
-      "keys": [
-        "Financeiros Cadastros",
-        "ContaBancaria"
-      ]
-    },
-    {
-      "source": "GET /v1/financeiros/contas-bancaria/{codigoContaBancaria}",
-      "target": "GET /v1/financeiros/moedas",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Financeiros Cadastros",
-      "keys": [
-        "Financeiros Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/financeiros/moedas",
-      "target": "GET /v1/financeiros/moedas/{codigoMoeda}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Financeiros Cadastros, Moeda",
-      "keys": [
-        "Financeiros Cadastros",
-        "Moeda"
-      ]
-    },
-    {
-      "source": "GET /v1/financeiros/moedas/{codigoMoeda}",
-      "target": "GET /v1/financeiros/moedas/{codigoMoeda}/cotacoes",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Financeiros Cadastros",
-      "keys": [
-        "Financeiros Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/financeiros/moedas/{codigoMoeda}/cotacoes",
-      "target": "GET /v1/financeiros/redes-tef",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Financeiros Cadastros",
-      "keys": [
-        "Financeiros Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/financeiros/redes-tef",
-      "target": "GET /v1/financeiros/tipos-pagamento",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Financeiros Cadastros",
-      "keys": [
-        "Financeiros Cadastros"
-      ]
-    },
-    {
-      "source": "GET /v1/financeiros/tipos-pagamento",
-      "target": "GET /v1/financeiros/tipos-pagamento/{codigoTipoPagamento}",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Financeiros Cadastros",
-      "keys": [
-        "Financeiros Cadastros"
-      ]
-    },
-    {
-      "source": "addFinanceiroDespesaAtualizar",
-      "target": "addFinanceiroDespesaBaixa",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Financeiros Movimentos, retornoMovimentoFinanceiro",
-      "keys": [
-        "Financeiros Movimentos",
-        "retornoMovimentoFinanceiro"
-      ]
-    },
-    {
-      "source": "addFinanceiroDespesaBaixa",
-      "target": "addFinanceiroDespesaInclusao",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Financeiros Movimentos, retornoMovimentoFinanceiro",
-      "keys": [
-        "Financeiros Movimentos",
-        "retornoMovimentoFinanceiro"
-      ]
-    },
-    {
-      "source": "addFinanceiroDespesaInclusao",
-      "target": "addFinanceiroReceitaAtualizar",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Financeiros Movimentos, retornoMovimentoFinanceiro",
-      "keys": [
-        "Financeiros Movimentos",
-        "retornoMovimentoFinanceiro"
-      ]
-    },
-    {
-      "source": "addFinanceiroReceitaAtualizar",
-      "target": "addFinanceiroReceitaInclusao",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Financeiros Movimentos, retornoMovimentoFinanceiro",
-      "keys": [
-        "Financeiros Movimentos",
-        "retornoMovimentoFinanceiro"
-      ]
-    },
-    {
-      "source": "addFinanceiroReceitaInclusao",
-      "target": "addFinanceiroReceitasBaixa",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Financeiros Movimentos, retornoMovimentoFinanceiro",
-      "keys": [
-        "Financeiros Movimentos",
-        "retornoMovimentoFinanceiro"
-      ]
-    },
-    {
-      "source": "addFinanceiroReceitasBaixa",
-      "target": "getFinanceiros",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Financeiros Movimentos",
-      "keys": [
-        "Financeiros Movimentos"
-      ]
-    },
-    {
-      "source": "getFinanceiros",
-      "target": "getFinanceirosDespesas",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Financeiros Movimentos, financeiroResponseList, Api_Financeiroretorno40X_50X, Api_Financeiroretorno404, Api_Financeiroretorno400",
-      "keys": [
-        "Financeiros Movimentos",
-        "financeiroResponseList",
-        "Api_Financeiroretorno40X_50X",
-        "Api_Financeiroretorno404",
-        "Api_Financeiroretorno400"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/funcionarios",
-      "target": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresa/{codigoEmpresa}",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Funcionários",
-      "keys": [
-        "HCM Funcionários"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresa/{codigoEmpresa}",
-      "target": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/atrasos",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Funcionários",
-      "keys": [
-        "HCM Funcionários"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/atrasos",
-      "target": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/carga-horaria-historica",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Funcionários",
-      "keys": [
-        "HCM Funcionários"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/carga-horaria-historica",
-      "target": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/faltas",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Funcionários",
-      "keys": [
-        "HCM Funcionários"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/faltas",
-      "target": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/ferias",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Funcionários",
-      "keys": [
-        "HCM Funcionários"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/ferias",
-      "target": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/movimentos",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Funcionários",
-      "keys": [
-        "HCM Funcionários"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/movimentos",
-      "target": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/ocorrencias",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Funcionários",
-      "keys": [
-        "HCM Funcionários"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/ocorrencias",
-      "target": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/tomadores",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Funcionários",
-      "keys": [
-        "HCM Funcionários"
-      ]
-    },
-    {
-      "source": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/tomadores",
-      "target": "PUT /v1/pessoal/funcionarios/{codigoFuncionario}/empresa/{codigoEmpresa}/recibos-esocial",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "HCM Funcionários",
-      "keys": [
-        "HCM Funcionários"
-      ]
-    },
-    {
-      "source": "GET /v1/produtos",
-      "target": "GET /v1/produtos/grupos",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Produtos",
-      "keys": [
-        "Produtos"
-      ]
-    },
-    {
-      "source": "GET /v1/produtos/grupos",
-      "target": "GET /v1/produtos/grupos/{codigoGrupoProduto}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Produtos, GrupoProduto",
-      "keys": [
-        "Produtos",
-        "GrupoProduto"
-      ]
-    },
-    {
-      "source": "GET /v1/produtos/grupos/{codigoGrupoProduto}",
-      "target": "GET /v1/produtos/volumes",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Produtos",
-      "keys": [
-        "Produtos"
-      ]
-    },
-    {
-      "source": "GET /v1/produtos/volumes",
-      "target": "GET /v1/produtos/volumes/{codigoVolume}",
-      "type": "schema+tag",
-      "types": [
-        "tag",
-        "schema"
-      ],
-      "key": "Produtos, Volume",
-      "keys": [
-        "Produtos",
-        "Volume"
-      ]
-    },
-    {
-      "source": "GET /v1/produtos/volumes/{codigoVolume}",
-      "target": "GET /v1/produtos/{codigoProduto}",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Produtos",
-      "keys": [
-        "Produtos"
-      ]
-    },
-    {
-      "source": "GET /v1/produtos/{codigoProduto}",
-      "target": "GET /v1/produtos/{codigoProduto}/alternativos",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Produtos",
-      "keys": [
-        "Produtos"
-      ]
-    },
-    {
-      "source": "GET /v1/produtos/{codigoProduto}/alternativos",
-      "target": "GET /v1/produtos/{codigoProduto}/componentes",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Produtos",
-      "keys": [
-        "Produtos"
-      ]
-    },
-    {
-      "source": "GET /v1/produtos/{codigoProduto}/componentes",
-      "target": "GET /v1/produtos/{codigoProduto}/volumes",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Produtos",
-      "keys": [
-        "Produtos"
-      ]
-    },
-    {
-      "source": "addPedidosToOrdemCarga",
-      "target": "getMotoristaById",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
-      ]
-    },
-    {
-      "source": "getMotoristaById",
-      "target": "getMotoristas",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
-      ]
-    },
-    {
-      "source": "getMotoristas",
-      "target": "getOrdemCargaPorCodigo",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
-      ]
-    },
-    {
-      "source": "getOrdemCargaPorCodigo",
-      "target": "getOrdensCarga",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
-      ]
-    },
-    {
-      "source": "getOrdensCarga",
-      "target": "getPedidosByOrdemCarga",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
-      ]
-    },
-    {
-      "source": "getPedidosByOrdemCarga",
-      "target": "getTransportadoraById",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
-      ]
-    },
-    {
-      "source": "getTransportadoraById",
-      "target": "getTransportadoras",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
-      ]
-    },
-    {
-      "source": "getTransportadoras",
-      "target": "postMotorista",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
-      ]
-    },
-    {
-      "source": "postMotorista",
-      "target": "postOrdemCarga",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
-      ]
-    },
-    {
-      "source": "postOrdemCarga",
-      "target": "postTransportadora",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
-      ]
-    },
-    {
-      "source": "postTransportadora",
-      "target": "putMotorista",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
-      ]
-    },
-    {
-      "source": "putMotorista",
-      "target": "putOrdemCarga",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
-      ]
-    },
-    {
-      "source": "putOrdemCarga",
-      "target": "putTransportadora",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
-      ]
-    },
-    {
-      "source": "putTransportadora",
-      "target": "removePedidoFromOrdemCarga",
-      "type": "tag",
-      "types": [
-        "tag"
-      ],
-      "key": "Logística",
-      "keys": [
-        "Logística"
+        "retorno40X_50X"
       ]
     },
     {
@@ -9691,6 +8446,21 @@
       ]
     },
     {
+      "source": "POST /v1/funcionarios/admissao",
+      "target": "POST /v2/funcionarios/admissao",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retorno40X_50X, retorno404, RequisicaoAdmissaoResponse, Requisicao_de_Admissaoretorno400",
+      "keys": [
+        "retorno40X_50X",
+        "retorno404",
+        "RequisicaoAdmissaoResponse",
+        "Requisicao_de_Admissaoretorno400"
+      ]
+    },
+    {
       "source": "POST /v2/funcionarios/admissao",
       "target": "addAbreCaixaPDV",
       "type": "schema",
@@ -9701,133 +8471,6 @@
       "keys": [
         "retorno40X_50X",
         "retorno404"
-      ]
-    },
-    {
-      "source": "addAbreCaixaPDV",
-      "target": "addCfeSat",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retorno40X_50X, retorno404, retorno400",
-      "keys": [
-        "retorno40X_50X",
-        "retorno404",
-        "retorno400"
-      ]
-    },
-    {
-      "source": "addCfeSat",
-      "target": "addFechaCaixaPDV",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retorno40X_50X, retorno404, retorno400",
-      "keys": [
-        "retorno40X_50X",
-        "retorno404",
-        "retorno400"
-      ]
-    },
-    {
-      "source": "addFechaCaixaPDV",
-      "target": "addNfce",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retorno40X_50X, retorno404, retorno400",
-      "keys": [
-        "retorno40X_50X",
-        "retorno404",
-        "retorno400"
-      ]
-    },
-    {
-      "source": "addNfce",
-      "target": "addPedido",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retorno40X_50X, retorno400",
-      "keys": [
-        "retorno40X_50X",
-        "retorno400"
-      ]
-    },
-    {
-      "source": "addPedido",
-      "target": "addRecebimentoCaixaPDVbaixa",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retorno40X_50X, retorno400",
-      "keys": [
-        "retorno40X_50X",
-        "retorno400"
-      ]
-    },
-    {
-      "source": "addSuprimentoCaixaPDV",
-      "target": "autorizaCfeSat",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retorno40X_50X, retorno404, retorno400, retornoMovimento",
-      "keys": [
-        "retorno40X_50X",
-        "retorno404",
-        "retorno400",
-        "retornoMovimento"
-      ]
-    },
-    {
-      "source": "autorizaCfeSat",
-      "target": "cancelaCfeSat",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retorno40X_50X, retorno404, retorno400, retornoMovimento",
-      "keys": [
-        "retorno40X_50X",
-        "retorno404",
-        "retorno400",
-        "retornoMovimento"
-      ]
-    },
-    {
-      "source": "cancelaCfeSat",
-      "target": "cancelaNfce",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retorno40X_50X, retorno404, retorno400, retornoMovimento",
-      "keys": [
-        "retorno40X_50X",
-        "retorno404",
-        "retorno400",
-        "retornoMovimento"
-      ]
-    },
-    {
-      "source": "cancelaNfce",
-      "target": "getCaixaAberto",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retorno40X_50X, retorno404, retorno400",
-      "keys": [
-        "retorno40X_50X",
-        "retorno404",
-        "retorno400"
       ]
     },
     {
@@ -9849,11 +8492,26 @@
       "types": [
         "schema"
       ],
-      "key": "retorno40X_50X, Clientes_e_Estoqueretorno404, Clientes_e_Estoqueretorno400",
+      "key": "retorno40X_50X, Clientes_e_Estoqueretorno400, Clientes_e_Estoqueretorno404",
       "keys": [
         "retorno40X_50X",
+        "Clientes_e_Estoqueretorno400",
+        "Clientes_e_Estoqueretorno404"
+      ]
+    },
+    {
+      "source": "getEstoquePorProduto",
+      "target": "getEstoqueProdutos",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retorno40X_50X, Clientes_e_Estoqueretorno400, Clientes_e_Estoqueretorno404, estoqueResponseSingle",
+      "keys": [
+        "retorno40X_50X",
+        "Clientes_e_Estoqueretorno400",
         "Clientes_e_Estoqueretorno404",
-        "Clientes_e_Estoqueretorno400"
+        "estoqueResponseSingle"
       ]
     },
     {
@@ -9869,48 +8527,6 @@
       ]
     },
     {
-      "source": "getPrecoTabela",
-      "target": "inutilizaCfeSat",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retorno40X_50X, retorno404, retorno400",
-      "keys": [
-        "retorno40X_50X",
-        "retorno404",
-        "retorno400"
-      ]
-    },
-    {
-      "source": "inutilizaCfeSat",
-      "target": "inutilizaNfce",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retorno40X_50X, retorno404, retorno400, retornoMovimento",
-      "keys": [
-        "retorno40X_50X",
-        "retorno404",
-        "retorno400",
-        "retornoMovimento"
-      ]
-    },
-    {
-      "source": "inutilizaNfce",
-      "target": "postCancelaPedido",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retorno40X_50X, retorno400",
-      "keys": [
-        "retorno40X_50X",
-        "retorno400"
-      ]
-    },
-    {
       "source": "postCancelaPedido",
       "target": "postCliente",
       "type": "schema",
@@ -9920,6 +8536,48 @@
       "key": "retorno40X_50X",
       "keys": [
         "retorno40X_50X"
+      ]
+    },
+    {
+      "source": "postCliente",
+      "target": "postContato",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retorno40X_50X, Clientes_e_Estoqueretorno400, Clientes_e_Estoqueretorno404",
+      "keys": [
+        "retorno40X_50X",
+        "Clientes_e_Estoqueretorno400",
+        "Clientes_e_Estoqueretorno404"
+      ]
+    },
+    {
+      "source": "postContato",
+      "target": "putCliente",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retorno40X_50X, Clientes_e_Estoqueretorno400, Clientes_e_Estoqueretorno404",
+      "keys": [
+        "retorno40X_50X",
+        "Clientes_e_Estoqueretorno400",
+        "Clientes_e_Estoqueretorno404"
+      ]
+    },
+    {
+      "source": "putCliente",
+      "target": "putContatoCliente",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retorno40X_50X, Clientes_e_Estoqueretorno400, Clientes_e_Estoqueretorno404",
+      "keys": [
+        "retorno40X_50X",
+        "Clientes_e_Estoqueretorno400",
+        "Clientes_e_Estoqueretorno404"
       ]
     },
     {
@@ -9935,53 +8593,15 @@
       ]
     },
     {
-      "source": "addNfce",
-      "target": "addRecebimentoCaixaPDVbaixa",
+      "source": "addAbreCaixaPDV",
+      "target": "addFechaCaixaPDV",
       "type": "schema",
       "types": [
         "schema"
       ],
-      "key": "retorno404, retornoMovimento",
+      "key": "retornoCaixaAberto",
       "keys": [
-        "retorno404",
-        "retornoMovimento"
-      ]
-    },
-    {
-      "source": "getCaixaAberto",
-      "target": "getPrecoContexto",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retorno404, retorno400",
-      "keys": [
-        "retorno404",
-        "retorno400"
-      ]
-    },
-    {
-      "source": "addCfeSat",
-      "target": "addNfce",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retornoMovimento",
-      "keys": [
-        "retornoMovimento"
-      ]
-    },
-    {
-      "source": "cancelaNfce",
-      "target": "inutilizaCfeSat",
-      "type": "schema",
-      "types": [
-        "schema"
-      ],
-      "key": "retornoMovimento",
-      "keys": [
-        "retornoMovimento"
+        "retornoCaixaAberto"
       ]
     },
     {
@@ -10009,16 +8629,29 @@
       ]
     },
     {
+      "source": "addPedido",
+      "target": "postCancelaPedido",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "Pedido_de_Vendasretorno404, retornoPedido",
+      "keys": [
+        "Pedido_de_Vendasretorno404",
+        "retornoPedido"
+      ]
+    },
+    {
       "source": "getEstoqueProdutos",
       "target": "postCliente",
       "type": "schema",
       "types": [
         "schema"
       ],
-      "key": "Clientes_e_Estoqueretorno404, Clientes_e_Estoqueretorno400",
+      "key": "Clientes_e_Estoqueretorno400, Clientes_e_Estoqueretorno404",
       "keys": [
-        "Clientes_e_Estoqueretorno404",
-        "Clientes_e_Estoqueretorno400"
+        "Clientes_e_Estoqueretorno400",
+        "Clientes_e_Estoqueretorno404"
       ]
     },
     {
@@ -10043,6 +8676,90 @@
       "key": "codigoContato",
       "keys": [
         "codigoContato"
+      ]
+    },
+    {
+      "source": "GET /v1/naturezas",
+      "target": "GET /v1/naturezas/{codigoNatureza}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "Natureza, GET path",
+      "keys": [
+        "Natureza",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/centros-resultado",
+      "target": "GET /v1/centros-resultado/{codigoCentroResultado}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "CentroResultado, GET path",
+      "keys": [
+        "CentroResultado",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/projetos",
+      "target": "GET /v1/projetos/{codigoProjeto}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "Projeto, GET path",
+      "keys": [
+        "Projeto",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/tipos-operacao",
+      "target": "GET /v1/tipos-operacao/{codigoTipoOperacao}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "TipoOperacao, GET path",
+      "keys": [
+        "TipoOperacao",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/financeiros/moedas",
+      "target": "GET /v1/financeiros/moedas/{codigoMoeda}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "Moeda, GET path",
+      "keys": [
+        "Moeda",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/financeiros/contas-bancaria",
+      "target": "GET /v1/financeiros/contas-bancaria/{codigoContaBancaria}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "ContaBancaria, GET path",
+      "keys": [
+        "ContaBancaria",
+        "GET path"
       ]
     },
     {
@@ -10074,6 +8791,151 @@
       ]
     },
     {
+      "source": "getFinanceiros",
+      "target": "getFinanceirosDespesas",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "Api_Financeiroretorno40X_50X, Api_Financeiroretorno404, Api_Financeiroretorno400, financeiroResponseList",
+      "keys": [
+        "Api_Financeiroretorno40X_50X",
+        "Api_Financeiroretorno404",
+        "Api_Financeiroretorno400",
+        "financeiroResponseList"
+      ]
+    },
+    {
+      "source": "addFinanceiroDespesaAtualizar",
+      "target": "addFinanceiroDespesaBaixa",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retornoMovimentoFinanceiro",
+      "keys": [
+        "retornoMovimentoFinanceiro"
+      ]
+    },
+    {
+      "source": "addFinanceiroDespesaBaixa",
+      "target": "addFinanceiroDespesaInclusao",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retornoMovimentoFinanceiro",
+      "keys": [
+        "retornoMovimentoFinanceiro"
+      ]
+    },
+    {
+      "source": "addFinanceiroDespesaInclusao",
+      "target": "addFinanceiroReceitaAtualizar",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retornoMovimentoFinanceiro",
+      "keys": [
+        "retornoMovimentoFinanceiro"
+      ]
+    },
+    {
+      "source": "addFinanceiroReceitaAtualizar",
+      "target": "addFinanceiroReceitaInclusao",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retornoMovimentoFinanceiro",
+      "keys": [
+        "retornoMovimentoFinanceiro"
+      ]
+    },
+    {
+      "source": "addFinanceiroReceitaInclusao",
+      "target": "addFinanceiroReceitasBaixa",
+      "type": "schema",
+      "types": [
+        "schema"
+      ],
+      "key": "retornoMovimentoFinanceiro",
+      "keys": [
+        "retornoMovimentoFinanceiro"
+      ]
+    },
+    {
+      "source": "GET /v1/pessoal/cargos",
+      "target": "GET /v1/pessoal/cargos/{codigoCargo}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "Cargo, GET path",
+      "keys": [
+        "Cargo",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/pessoal/funcoes",
+      "target": "GET /v1/pessoal/funcoes/{codigoFuncao}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "Funcao, GET path",
+      "keys": [
+        "Funcao",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/pessoal/departamentos",
+      "target": "GET /v1/pessoal/departamentos/{codigoDepartamento}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "Departamento, GET path",
+      "keys": [
+        "Departamento",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/pessoal/locais-ponto",
+      "target": "GET /v1/pessoal/locais-ponto/{codigoLocalPonto}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "LocalPonto, GET path",
+      "keys": [
+        "LocalPonto",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/pessoal/historicos-ocorrencia",
+      "target": "GET /v1/pessoal/historicos-ocorrencia/{codigoHistoricoOcorrencia}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "HistoricosOcorrencia, GET path",
+      "keys": [
+        "HistoricosOcorrencia",
+        "GET path"
+      ]
+    },
+    {
       "source": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/ocorrencias",
       "target": "GET /v1/pessoal/ocorrencias",
       "type": "schema",
@@ -10083,6 +8945,20 @@
       "key": "RegistroOcorrencia",
       "keys": [
         "RegistroOcorrencia"
+      ]
+    },
+    {
+      "source": "GET /v1/pessoal/sindicatos",
+      "target": "GET /v1/pessoal/sindicatos/{codigoSindicato}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "SindicatoSindicato, GET path",
+      "keys": [
+        "SindicatoSindicato",
+        "GET path"
       ]
     },
     {
@@ -10098,6 +8974,20 @@
       ]
     },
     {
+      "source": "GET /v1/produtos/volumes",
+      "target": "GET /v1/produtos/volumes/{codigoVolume}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "Volume, GET path",
+      "keys": [
+        "Volume",
+        "GET path"
+      ]
+    },
+    {
       "source": "GET /v1/pessoal/atrasos",
       "target": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/atrasos",
       "type": "schema",
@@ -10110,6 +9000,20 @@
       ]
     },
     {
+      "source": "GET /v1/pessoal/empresas",
+      "target": "GET /v1/pessoal/empresas/{codigoEmpresa}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "EmpresasEmpresa, GET path",
+      "keys": [
+        "EmpresasEmpresa",
+        "GET path"
+      ]
+    },
+    {
       "source": "GET /v1/pessoal/carga-horaria-historica",
       "target": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/carga-horaria-historica",
       "type": "schema",
@@ -10119,6 +9023,20 @@
       "key": "CargaHorariaHistorica",
       "keys": [
         "CargaHorariaHistorica"
+      ]
+    },
+    {
+      "source": "GET /v1/estoque/locais",
+      "target": "GET /v1/estoque/locais/{codigoLocal}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "LocalEstoque, GET path",
+      "keys": [
+        "LocalEstoque",
+        "GET path"
       ]
     },
     {
@@ -10143,6 +9061,34 @@
       "key": "motorista",
       "keys": [
         "motorista"
+      ]
+    },
+    {
+      "source": "GET /v1/vendedores",
+      "target": "GET /v1/vendedores/{codigoVendedor}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "Vendedor, GET path",
+      "keys": [
+        "Vendedor",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/usuarios",
+      "target": "GET /v1/usuarios/{codigoUsuario}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "Usuario, GET path",
+      "keys": [
+        "Usuario",
+        "GET path"
       ]
     },
     {
@@ -10172,13 +9118,71 @@
     {
       "source": "GET /v1/produtos",
       "target": "GET /v1/produtos/{codigoProduto}",
-      "type": "schema",
+      "type": "resource+schema",
       "types": [
-        "schema"
+        "schema",
+        "resource"
       ],
-      "key": "ProdutosProduto",
+      "key": "ProdutosProduto, GET path",
       "keys": [
-        "ProdutosProduto"
+        "ProdutosProduto",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/produtos/grupos",
+      "target": "GET /v1/produtos/grupos/{codigoGrupoProduto}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "GrupoProduto, GET path",
+      "keys": [
+        "GrupoProduto",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/regioes",
+      "target": "GET /v1/regioes/{codigoRegiao}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "Regiao, GET path",
+      "keys": [
+        "Regiao",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/cidades",
+      "target": "GET /v1/cidades/{codigoCidade}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "CidadesCidade, GET path",
+      "keys": [
+        "CidadesCidade",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/logradouros",
+      "target": "GET /v1/logradouros/{codigoLogradouro}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "Logradouro, GET path",
+      "keys": [
+        "Logradouro",
+        "GET path"
       ]
     },
     {
@@ -10206,6 +9210,48 @@
       ]
     },
     {
+      "source": "GET /v1/bairros",
+      "target": "GET /v1/bairros/{codigoBairro}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "BairrosBairro, GET path",
+      "keys": [
+        "BairrosBairro",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/veiculos",
+      "target": "GET /v1/veiculos/{codigoVeiculo}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "Veiculo, GET path",
+      "keys": [
+        "Veiculo",
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/pessoal/identificacao-carga-horaria",
+      "target": "GET /v1/pessoal/identificacao-carga-horaria/{codigoCargaHoraria}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "IdentificacaoCargaHoraria, GET path",
+      "keys": [
+        "IdentificacaoCargaHoraria",
+        "GET path"
+      ]
+    },
+    {
       "source": "GET /v1/pessoal/funcionarios/{codigoFuncionario}/empresas/{codigoEmpresa}/tomadores",
       "target": "GET /v1/pessoal/tomadores",
       "type": "schema",
@@ -10215,6 +9261,20 @@
       "key": "Tomador",
       "keys": [
         "Tomador"
+      ]
+    },
+    {
+      "source": "GET /v1/empresas",
+      "target": "GET /v1/empresas/{codigoEmpresa}",
+      "type": "resource+schema",
+      "types": [
+        "schema",
+        "resource"
+      ],
+      "key": "Empresa1, GET path",
+      "keys": [
+        "Empresa1",
+        "GET path"
       ]
     },
     {
@@ -10239,6 +9299,54 @@
       "key": "Movimentos",
       "keys": [
         "Movimentos"
+      ]
+    },
+    {
+      "source": "getEstoqueProdutos",
+      "target": "getEstoquePorProduto",
+      "type": "resource",
+      "types": [
+        "resource"
+      ],
+      "key": "GET path",
+      "keys": [
+        "GET path"
+      ]
+    },
+    {
+      "source": "GET /v1/financeiros/tipos-pagamento",
+      "target": "GET /v1/financeiros/tipos-pagamento/{codigoTipoPagamento}",
+      "type": "resource",
+      "types": [
+        "resource"
+      ],
+      "key": "GET path",
+      "keys": [
+        "GET path"
+      ]
+    },
+    {
+      "source": "getMotoristas",
+      "target": "getMotoristaById",
+      "type": "resource",
+      "types": [
+        "resource"
+      ],
+      "key": "GET path",
+      "keys": [
+        "GET path"
+      ]
+    },
+    {
+      "source": "getTransportadoras",
+      "target": "getTransportadoraById",
+      "type": "resource",
+      "types": [
+        "resource"
+      ],
+      "key": "GET path",
+      "keys": [
+        "GET path"
       ]
     }
   ]
