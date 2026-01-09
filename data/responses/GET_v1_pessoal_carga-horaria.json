@@ -1,0 +1,537 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/pessoal/carga-horaria",
+    "url": "https://api.sankhya.com.br/v1/pessoal/carga-horaria"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:22 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "9756",
+      "Connection": "keep-alive",
+      "X-RateLimit-Remaining-Minute": "1990",
+      "X-RateLimit-Limit-Minute": "2000",
+      "RateLimit-Remaining": "1990",
+      "RateLimit-Reset": "38",
+      "RateLimit-Limit": "2000",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "854a5c42-6a0a-4734-a56c-8829b3c503f3",
+      "X-Kong-Upstream-Latency": "203",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "de797b03f78eb64acbfad96ed9469951"
+    },
+    "json": {
+      "cargasHorarias": [
+        {
+          "codigoCargaHoraria": 4,
+          "descricao": "Das 07:00 às 11:00 e das 14:30 às 18:30",
+          "diaSemana": 1,
+          "turno": 1,
+          "entrada": "",
+          "saida": "",
+          "descansoSemanal": true,
+          "dataAlteracao": "31/03/2020 14:14:11"
+        },
+        {
+          "codigoCargaHoraria": 4,
+          "descricao": "Das 07:00 às 11:00 e das 14:30 às 18:30",
+          "diaSemana": 2,
+          "turno": 1,
+          "entrada": 700,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "31/03/2020 14:18:50"
+        },
+        {
+          "codigoCargaHoraria": 4,
+          "descricao": "Das 07:00 às 11:00 e das 14:30 às 18:30",
+          "diaSemana": 2,
+          "turno": 2,
+          "entrada": 1430,
+          "saida": 1830,
+          "descansoSemanal": false,
+          "dataAlteracao": "31/03/2020 14:19:26"
+        },
+        {
+          "codigoCargaHoraria": 4,
+          "descricao": "Das 07:00 às 11:00 e das 14:30 às 18:30",
+          "diaSemana": 3,
+          "turno": 1,
+          "entrada": 700,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "31/03/2020 14:18:56"
+        },
+        {
+          "codigoCargaHoraria": 4,
+          "descricao": "Das 07:00 às 11:00 e das 14:30 às 18:30",
+          "diaSemana": 3,
+          "turno": 2,
+          "entrada": 1430,
+          "saida": 1830,
+          "descansoSemanal": false,
+          "dataAlteracao": "31/03/2020 14:19:29"
+        },
+        {
+          "codigoCargaHoraria": 4,
+          "descricao": "Das 07:00 às 11:00 e das 14:30 às 18:30",
+          "diaSemana": 4,
+          "turno": 1,
+          "entrada": 700,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "31/03/2020 14:19:05"
+        },
+        {
+          "codigoCargaHoraria": 4,
+          "descricao": "Das 07:00 às 11:00 e das 14:30 às 18:30",
+          "diaSemana": 4,
+          "turno": 2,
+          "entrada": 1430,
+          "saida": 1830,
+          "descansoSemanal": false,
+          "dataAlteracao": "31/03/2020 14:19:32"
+        },
+        {
+          "codigoCargaHoraria": 4,
+          "descricao": "Das 07:00 às 11:00 e das 14:30 às 18:30",
+          "diaSemana": 5,
+          "turno": 1,
+          "entrada": 700,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "31/03/2020 14:19:11"
+        },
+        {
+          "codigoCargaHoraria": 4,
+          "descricao": "Das 07:00 às 11:00 e das 14:30 às 18:30",
+          "diaSemana": 5,
+          "turno": 2,
+          "entrada": 1430,
+          "saida": 1830,
+          "descansoSemanal": false,
+          "dataAlteracao": "31/03/2020 14:19:36"
+        },
+        {
+          "codigoCargaHoraria": 4,
+          "descricao": "Das 07:00 às 11:00 e das 14:30 às 18:30",
+          "diaSemana": 6,
+          "turno": 1,
+          "entrada": 700,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "31/03/2020 14:19:17"
+        },
+        {
+          "codigoCargaHoraria": 4,
+          "descricao": "Das 07:00 às 11:00 e das 14:30 às 18:30",
+          "diaSemana": 6,
+          "turno": 2,
+          "entrada": 1430,
+          "saida": 1830,
+          "descansoSemanal": false,
+          "dataAlteracao": "31/03/2020 14:19:42"
+        },
+        {
+          "codigoCargaHoraria": 4,
+          "descricao": "Das 07:00 às 11:00 e das 14:30 às 18:30",
+          "diaSemana": 7,
+          "turno": 1,
+          "entrada": 700,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "31/03/2020 14:20:25"
+        },
+        {
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "diaSemana": 1,
+          "turno": 1,
+          "entrada": "",
+          "saida": "",
+          "descansoSemanal": true,
+          "dataAlteracao": "27/03/2020 13:54:04"
+        },
+        {
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "diaSemana": 2,
+          "turno": 1,
+          "entrada": 730,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:00:50"
+        },
+        {
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "diaSemana": 2,
+          "turno": 2,
+          "entrada": 1200,
+          "saida": 1718,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:00:24"
+        },
+        {
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "diaSemana": 3,
+          "turno": 1,
+          "entrada": 730,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:00:53"
+        },
+        {
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "diaSemana": 3,
+          "turno": 2,
+          "entrada": 1200,
+          "saida": 1718,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:00:31"
+        },
+        {
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "diaSemana": 4,
+          "turno": 1,
+          "entrada": 730,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:00:57"
+        },
+        {
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "diaSemana": 4,
+          "turno": 2,
+          "entrada": 1200,
+          "saida": 1718,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:00:33"
+        },
+        {
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "diaSemana": 5,
+          "turno": 1,
+          "entrada": 730,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:01:00"
+        },
+        {
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "diaSemana": 5,
+          "turno": 2,
+          "entrada": 1200,
+          "saida": 1718,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:00:34"
+        },
+        {
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "diaSemana": 6,
+          "turno": 1,
+          "entrada": 730,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:01:05"
+        },
+        {
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "diaSemana": 6,
+          "turno": 2,
+          "entrada": 1200,
+          "saida": 1718,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:00:36"
+        },
+        {
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "diaSemana": 7,
+          "turno": 1,
+          "entrada": "",
+          "saida": "",
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:00:19"
+        },
+        {
+          "codigoCargaHoraria": 3,
+          "descricao": "DAS 07:00 ÀS 11:00 E DAS 12:00 ÀS 16:00",
+          "diaSemana": 1,
+          "turno": 1,
+          "entrada": "",
+          "saida": "",
+          "descansoSemanal": true,
+          "dataAlteracao": "27/03/2020 14:03:28"
+        },
+        {
+          "codigoCargaHoraria": 3,
+          "descricao": "DAS 07:00 ÀS 11:00 E DAS 12:00 ÀS 16:00",
+          "diaSemana": 2,
+          "turno": 1,
+          "entrada": 700,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:04:25"
+        },
+        {
+          "codigoCargaHoraria": 3,
+          "descricao": "DAS 07:00 ÀS 11:00 E DAS 12:00 ÀS 16:00",
+          "diaSemana": 2,
+          "turno": 2,
+          "entrada": 1200,
+          "saida": 1600,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:04:41"
+        },
+        {
+          "codigoCargaHoraria": 3,
+          "descricao": "DAS 07:00 ÀS 11:00 E DAS 12:00 ÀS 16:00",
+          "diaSemana": 3,
+          "turno": 1,
+          "entrada": 700,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:04:30"
+        },
+        {
+          "codigoCargaHoraria": 3,
+          "descricao": "DAS 07:00 ÀS 11:00 E DAS 12:00 ÀS 16:00",
+          "diaSemana": 3,
+          "turno": 2,
+          "entrada": 1200,
+          "saida": 1600,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:04:43"
+        },
+        {
+          "codigoCargaHoraria": 3,
+          "descricao": "DAS 07:00 ÀS 11:00 E DAS 12:00 ÀS 16:00",
+          "diaSemana": 4,
+          "turno": 1,
+          "entrada": 700,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:04:45"
+        },
+        {
+          "codigoCargaHoraria": 3,
+          "descricao": "DAS 07:00 ÀS 11:00 E DAS 12:00 ÀS 16:00",
+          "diaSemana": 4,
+          "turno": 2,
+          "entrada": 1200,
+          "saida": 1600,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:04:46"
+        },
+        {
+          "codigoCargaHoraria": 3,
+          "descricao": "DAS 07:00 ÀS 11:00 E DAS 12:00 ÀS 16:00",
+          "diaSemana": 5,
+          "turno": 1,
+          "entrada": 700,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:04:33"
+        },
+        {
+          "codigoCargaHoraria": 3,
+          "descricao": "DAS 07:00 ÀS 11:00 E DAS 12:00 ÀS 16:00",
+          "diaSemana": 5,
+          "turno": 2,
+          "entrada": 1200,
+          "saida": 1600,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:04:49"
+        },
+        {
+          "codigoCargaHoraria": 3,
+          "descricao": "DAS 07:00 ÀS 11:00 E DAS 12:00 ÀS 16:00",
+          "diaSemana": 6,
+          "turno": 1,
+          "entrada": 700,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:04:36"
+        },
+        {
+          "codigoCargaHoraria": 3,
+          "descricao": "DAS 07:00 ÀS 11:00 E DAS 12:00 ÀS 16:00",
+          "diaSemana": 6,
+          "turno": 2,
+          "entrada": 1200,
+          "saida": 1600,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:04:51"
+        },
+        {
+          "codigoCargaHoraria": 3,
+          "descricao": "DAS 07:00 ÀS 11:00 E DAS 12:00 ÀS 16:00",
+          "diaSemana": 7,
+          "turno": 1,
+          "entrada": 700,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 14:05:00"
+        },
+        {
+          "codigoCargaHoraria": 0,
+          "descricao": "CARGA HORARIA 0",
+          "diaSemana": 1,
+          "turno": 0,
+          "entrada": "",
+          "saida": "",
+          "descansoSemanal": true,
+          "dataAlteracao": "11/09/2003 09:46:41"
+        },
+        {
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "diaSemana": 1,
+          "turno": 1,
+          "entrada": "",
+          "saida": "",
+          "descansoSemanal": true,
+          "dataAlteracao": "27/08/2010 18:30:50"
+        },
+        {
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "diaSemana": 2,
+          "turno": 1,
+          "entrada": 730,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 13:50:54"
+        },
+        {
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "diaSemana": 2,
+          "turno": 2,
+          "entrada": 1230,
+          "saida": 1700,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 13:51:43"
+        },
+        {
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "diaSemana": 3,
+          "turno": 1,
+          "entrada": 730,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 13:50:57"
+        },
+        {
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "diaSemana": 3,
+          "turno": 2,
+          "entrada": 1230,
+          "saida": 1700,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 13:51:45"
+        },
+        {
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "diaSemana": 4,
+          "turno": 1,
+          "entrada": 730,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 13:51:16"
+        },
+        {
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "diaSemana": 4,
+          "turno": 2,
+          "entrada": 1230,
+          "saida": 1700,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 13:51:48"
+        },
+        {
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "diaSemana": 5,
+          "turno": 1,
+          "entrada": 730,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 13:51:01"
+        },
+        {
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "diaSemana": 5,
+          "turno": 2,
+          "entrada": 1230,
+          "saida": 1700,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 13:51:50"
+        },
+        {
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "diaSemana": 6,
+          "turno": 1,
+          "entrada": 730,
+          "saida": 1100,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 13:51:03"
+        },
+        {
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "diaSemana": 6,
+          "turno": 2,
+          "entrada": 1230,
+          "saida": 1700,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 13:51:53"
+        },
+        {
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "diaSemana": 7,
+          "turno": 1,
+          "entrada": 730,
+          "saida": 1130,
+          "descansoSemanal": false,
+          "dataAlteracao": "27/03/2020 13:53:48"
+        },
+        {
+          "codigoCargaHoraria": 5,
+          "descricao": "DAS 06:00 ÀS 10:00 E DAS 11:00 ÀS 15:00",
+          "diaSemana": 1,
+          "turno": 1,
+          "entrada": "",
+          "saida": "",
+          "descansoSemanal": true,
+          "dataAlteracao": "03/08/2020 15:30:01"
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

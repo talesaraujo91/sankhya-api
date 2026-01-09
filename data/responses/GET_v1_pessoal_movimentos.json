@@ -1,0 +1,1187 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/pessoal/movimentos",
+    "url": "https://api.sankhya.com.br/v1/pessoal/movimentos"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:42 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "18071",
+      "Connection": "keep-alive",
+      "X-RateLimit-Remaining-Minute": "1981",
+      "X-RateLimit-Limit-Minute": "2000",
+      "RateLimit-Remaining": "1981",
+      "RateLimit-Reset": "19",
+      "RateLimit-Limit": "2000",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "b161db4c-858c-4d3e-9509-6f4c379cf612",
+      "X-Kong-Upstream-Latency": "377",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "87cb5303e2924f3362975a6e5040e95a"
+    },
+    "json": {
+      "movimentos": [
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 342,
+            "nome": "SABRINA DIAS PEREIRA "
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10021,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR ESTADUAL - TE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "SABRINA DIAS PEREIRA ",
+          "dataAlteracao": "06/05/2020 12:40:54"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 122,
+            "nome": "GUSTAVO JUNIOR FELIPE FEITOSA"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10032,
+            "tipo": -1,
+            "descricao": "COOPARTICIPACAO DEPENDENTE"
+          },
+          "tipo": "M",
+          "sequencia": 1,
+          "valor": 20,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "ALICIA ESTEFANI FEITOSA PEREIRA ",
+          "dataAlteracao": "25/05/2020 14:48:29"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 296,
+            "nome": "CARLOS HENRIQUE SALES"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10026,
+            "tipo": -1,
+            "descricao": "UNIMED DEPENDENTE ESTADUAL-TE"
+          },
+          "tipo": "F",
+          "sequencia": 1,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "NICOLE RODRIGUES OLIVEIRA SALES",
+          "dataAlteracao": "06/05/2020 10:13:21"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 37,
+            "nome": "CARMENS APARECIDA BERNARDES DA SILVA "
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10021,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR ESTADUAL - TE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "CARMENS APARECIDA BERNARDES DA SILVA ",
+          "dataAlteracao": "06/05/2020 10:17:09"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 350,
+            "nome": "CLAYSON PONTES "
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10021,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR ESTADUAL - TE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "CLAYSON PONTES ",
+          "dataAlteracao": "06/05/2020 10:22:30"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 350,
+            "nome": "CLAYSON PONTES "
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10026,
+            "tipo": -1,
+            "descricao": "UNIMED DEPENDENTE ESTADUAL-TE"
+          },
+          "tipo": "F",
+          "sequencia": 1,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "GECILEIDE MOURA DE MACEDO PONTES",
+          "dataAlteracao": "06/05/2020 10:22:30"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 350,
+            "nome": "CLAYSON PONTES "
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10026,
+            "tipo": -1,
+            "descricao": "UNIMED DEPENDENTE ESTADUAL-TE"
+          },
+          "tipo": "F",
+          "sequencia": 3,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "ANDRE MOURA DE MACEDO PONTES",
+          "dataAlteracao": "06/05/2020 10:22:30"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 350,
+            "nome": "CLAYSON PONTES "
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10026,
+            "tipo": -1,
+            "descricao": "UNIMED DEPENDENTE ESTADUAL-TE"
+          },
+          "tipo": "F",
+          "sequencia": 2,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "ESTER MOURA DE MACEDO  PONTES",
+          "dataAlteracao": "06/05/2020 10:22:30"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 209,
+            "nome": "ESLEI MARQUES RODRIGUES"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10032,
+            "tipo": -1,
+            "descricao": "COOPARTICIPACAO DEPENDENTE"
+          },
+          "tipo": "M",
+          "sequencia": 2,
+          "valor": 5,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "AMILTON PAULISTA VIEIRA NETO",
+          "dataAlteracao": "25/05/2020 14:42:26"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 346,
+            "nome": "JONATHAN FERNANDO LOPES"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10021,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR ESTADUAL - TE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "JONATHAN FERNANDO LOPES",
+          "dataAlteracao": "06/05/2020 10:47:09"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 321,
+            "nome": "LUCIANA DA SILVA"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10021,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR ESTADUAL - TE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "LUCIANA DA SILVA",
+          "dataAlteracao": "06/05/2020 10:55:42"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 353,
+            "nome": "TALES VILARINHO "
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10013,
+            "tipo": 1,
+            "descricao": "COMISSOES"
+          },
+          "tipo": "M",
+          "sequencia": 0,
+          "valor": 195.22000122070312,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "",
+          "dataAlteracao": "25/05/2020 14:37:41"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 332,
+            "nome": "MARCELA CARNEIRO ARAUJO"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10031,
+            "tipo": -1,
+            "descricao": "COOPARTICIPACAO TITULAR"
+          },
+          "tipo": "M",
+          "sequencia": 0,
+          "valor": 206,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "MARCELA CARNEIRO ARAUJO",
+          "dataAlteracao": "25/05/2020 14:43:45"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 342,
+            "nome": "SABRINA DIAS PEREIRA "
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10026,
+            "tipo": -1,
+            "descricao": "UNIMED DEPENDENTE ESTADUAL-TE"
+          },
+          "tipo": "F",
+          "sequencia": 1,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "JOAO VICTOR OLIVEIRA PEREIRA",
+          "dataAlteracao": "06/05/2020 12:40:54"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 331,
+            "nome": "ANA PAULA RODRIGUES ABRAO"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10055,
+            "tipo": -1,
+            "descricao": "CAPINOPOLIS CLUBE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": 54,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "ANA PAULA RODRIGUES ABRAO",
+          "dataAlteracao": "06/05/2020 14:22:41"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 321,
+            "nome": "LUCIANA DA SILVA"
+          },
+          "referencia": "01/04/2020 00:00:00",
+          "evento": {
+            "codigo": 10031,
+            "tipo": -1,
+            "descricao": "COOPARTICIPACAO TITULAR"
+          },
+          "tipo": "M",
+          "sequencia": 0,
+          "valor": 35,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "LUCIANA DA SILVA",
+          "dataAlteracao": "06/05/2020 17:26:45"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 271,
+            "nome": "ODARIO DE OLIVEIRA"
+          },
+          "referencia": "01/04/2020 00:00:00",
+          "evento": {
+            "codigo": 10055,
+            "tipo": -1,
+            "descricao": "CAPINOPOLIS CLUBE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": 72,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "",
+          "dataAlteracao": "07/05/2020 09:27:54"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 327,
+            "nome": "DANIEL EVANGELISTA DA SILVA"
+          },
+          "referencia": "01/04/2020 00:00:00",
+          "evento": {
+            "codigo": 10016,
+            "tipo": 1,
+            "descricao": "ABONO DE FERIAS CCT"
+          },
+          "tipo": "M",
+          "sequencia": 0,
+          "valor": 360.1300048828125,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "",
+          "dataAlteracao": "07/05/2020 13:08:33"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 94,
+            "nome": "CAMILA SILVA XAVIER"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10031,
+            "tipo": -1,
+            "descricao": "COOPARTICIPACAO TITULAR"
+          },
+          "tipo": "M",
+          "sequencia": 0,
+          "valor": 54,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "CAMILA SILVA XAVIER",
+          "dataAlteracao": "27/05/2020 09:41:01"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 136,
+            "nome": "EDUARDO HENRIQUE MARTINS BURI"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10024,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR NACIONAL-TEAUT"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "EDUARDO HENRIQUE MARTINS BURI",
+          "dataAlteracao": "07/05/2020 17:52:09"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 67,
+            "nome": "FLAVIA APARECIDA DE ANDRADE FARIA"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10028,
+            "tipo": -1,
+            "descricao": "UNIMED DEPENDENTE ESTAD-TEAUT"
+          },
+          "tipo": "F",
+          "sequencia": 1,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "HEITOR HENRIQUE FARIA COSTA",
+          "dataAlteracao": "08/05/2020 10:03:31"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 121,
+            "nome": "HILTON CARLOS BEZERRA "
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10023,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR ESTADUAL-TEAUT"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "HILTON CARLOS BEZERRA ",
+          "dataAlteracao": "08/05/2020 10:15:29"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 148,
+            "nome": "ANDERSON PEREIRA"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10046,
+            "tipo": -1,
+            "descricao": "UNIMED DEPENDENTE INDUSTRIA"
+          },
+          "tipo": "F",
+          "sequencia": 1,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "ARTHUR VINICIUS SILVA PEREIRA ",
+          "dataAlteracao": "08/05/2020 10:17:34"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 139,
+            "nome": "IAGO FERNANDES DE ARAUJO "
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10023,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR ESTADUAL-TEAUT"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "IAGO FERNANDES DE ARAUJO ",
+          "dataAlteracao": "08/05/2020 10:17:46"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 102,
+            "nome": "MURILO ALVES DIAS "
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10031,
+            "tipo": -1,
+            "descricao": "COOPARTICIPACAO TITULAR"
+          },
+          "tipo": "M",
+          "sequencia": 0,
+          "valor": 54,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "MURILO ALVES DIAS ",
+          "dataAlteracao": "27/05/2020 09:44:50"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 142,
+            "nome": "KLAYBERT GOMES MACHADO JUNIOR"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10023,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR ESTADUAL-TEAUT"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "KLAYBERT GOMES MACHADO JUNIOR",
+          "dataAlteracao": "08/05/2020 10:25:27"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 93,
+            "nome": "MATEUS HENRIQUE SILVA"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10023,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR ESTADUAL-TEAUT"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "MATEUS HENRIQUE SILVA",
+          "dataAlteracao": "08/05/2020 10:29:15"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 223,
+            "nome": "CLOVIS ARAUJO PONTES"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10021,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR ESTADUAL - TE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "CLOVIS ARAUJO PONTOS",
+          "dataAlteracao": "29/05/2020 15:15:02"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 349,
+            "nome": "LEIDIMAR LUIZA DE ARAUJO"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10021,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR ESTADUAL - TE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "",
+          "dataAlteracao": "06/05/2020 10:53:13"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 89,
+            "nome": "ROBERTO PEREIRA FILHO "
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10024,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR NACIONAL-TEAUT"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "ROBERTO PEREIRA FILHO ",
+          "dataAlteracao": "08/05/2020 10:34:21"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 114,
+            "nome": "FABIOLA MARIA DA SILVA DE QUEIROZ"
+          },
+          "referencia": "01/04/2020 00:00:00",
+          "evento": {
+            "codigo": 10016,
+            "tipo": 1,
+            "descricao": "ABONO DE FERIAS CCT"
+          },
+          "tipo": "E",
+          "sequencia": 0,
+          "valor": 507.5199890136719,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "",
+          "dataAlteracao": "28/05/2020 15:12:49"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 121,
+            "nome": "DISHRALLEN ROCHA DA SILVA "
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10025,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR INDUSTRIA"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "DISHRALLEN ROCHA DA SILVA ",
+          "dataAlteracao": "08/05/2020 10:55:03"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 152,
+            "nome": "EDER RODRIGUES SILVEIRA"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10025,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR INDUSTRIA"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "EDER RODRIGUES SILVEIRA",
+          "dataAlteracao": "08/05/2020 10:55:55"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 120,
+            "nome": "EDERVAL COELHO"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10025,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR INDUSTRIA"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "EDERVAL COELHO",
+          "dataAlteracao": "08/05/2020 10:57:01"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 120,
+            "nome": "EDERVAL COELHO"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10046,
+            "tipo": -1,
+            "descricao": "UNIMED DEPENDENTE INDUSTRIA"
+          },
+          "tipo": "F",
+          "sequencia": 1,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "GABRIELA APARECIDA COLEHO ",
+          "dataAlteracao": "08/05/2020 10:57:01"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 90,
+            "nome": "IGOR FERNANDES DE ARAUJO"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10025,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR INDUSTRIA"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "IGOR FERNANDES DE ARAUJO",
+          "dataAlteracao": "08/05/2020 11:04:58"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 119,
+            "nome": "JOAO ARAUJO FILHO"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10025,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR INDUSTRIA"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "JOAO ARAUJO FILHO",
+          "dataAlteracao": "08/05/2020 11:11:34"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 147,
+            "nome": "LEANDRO JOSE LUCENA FILHO"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10025,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR INDUSTRIA"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "LEANDRO JOSE LUCENA FILHO",
+          "dataAlteracao": "08/05/2020 11:12:28"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 14,
+            "nome": "DIRAN SILVEIRA DOS SANTOS"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10047,
+            "tipo": 1,
+            "descricao": "PERICULOSIDADE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": 0,
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "",
+          "dataAlteracao": "03/06/2020 07:50:54"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 356,
+            "nome": "ALBERTO GABRIEL SILVA COSTA"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10047,
+            "tipo": 1,
+            "descricao": "PERICULOSIDADE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": 0,
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "",
+          "dataAlteracao": "03/06/2020 07:43:30"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 348,
+            "nome": "BRENO JUSTINO SILVA"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10047,
+            "tipo": 1,
+            "descricao": "PERICULOSIDADE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": 0,
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "",
+          "dataAlteracao": "03/06/2020 07:43:30"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 154,
+            "nome": "NATAN TARGINO LOPES"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10025,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR INDUSTRIA"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "NATAN TARGINO LOPES",
+          "dataAlteracao": "08/05/2020 11:16:52"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 133,
+            "nome": "TALES HENRIQUE DA SILVA"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10025,
+            "tipo": -1,
+            "descricao": "UNIMED TITULAR INDUSTRIA"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 1,
+          "unidade": "Q",
+          "observacao": "TALES HENRIQUE DA SILVA",
+          "dataAlteracao": "08/05/2020 11:18:46"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 122,
+            "nome": "GUSTAVO JUNIOR FELIPE FEITOSA"
+          },
+          "referencia": "01/04/2020 00:00:00",
+          "evento": {
+            "codigo": 10032,
+            "tipo": -1,
+            "descricao": "COOPARTICIPACAO DEPENDENTE"
+          },
+          "tipo": "M",
+          "sequencia": 2,
+          "valor": 70,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "ANA CLARA FEITOSA PEREIRA ",
+          "dataAlteracao": "08/05/2020 13:56:40"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 102,
+            "nome": "MURILO ALVES DIAS "
+          },
+          "referencia": "01/04/2020 00:00:00",
+          "evento": {
+            "codigo": 10032,
+            "tipo": -1,
+            "descricao": "COOPARTICIPACAO DEPENDENTE"
+          },
+          "tipo": "M",
+          "sequencia": 1,
+          "valor": 77,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "ANDRESSA CAMARGO SILVA ",
+          "dataAlteracao": "08/05/2020 14:03:59"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 138,
+            "nome": "RAUL HENRIQUE NASCIMENTO FELIX"
+          },
+          "referencia": "01/04/2020 00:00:00",
+          "evento": {
+            "codigo": 10000,
+            "tipo": 1,
+            "descricao": "HORA EXTRA 55%"
+          },
+          "tipo": "M",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 4.37,
+          "unidade": "H",
+          "observacao": "",
+          "dataAlteracao": "11/05/2020 13:58:44"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 76,
+            "nome": "CLAUDIO ARDUINI SURIANI"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10055,
+            "tipo": -1,
+            "descricao": "CAPINOPOLIS CLUBE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": 54,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "",
+          "dataAlteracao": "27/05/2020 10:04:24"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 132,
+            "nome": "LUCINILDO DOS SANTOS LIMA"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10055,
+            "tipo": -1,
+            "descricao": "CAPINOPOLIS CLUBE"
+          },
+          "tipo": "F",
+          "sequencia": 0,
+          "valor": 54,
+          "indice": "",
+          "unidade": "V",
+          "observacao": "",
+          "dataAlteracao": "27/05/2020 10:06:24"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 76,
+            "nome": "CLAUDIO ARDUINI SURIANI"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10004,
+            "tipo": 1,
+            "descricao": "HORA EXTRA 100%"
+          },
+          "tipo": "M",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 12.1,
+          "unidade": "H",
+          "observacao": "",
+          "dataAlteracao": "27/05/2020 10:20:09"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 76,
+            "nome": "CLAUDIO ARDUINI SURIANI"
+          },
+          "referencia": "01/05/2020 00:00:00",
+          "evento": {
+            "codigo": 10000,
+            "tipo": 1,
+            "descricao": "HORA EXTRA 55%"
+          },
+          "tipo": "M",
+          "sequencia": 0,
+          "valor": "",
+          "indice": 10.12,
+          "unidade": "H",
+          "observacao": "",
+          "dataAlteracao": "27/05/2020 10:20:09"
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

@@ -1,0 +1,737 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/pessoal/carga-horaria-historica",
+    "url": "https://api.sankhya.com.br/v1/pessoal/carga-horaria-historica"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:23 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "12599",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "37",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1987",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1987",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "e4177c50-aea8-4120-acc4-2927ef52b438",
+      "X-Kong-Upstream-Latency": "374",
+      "X-Kong-Proxy-Latency": "1",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "b1ff5c633bb7a0600b6a39050bff9e2c"
+    },
+    "json": {
+      "cargasHorariasHistoricas": [
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 149,
+            "nome": "ANA CARLA DE SOUZA ROCHA"
+          },
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "dataFolga": "",
+          "dataAlteracao": "15/05/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 148,
+            "nome": "ANDERSON PEREIRA"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "01/04/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 156,
+            "nome": "ARTUR MOREIRA DE MEDEIROS"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "26/11/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 158,
+            "nome": "AUGUSTO LOURENCO DE OLIVEIRA NETO"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "13/01/2020 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 161,
+            "nome": "BRUNA GONCALVES FERREIRA "
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "22/04/2020 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 114,
+            "nome": "CARLOS EDUARDO ZABARELLI"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "21/12/2017 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 76,
+            "nome": "CLAUDIO ARDUINI SURIANI"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "01/04/2015 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 159,
+            "nome": "CLEIBER FELIPE DOS SANTOS"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "21/01/2020 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 126,
+            "nome": "CRISTIANO DUARTE FONSECA"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "28/08/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 142,
+            "nome": "DANIEL ALVES BATISTA"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "02/01/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 121,
+            "nome": "DISHRALLEN ROCHA DA SILVA "
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "13/06/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 152,
+            "nome": "EDER RODRIGUES SILVEIRA"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "08/10/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 120,
+            "nome": "EDERVAL COELHO"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "19/04/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 113,
+            "nome": "EDMAR DAMIAO DA SILVA"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "11/08/2016 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 145,
+            "nome": "EDSON FELIPE DA SILVA "
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "15/01/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 151,
+            "nome": "FABIO ANTONIO LUCAS"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "29/07/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 122,
+            "nome": "GUSTAVO JUNIOR FELIPE FEITOSA"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "18/06/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 90,
+            "nome": "IGOR FERNANDES DE ARAUJO"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "16/11/2015 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 116,
+            "nome": "IRAN SERGIO MOREIRA"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "22/02/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 101,
+            "nome": "JOANAS ELIAS DE MEDEIROS"
+          },
+          "codigoCargaHoraria": 4,
+          "descricao": "Das 07:00 às 11:00 e das 14:30 às 18:30",
+          "dataFolga": "",
+          "dataAlteracao": "13/06/2016 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 119,
+            "nome": "JOAO ARAUJO FILHO"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "19/04/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 106,
+            "nome": "JOSE GERALDO DA SILVA"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "11/07/2016 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 147,
+            "nome": "LEANDRO JOSE LUCENA FILHO"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "02/04/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 137,
+            "nome": "LINDAMAR NOGUEIRA BORGES"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "14/11/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 132,
+            "nome": "LUCINILDO DOS SANTOS LIMA"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "17/09/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 154,
+            "nome": "NATAN TARGINO LOPES"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "08/10/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 138,
+            "nome": "RAUL HENRIQUE NASCIMENTO FELIX"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "11/12/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 160,
+            "nome": "RODRIGO SILVA PONTES DE AZEVEDO"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "02/03/2020 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 100,
+            "nome": "SERGIO ROBERTO THEINDL"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "01/06/2016 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 133,
+            "nome": "TALES HENRIQUE DA SILVA"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "18/09/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 356,
+            "nome": "ALBERTO GABRIEL SILVA COSTA"
+          },
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "dataFolga": "",
+          "dataAlteracao": "18/02/2020 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 331,
+            "nome": "ANA PAULA RODRIGUES ABRAO"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "18/07/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 348,
+            "nome": "BRENO JUSTINO SILVA"
+          },
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "dataFolga": "",
+          "dataAlteracao": "21/05/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 296,
+            "nome": "CARLOS HENRIQUE SALES"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "02/08/2016 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 37,
+            "nome": "CARMENS APARECIDA BERNARDES DA SILVA "
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "01/12/2005 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 327,
+            "nome": "DANIEL EVANGELISTA DA SILVA"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "14/02/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 281,
+            "nome": "ELIAS FERREIRA  NASCIMENTO"
+          },
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "dataFolga": "",
+          "dataAlteracao": "15/12/2015 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 343,
+            "nome": "GUSTAVO DUTRA MAXIMIANO"
+          },
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "dataFolga": "",
+          "dataAlteracao": "26/03/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 355,
+            "nome": "IAN CRISTIAN ANDRADE GOIS"
+          },
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "dataFolga": "",
+          "dataAlteracao": "13/01/2020 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 346,
+            "nome": "JONATHAN FERNANDO LOPES"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "12/04/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 247,
+            "nome": "JOSE TADEU DE ALMEIDA JUNIOR"
+          },
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "dataFolga": "",
+          "dataAlteracao": "05/05/2015 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 349,
+            "nome": "LEIDIMAR LUIZA DE ARAUJO"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "27/05/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 321,
+            "nome": "LUCIANA DA SILVA"
+          },
+          "codigoCargaHoraria": 3,
+          "descricao": "DAS 07:00 ÀS 11:00 E DAS 12:00 ÀS 16:00",
+          "dataFolga": "",
+          "dataAlteracao": "15/12/2017 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 341,
+            "nome": "LUIZMAR DE ALMEIDA DOS SANTOS"
+          },
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "dataFolga": "",
+          "dataAlteracao": "26/12/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 316,
+            "nome": "PAULA DANIELA DA SILVA SANTOS"
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "22/08/2017 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 333,
+            "nome": "PAULO ROBERTO SANTANA DE ARAUJO"
+          },
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "dataFolga": "",
+          "dataAlteracao": "20/10/2018 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 354,
+            "nome": "PEDRO HENRIQUE DE SOUSA COSTA"
+          },
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "dataFolga": "",
+          "dataAlteracao": "02/01/2020 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 342,
+            "nome": "SABRINA DIAS PEREIRA "
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "14/03/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 353,
+            "nome": "TALES VILARINHO "
+          },
+          "codigoCargaHoraria": 1,
+          "descricao": "Das 07:30 às 11:00 e das 12:30 às 17:00",
+          "dataFolga": "",
+          "dataAlteracao": "18/11/2019 00:00:00"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 352,
+            "nome": "WILLIAM JUNIO GUIMARAES FRANCO"
+          },
+          "codigoCargaHoraria": 2,
+          "descricao": "Das 07:30 às 11:00 e das 12:00 às 17:18",
+          "dataFolga": "",
+          "dataAlteracao": "08/10/2019 00:00:00"
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

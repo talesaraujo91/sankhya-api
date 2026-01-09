@@ -1,0 +1,237 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/pessoal/funcionarios",
+    "url": "https://api.sankhya.com.br/v1/pessoal/funcionarios"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:17 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "2271",
+      "Connection": "keep-alive",
+      "X-RateLimit-Remaining-Minute": "1993",
+      "X-RateLimit-Limit-Minute": "2000",
+      "RateLimit-Remaining": "1993",
+      "RateLimit-Reset": "44",
+      "RateLimit-Limit": "2000",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "c537a458-3a83-40cc-8b17-9eec206c1707",
+      "X-Kong-Upstream-Latency": "210",
+      "X-Kong-Proxy-Latency": "1",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "0644695435eece25ef694a521b309a7b"
+    },
+    "json": {
+      "codigos": [
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 341
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 321
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 332
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 333
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 354
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 352
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 350
+        },
+        {
+          "codigoEmpresa": 4,
+          "codigoFuncionario": 3
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 331
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 37
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 343
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 355
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 281
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 316
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 327
+        },
+        {
+          "codigoEmpresa": 1,
+          "codigoFuncionario": 160
+        },
+        {
+          "codigoEmpresa": 1,
+          "codigoFuncionario": 149
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 209
+        },
+        {
+          "codigoEmpresa": 3,
+          "codigoFuncionario": 43
+        },
+        {
+          "codigoEmpresa": 3,
+          "codigoFuncionario": 84
+        },
+        {
+          "codigoEmpresa": 3,
+          "codigoFuncionario": 13
+        },
+        {
+          "codigoEmpresa": 3,
+          "codigoFuncionario": 140
+        },
+        {
+          "codigoEmpresa": 3,
+          "codigoFuncionario": 160
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 271
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 296
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 349
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 278
+        },
+        {
+          "codigoEmpresa": 3,
+          "codigoFuncionario": 114
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 356
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 346
+        },
+        {
+          "codigoEmpresa": 3,
+          "codigoFuncionario": 152
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 360
+        },
+        {
+          "codigoEmpresa": 3,
+          "codigoFuncionario": 170
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 361
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 362
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 364
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 363
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 365
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 370
+        },
+        {
+          "codigoEmpresa": 1,
+          "codigoFuncionario": 139
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 348
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 247
+        },
+        {
+          "codigoEmpresa": 4,
+          "codigoFuncionario": 1
+        },
+        {
+          "codigoEmpresa": 4,
+          "codigoFuncionario": 14
+        },
+        {
+          "codigoEmpresa": 3,
+          "codigoFuncionario": 100
+        },
+        {
+          "codigoEmpresa": 3,
+          "codigoFuncionario": 85
+        },
+        {
+          "codigoEmpresa": 2,
+          "codigoFuncionario": 353
+        },
+        {
+          "codigoEmpresa": 3,
+          "codigoFuncionario": 120
+        },
+        {
+          "codigoEmpresa": 3,
+          "codigoFuncionario": 14
+        },
+        {
+          "codigoEmpresa": 3,
+          "codigoFuncionario": 144
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

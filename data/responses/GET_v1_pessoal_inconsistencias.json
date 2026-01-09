@@ -1,0 +1,35 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/pessoal/inconsistencias",
+    "url": "https://api.sankhya.com.br/v1/pessoal/inconsistencias"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:43 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "207",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "18",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1980",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1980",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "1713d442-de03-4b5d-8215-ba38cd9e1ffe",
+      "X-Kong-Upstream-Latency": "152",
+      "X-Kong-Proxy-Latency": "1",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "d6114801304eb8370516a0388bab3174"
+    },
+    "json": {
+      "statusCode": 404,
+      "error": {
+        "code": "RESOURCE_NOT_FOUND",
+        "message": "Recurso solicitado não foi encontrado!",
+        "details": "Nenhum registro da entidade TFPInconsistenciaIntegracao com o identificador informado!"
+      }
+    }
+  }
+}

@@ -1,0 +1,487 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/projetos",
+    "url": "https://api.sankhya.com.br/v1/projetos"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:04 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "9376",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "56",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1998",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1998",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "a23c280b-74dc-49a7-a4db-eb0e852ae011",
+      "X-Kong-Upstream-Latency": "214",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "0ee7d64227986a2c35235b712a237d69"
+    },
+    "json": {
+      "data": [
+        {
+          "codigoProjeto": 20190000,
+          "abreviacao": "PROJETOS 2019",
+          "descricao": "PROJETOS - ANO 2019",
+          "analitico": false,
+          "grau": 1,
+          "ativo": false,
+          "codigoProjetoPai": -999999999
+        },
+        {
+          "codigoProjeto": 20190001,
+          "abreviacao": "GAS R404A",
+          "descricao": "TCS 774 19 - GAS R404A",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190002,
+          "abreviacao": "MAQ. DE REF. PRED. 4",
+          "descricao": "TCS 374 19 - INST. DE MAQ. DE REF. PREDIO 04 ",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190003,
+          "abreviacao": "BID DE ADEQUAÇÃO PDA",
+          "descricao": "TCS 190 19 - BID DE ADEQUAÇÃO PDA",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190004,
+          "abreviacao": "COMPRESSOR",
+          "descricao": "TCS 793 19 - COMPRESSOR DANFOSS 7,5TR",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190005,
+          "abreviacao": "GAS 410A",
+          "descricao": "TCS 618 19 - GAS 410A",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190006,
+          "abreviacao": "MICRO MOTOR E COMPRE",
+          "descricao": "TCS 727 19 - MICRO MOTOR E COMPRESSOR ELGIN",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190007,
+          "abreviacao": "INST. MOTORES ATM EX",
+          "descricao": "TCS 733 18 - INSTALAÇÃO DE MOTORES PARA ATM EX",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190008,
+          "abreviacao": "ADEQ. CANOS IRRIG. ",
+          "descricao": "TCS 133 19 - ADEQ. DOS CANOS DE IRRIGAÇÃO DA ESTUFA DO LAS",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190009,
+          "abreviacao": "EDIF. PURIF. DE SOJA",
+          "descricao": "TCS 134 19 - EDIFICAÇÃO DE PURIFICAÇÃO DE SEMENTES DE SOJA",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190010,
+          "abreviacao": "INST. ELET. DEBULHA",
+          "descricao": "TCS 428 19 -INSTALAÇÃO ELÉTRICA DE 01 MOTOREDUTOR NA DEBULHA",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190011,
+          "abreviacao": "ÓLEO BITZER",
+          "descricao": "TE 773 19 - ÓLEO BITZER BSE 32",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190012,
+          "abreviacao": "OLEO SUMMIT",
+          "descricao": "TE 792 19 - OLEO SUMMIT VARNASOLV",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190013,
+          "abreviacao": "TUBO POLIPEX",
+          "descricao": "TE 687 19 - TUBO POLIPEX 3/8 BRANCO",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190014,
+          "abreviacao": "PLACA ELETRONICA",
+          "descricao": "TE 779 19 - PLACA ELETRONICA PRINC. 17122000026055",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190015,
+          "abreviacao": "PLACAS",
+          "descricao": "TE 611 19 - PLACAS PARA AR CONDICIONADO 9K",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190016,
+          "abreviacao": "PLACA ELETRONICA",
+          "descricao": "TE 780 19 - PLACA ELETRONICA 2013325A0384",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190017,
+          "abreviacao": "COMPRESSORES SCROLL ",
+          "descricao": "TE 822 19 - COMPRESSORES SCROLL 48K 220/60/3",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190018,
+          "abreviacao": "SERPENTINA",
+          "descricao": "TCS 798 19 - SERPENTINA B7",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190019,
+          "abreviacao": "AR CONDICIONADO LAB.",
+          "descricao": "TCS 478 19 - DESISNTALAÇÃO E INSTALAÇÃO DE AR CONDICIONADO ",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190020,
+          "abreviacao": "ADEQUAÇÃO NR12",
+          "descricao": "TCS 454 19 - ADEQUAÇÃO DE NR 12",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190021,
+          "abreviacao": "INST. ELET. MOTORES",
+          "descricao": "TCS 492 19 - INSTALAÇÃO ELÉTRICA DE 02 MOTORES NA TORRE",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190022,
+          "abreviacao": "INSTALAÇÃO DO SPDA",
+          "descricao": "TCS 533 19 -  INSTALAÇÃO DO SPDA NO ALAMBRADO",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190023,
+          "abreviacao": "INSTALAÇÃO DO PAINEL",
+          "descricao": "TCS 565 19 - INSTALAÇÃO DO PAINEL DO CANTEIRO DE OBRAS",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190024,
+          "abreviacao": "INST. DE INVERSOR",
+          "descricao": "TCS 576 19 - INSTALAÇÃO DE INVERSOR DE 04 CV",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190025,
+          "abreviacao": "INST. AR CONDICIONAD",
+          "descricao": "TCS 588 19 - INSTALAÇÃO DE AR CONDICIONADO",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190026,
+          "abreviacao": "INST. ELET. LAVADOR",
+          "descricao": "TCS 624 19 - INSTALAÇÃO ELÉTRICA DE LAVADOR DE MÁQUINAS",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190027,
+          "abreviacao": "WET COTTON 2500",
+          "descricao": "TEIE 817-19 - UMIDIFICADOR DE PLUMAS 2500 KCAL",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190028,
+          "abreviacao": "INST. MAQ. REFRIG.",
+          "descricao": "TEIE 035 19 - INST. DE MAQ. DE REFRIG. CÂMARA PACKING CENTER",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190029,
+          "abreviacao": "FERRAMENTAS MANUAIS",
+          "descricao": "2019.0029 - TEIE 686 19 - FERRAMENTAS MANUAIS",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190030,
+          "abreviacao": "INSTALAÇÃO QUEIMADOR",
+          "descricao": "TEIE 257 19 - SERVIÇO DE INSTALAÇÃO EM QUEIMADORES",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190031,
+          "abreviacao": "CABO DE AÇO P CAIXA ",
+          "descricao": "TEIE 690 19 CABO DE AÇO PARA CAIXA METALICA",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190032,
+          "abreviacao": "INTS. DE TOMADAS",
+          "descricao": "TCS 791 19 - INSTALAÇÃO DE TOMADAS",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190033,
+          "abreviacao": "INST. ELÉTRICA E PD",
+          "descricao": "TCS 699 19 - INST. ELÉTRICA E PDA - CONTAINER",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190034,
+          "abreviacao": "REFRIG. CÂMARA PACKI",
+          "descricao": "TEIE 035 19 - INST. DE MAQ. DE REFRIG. CÂMARA PACKING CENTER",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190035,
+          "abreviacao": "SUBST. DE POSTES",
+          "descricao": "TCS 752 18 - SUBSTITUIÇÃO DE POSTES",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190036,
+          "abreviacao": "INSTALAÇÃO DE 04 EXA",
+          "descricao": "TCS 1109 18 - INSTALAÇÃO DE 04 EXAUSTORES",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190037,
+          "abreviacao": "BID ELET. E INST.",
+          "descricao": "TCS 306 19 - BID ELETRICA E INSTRUMENTAÇÃO",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190038,
+          "abreviacao": "LANÇAMENTO DE CABOS",
+          "descricao": "TCS 745 19 - LANÇAMENTO DE CABOS",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190039,
+          "abreviacao": "CAMARA CLIMATIZADA ",
+          "descricao": "TCS 374-19 - INSTALAÇÃO DE MÁQUINA FRIGORÍFICA",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190040,
+          "abreviacao": "PAINEL INVERSOR ITAÍ",
+          "descricao": "TEIE 718-19 - PAINEL EXAUSTOR ",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190041,
+          "abreviacao": "SECADORES NIDEIRA",
+          "descricao": "TEIE 034-19 - SECADOR DE SEMENTES TERREIRO",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190042,
+          "abreviacao": "SECADORES CDR",
+          "descricao": "TEIE 257-19 - QUEIMADORES",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190043,
+          "abreviacao": "INSTALAÇÃO UBS",
+          "descricao": "TUBS 550-19 - INSTALAÇÃO UBS",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190044,
+          "abreviacao": "PENEIRA DE SELEÇÃO",
+          "descricao": "TEIE 728-19 CLASSIFICADORA DE SEMENTES ",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190045,
+          "abreviacao": "CÂMARA FRIA SINOP",
+          "descricao": "TEIE 750-19 - ADEQUAÇÃO PAINEL CÂMARA ",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190046,
+          "abreviacao": "BENEFICIADORA",
+          "descricao": "TEI 729-19 - BENEFICIADORA DE SEMENTES ",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190047,
+          "abreviacao": "ESTEIRA-PRÉ DESPALHA",
+          "descricao": "TEIE 872 19 ESTEIRA DE PRÉ DESPALHA - PLANTA PILOTO",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190048,
+          "abreviacao": "DESCARTE DE SABUGO",
+          "descricao": "TEIE 772 19 DESCARTE DE SABUGO",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        },
+        {
+          "codigoProjeto": 20190049,
+          "abreviacao": "BOCA PARA FORNALHA",
+          "descricao": "TEIE 771 19 BOCA PARA FORNALHA EM FERRO FUNDIDO",
+          "analitico": true,
+          "grau": 2,
+          "ativo": false,
+          "codigoProjetoPai": 20190000
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

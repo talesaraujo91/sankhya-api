@@ -1,0 +1,259 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/pessoal/empresas",
+    "url": "https://api.sankhya.com.br/v1/pessoal/empresas"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:21 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "5531",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "39",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1988",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1988",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "2287f272-0394-4565-987e-8a384421ee86",
+      "X-Kong-Upstream-Latency": "226",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "a9769b5fdc82742caddd45360fd73f35"
+    },
+    "json": {
+      "empresas": [
+        {
+          "codigoEmpresa": 4,
+          "nome": "SELECAO SEMENTES LTDA",
+          "cnpj": "27554563000188",
+          "razaoSocial": "SELECAO SEMENTES LTDA",
+          "endereco": {
+            "cep": "38360000",
+            "descricao": "UM",
+            "numero": 1525,
+            "complemento": "BRCAO 01",
+            "bairro": "SETOR INDUSTRIAL ISAAC LUIZ",
+            "cidade": "CAPINOPOLIS"
+          },
+          "registroFiscal": {
+            "codigo": 4,
+            "nome": "SELECAO SEMENTES"
+          },
+          "regraCalculo": {
+            "codigo": 1,
+            "nome": "REGRAS MODELO"
+          },
+          "lotacao": {
+            "tipo": 1,
+            "descricao": "Classifica¿¿o da atividade econ¿mica exercida pela Pessoa Jur¿dica para fins de atribui¿¿o de c¿digo FPAS, inclusive obras de constru¿¿o civil pr¿pria, exceto: a) empreitada parcial ou sub-empreitada de obra de constru¿¿o civil (utilizar op¿¿o 02); b"
+          },
+          "desoneracaoFolha": 0,
+          "indicadorSimples": 0,
+          "contrataPcd": 0,
+          "contrataAprendiz": 0,
+          "regimeIrrf": "S",
+          "situacaoPj": 0,
+          "cpfResponsavelCnpj": "08964151631",
+          "porte": 1,
+          "cnpjSindicatoPatronal": "",
+          "ativa": true,
+          "dataAlteracao": "30/08/2025 09:56:05"
+        },
+        {
+          "codigoEmpresa": 2,
+          "nome": "TERMO ELETRO LTDA",
+          "cnpj": "21329909000168",
+          "razaoSocial": "TERMO ELETRO LTDA",
+          "endereco": {
+            "cep": "38360000",
+            "descricao": "UM",
+            "numero": 1501,
+            "complemento": ".",
+            "bairro": "SETOR INDUSTRIAL ISAAC LUIZ",
+            "cidade": "CAPINOPOLIS"
+          },
+          "registroFiscal": {
+            "codigo": 7,
+            "nome": "TERMO ELETRO LTDA - LR - 01/09/2023"
+          },
+          "regraCalculo": {
+            "codigo": 1,
+            "nome": "REGRAS MODELO"
+          },
+          "lotacao": {
+            "tipo": 1,
+            "descricao": "Classifica¿¿o da atividade econ¿mica exercida pela Pessoa Jur¿dica para fins de atribui¿¿o de c¿digo FPAS, inclusive obras de constru¿¿o civil pr¿pria, exceto: a) empreitada parcial ou sub-empreitada de obra de constru¿¿o civil (utilizar op¿¿o 02); b"
+          },
+          "desoneracaoFolha": 0,
+          "indicadorSimples": 0,
+          "contrataPcd": 0,
+          "contrataAprendiz": 0,
+          "regimeIrrf": "S",
+          "situacaoPj": "",
+          "cpfResponsavelCnpj": "07813033620",
+          "porte": 1,
+          "cnpjSindicatoPatronal": "",
+          "ativa": true,
+          "dataAlteracao": "08/10/2025 16:43:55"
+        },
+        {
+          "codigoEmpresa": 3,
+          "nome": "TERMO ELETRO AUTOMACAO",
+          "cnpj": "26095003000140",
+          "razaoSocial": "TERMO ELETRO COM SERV AUTOM ELET LTDA",
+          "endereco": {
+            "cep": "38360000",
+            "descricao": "DOIS",
+            "numero": 420,
+            "complemento": ".",
+            "bairro": "SETOR INDUSTRIAL ISAAC LUIZ",
+            "cidade": "CAPINOPOLIS"
+          },
+          "registroFiscal": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTO"
+          },
+          "regraCalculo": {
+            "codigo": 1,
+            "nome": "REGRAS MODELO"
+          },
+          "lotacao": {
+            "tipo": 1,
+            "descricao": "Classifica¿¿o da atividade econ¿mica exercida pela Pessoa Jur¿dica para fins de atribui¿¿o de c¿digo FPAS, inclusive obras de constru¿¿o civil pr¿pria, exceto: a) empreitada parcial ou sub-empreitada de obra de constru¿¿o civil (utilizar op¿¿o 02); b"
+          },
+          "desoneracaoFolha": 0,
+          "indicadorSimples": 0,
+          "contrataPcd": 0,
+          "contrataAprendiz": 0,
+          "regimeIrrf": "S",
+          "situacaoPj": "",
+          "cpfResponsavelCnpj": "43209793620",
+          "porte": 1,
+          "cnpjSindicatoPatronal": "",
+          "ativa": true,
+          "dataAlteracao": "15/02/2022 17:58:06"
+        },
+        {
+          "codigoEmpresa": 1,
+          "nome": "TERMO ELETRO INDUSTRIA",
+          "cnpj": "05955099000107",
+          "razaoSocial": "TERMO ELETRO INDUSTRIA LTDA",
+          "endereco": {
+            "cep": "38360000",
+            "descricao": "DOIS",
+            "numero": 430,
+            "complemento": ".",
+            "bairro": "SETOR INDUSTRIAL ISAAC LUIZ",
+            "cidade": "CAPINOPOLIS"
+          },
+          "registroFiscal": {
+            "codigo": 1,
+            "nome": "INDUSTRIA"
+          },
+          "regraCalculo": {
+            "codigo": 1,
+            "nome": "REGRAS MODELO"
+          },
+          "lotacao": {
+            "tipo": 1,
+            "descricao": "Classifica¿¿o da atividade econ¿mica exercida pela Pessoa Jur¿dica para fins de atribui¿¿o de c¿digo FPAS, inclusive obras de constru¿¿o civil pr¿pria, exceto: a) empreitada parcial ou sub-empreitada de obra de constru¿¿o civil (utilizar op¿¿o 02); b"
+          },
+          "desoneracaoFolha": 0,
+          "indicadorSimples": 0,
+          "contrataPcd": 0,
+          "contrataAprendiz": 0,
+          "regimeIrrf": "S",
+          "situacaoPj": "",
+          "cpfResponsavelCnpj": "21093369604",
+          "porte": 1,
+          "cnpjSindicatoPatronal": "",
+          "ativa": true,
+          "dataAlteracao": "12/02/2021 16:50:21"
+        },
+        {
+          "codigoEmpresa": 7,
+          "nome": "SELECAO SEMENTES - OBRA",
+          "cnpj": "27554563000188",
+          "razaoSocial": "SELECAO SEMENTES LTDA",
+          "endereco": {
+            "cep": "38360000",
+            "descricao": "CENTO E DEZ",
+            "numero": 55,
+            "complemento": "",
+            "bairro": "ALVORADA II",
+            "cidade": "CAPINOPOLIS"
+          },
+          "registroFiscal": {
+            "codigo": 8,
+            "nome": "SELECAO SEMENTES - OBRA"
+          },
+          "regraCalculo": {
+            "codigo": 1,
+            "nome": "REGRAS MODELO"
+          },
+          "lotacao": {
+            "tipo": 1,
+            "descricao": "Classifica¿¿o da atividade econ¿mica exercida pela Pessoa Jur¿dica para fins de atribui¿¿o de c¿digo FPAS, inclusive obras de constru¿¿o civil pr¿pria, exceto: a) empreitada parcial ou sub-empreitada de obra de constru¿¿o civil (utilizar op¿¿o 02); b"
+          },
+          "desoneracaoFolha": 0,
+          "indicadorSimples": 0,
+          "contrataPcd": 0,
+          "contrataAprendiz": 0,
+          "regimeIrrf": "S",
+          "situacaoPj": "",
+          "cpfResponsavelCnpj": "08964151631",
+          "porte": 1,
+          "cnpjSindicatoPatronal": "",
+          "ativa": true,
+          "dataAlteracao": "01/08/2025 17:21:16"
+        },
+        {
+          "codigoEmpresa": 5,
+          "nome": "TERMO ELETRO PARTICIPACOES S.A.",
+          "cnpj": "51380144000151",
+          "razaoSocial": "TERMO ELETRO PARTICIPACOES S.A.",
+          "endereco": {
+            "cep": "38408188",
+            "descricao": "DOUTOR JAIME RIBEIRO DA LUZ",
+            "numero": 971,
+            "complemento": "LOJA 052",
+            "bairro": "SANTA MONICA",
+            "cidade": "UBERLANDIA"
+          },
+          "registroFiscal": {
+            "codigo": 5,
+            "nome": "TERMO ELETRO PARTICIPACOES"
+          },
+          "regraCalculo": {
+            "codigo": 1,
+            "nome": "REGRAS MODELO"
+          },
+          "lotacao": {
+            "tipo": 1,
+            "descricao": "Classifica¿¿o da atividade econ¿mica exercida pela Pessoa Jur¿dica para fins de atribui¿¿o de c¿digo FPAS, inclusive obras de constru¿¿o civil pr¿pria, exceto: a) empreitada parcial ou sub-empreitada de obra de constru¿¿o civil (utilizar op¿¿o 02); b"
+          },
+          "desoneracaoFolha": 0,
+          "indicadorSimples": 0,
+          "contrataPcd": 0,
+          "contrataAprendiz": 0,
+          "regimeIrrf": "S",
+          "situacaoPj": "",
+          "cpfResponsavelCnpj": "",
+          "porte": "",
+          "cnpjSindicatoPatronal": "",
+          "ativa": false,
+          "dataAlteracao": "14/08/2023 15:21:39"
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "6",
+        "hasMore": "false"
+      }
+    }
+  }
+}

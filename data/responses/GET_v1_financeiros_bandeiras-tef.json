@@ -1,0 +1,287 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/financeiros/bandeiras-tef",
+    "url": "https://api.sankhya.com.br/v1/financeiros/bandeiras-tef"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:08 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "3362",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "52",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1996",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1996",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "221e6caf-b66e-4beb-a948-63693ad6bff5",
+      "X-Kong-Upstream-Latency": "174",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "a8134d6d4b0d9f3187e5e1471717bb28"
+    },
+    "json": {
+      "data": [
+        {
+          "codigoBandeira": 203,
+          "tipo": "Credito",
+          "bandeira": "Credialto Card"
+        },
+        {
+          "codigoBandeira": 335,
+          "tipo": "Credito",
+          "bandeira": "Credicesta"
+        },
+        {
+          "codigoBandeira": 20208,
+          "tipo": "Debito",
+          "bandeira": "Credicesta"
+        },
+        {
+          "codigoBandeira": 204,
+          "tipo": "Credito",
+          "bandeira": "Credinova Card"
+        },
+        {
+          "codigoBandeira": 205,
+          "tipo": "Credito",
+          "bandeira": "Credipinho Card"
+        },
+        {
+          "codigoBandeira": 71,
+          "tipo": "Credito",
+          "bandeira": "Credishop"
+        },
+        {
+          "codigoBandeira": 63,
+          "tipo": "Credito",
+          "bandeira": "Credpar"
+        },
+        {
+          "codigoBandeira": 10291,
+          "tipo": "Voucher",
+          "bandeira": "Credpar"
+        },
+        {
+          "codigoBandeira": 251,
+          "tipo": "Credito",
+          "bandeira": "CredPublico"
+        },
+        {
+          "codigoBandeira": 20168,
+          "tipo": "Debito",
+          "bandeira": "CredPublico"
+        },
+        {
+          "codigoBandeira": 70,
+          "tipo": "Credito",
+          "bandeira": "Credz"
+        },
+        {
+          "codigoBandeira": 264,
+          "tipo": "Credito",
+          "bandeira": "Croscard"
+        },
+        {
+          "codigoBandeira": 342,
+          "tipo": "Credito",
+          "bandeira": "CSF"
+        },
+        {
+          "codigoBandeira": 20214,
+          "tipo": "Debito",
+          "bandeira": "CSF"
+        },
+        {
+          "codigoBandeira": 291,
+          "tipo": "Credito",
+          "bandeira": "DaCasa"
+        },
+        {
+          "codigoBandeira": 475,
+          "tipo": "Credito Private Label",
+          "bandeira": "Dafiti"
+        },
+        {
+          "codigoBandeira": 114,
+          "tipo": "Credito",
+          "bandeira": "Daycard"
+        },
+        {
+          "codigoBandeira": 20115,
+          "tipo": "Debito",
+          "bandeira": "Daycard"
+        },
+        {
+          "codigoBandeira": 311,
+          "tipo": "Credito",
+          "bandeira": "DDTotal"
+        },
+        {
+          "codigoBandeira": 20195,
+          "tipo": "Debito",
+          "bandeira": "DDTotal"
+        },
+        {
+          "codigoBandeira": 438,
+          "tipo": "Credito Private Label",
+          "bandeira": "Del Fiori"
+        },
+        {
+          "codigoBandeira": 423,
+          "tipo": "Credito Private Label",
+          "bandeira": "Demanos Dimanos"
+        },
+        {
+          "codigoBandeira": 436,
+          "tipo": "Credito Private Label",
+          "bandeira": "Deny Sports"
+        },
+        {
+          "codigoBandeira": 416,
+          "tipo": "Credito Private Label",
+          "bandeira": "Di Gaspi"
+        },
+        {
+          "codigoBandeira": 457,
+          "tipo": "Credito Private Label",
+          "bandeira": "Di Santinni"
+        },
+        {
+          "codigoBandeira": 147,
+          "tipo": "Credito",
+          "bandeira": "Diamante Card"
+        },
+        {
+          "codigoBandeira": 409,
+          "tipo": "Credito Private Label",
+          "bandeira": "Dibs"
+        },
+        {
+          "codigoBandeira": 10014,
+          "tipo": "Voucher",
+          "bandeira": "Diners"
+        },
+        {
+          "codigoBandeira": 3,
+          "tipo": "Credito",
+          "bandeira": "Diners"
+        },
+        {
+          "codigoBandeira": 476,
+          "tipo": "Credito",
+          "bandeira": "Discover"
+        },
+        {
+          "codigoBandeira": 321,
+          "tipo": "Credito",
+          "bandeira": "DMcard"
+        },
+        {
+          "codigoBandeira": 380,
+          "tipo": "Credito",
+          "bandeira": "DMTPlus"
+        },
+        {
+          "codigoBandeira": 20240,
+          "tipo": "Debito",
+          "bandeira": "DMTPlus"
+        },
+        {
+          "codigoBandeira": 182,
+          "tipo": "Credito",
+          "bandeira": "Dotz"
+        },
+        {
+          "codigoBandeira": 20153,
+          "tipo": "Debito",
+          "bandeira": "Dotz"
+        },
+        {
+          "codigoBandeira": 390,
+          "tipo": "Credito",
+          "bandeira": "Drogabella"
+        },
+        {
+          "codigoBandeira": 306,
+          "tipo": "Credito",
+          "bandeira": "DTransfer"
+        },
+        {
+          "codigoBandeira": 466,
+          "tipo": "Credito Private Label",
+          "bandeira": "Econ Card"
+        },
+        {
+          "codigoBandeira": 181,
+          "tipo": "Credito",
+          "bandeira": "ECXCard"
+        },
+        {
+          "codigoBandeira": 10186,
+          "tipo": "Combustivel Frota",
+          "bandeira": "ECXCard"
+        },
+        {
+          "codigoBandeira": 411,
+          "tipo": "Credito Private Label",
+          "bandeira": "Ed"
+        },
+        {
+          "codigoBandeira": 10203,
+          "tipo": "Voucher",
+          "bandeira": "Ediz"
+        },
+        {
+          "codigoBandeira": 292,
+          "tipo": "Credito",
+          "bandeira": "EdmCard"
+        },
+        {
+          "codigoBandeira": 312,
+          "tipo": "Credito",
+          "bandeira": "Eletrozema"
+        },
+        {
+          "codigoBandeira": 424,
+          "tipo": "Credito Private Label",
+          "bandeira": "Elmo"
+        },
+        {
+          "codigoBandeira": 31,
+          "tipo": "Credito",
+          "bandeira": "Elo"
+        },
+        {
+          "codigoBandeira": 20032,
+          "tipo": "Debito",
+          "bandeira": "Elo"
+        },
+        {
+          "codigoBandeira": 10082,
+          "tipo": "Combustivel",
+          "bandeira": "Elo"
+        },
+        {
+          "codigoBandeira": 431,
+          "tipo": "Credito Private Label",
+          "bandeira": "Emanuelle PE"
+        },
+        {
+          "codigoBandeira": 432,
+          "tipo": "Credito Private Label",
+          "bandeira": "Emmanuelle SE"
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

@@ -1,0 +1,1237 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/pessoal/ocorrencias",
+    "url": "https://api.sankhya.com.br/v1/pessoal/ocorrencias"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:16 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "24043",
+      "Connection": "keep-alive",
+      "X-RateLimit-Remaining-Minute": "1994",
+      "X-RateLimit-Limit-Minute": "2000",
+      "RateLimit-Remaining": "1994",
+      "RateLimit-Reset": "45",
+      "RateLimit-Limit": "2000",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "963947a6-21dc-4ef0-9176-fa1193c29bac",
+      "X-Kong-Upstream-Latency": "287",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "72fe345b237ec756407dd9160a0bb91c"
+    },
+    "json": {
+      "ocorrencias": [
+        {
+          "numeroOcorrencia": 19,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: SUPERVISOR DE MANUTENCAO",
+          "dataInicio": "10/11/2015 00:00:00",
+          "dataFinal": "10/11/2015 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 278,
+            "nome": "CAIRO AMARILDO  BATISTA MARTINS"
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "08/04/2020 09:48:03"
+        },
+        {
+          "numeroOcorrencia": 13,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: FAXINEIRA",
+          "dataInicio": "15/12/2017 00:00:00",
+          "dataFinal": "15/12/2017 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 321,
+            "nome": "LUCIANA DA SILVA"
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "07/04/2020 13:51:58"
+        },
+        {
+          "numeroOcorrencia": 16,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: ASSISTENTE FINANCEIRO II",
+          "dataInicio": "01/12/2005 00:00:00",
+          "dataFinal": "01/12/2005 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 37,
+            "nome": "CARMENS APARECIDA BERNARDES DA SILVA "
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "26/01/2021 17:16:54"
+        },
+        {
+          "numeroOcorrencia": 20,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: BOBINADOR ELETRICISTA A MAO",
+          "dataInicio": "02/08/2016 00:00:00",
+          "dataFinal": "02/08/2016 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 296,
+            "nome": "CARLOS HENRIQUE SALES"
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "08/04/2020 09:49:04"
+        },
+        {
+          "numeroOcorrencia": 25,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: AUXILIAR DE ALMOXARIFADO II",
+          "dataInicio": "15/01/2019 00:00:00",
+          "dataFinal": "15/01/2019 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 145,
+            "nome": "EDSON FELIPE DA SILVA "
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "17/04/2020 10:08:59"
+        },
+        {
+          "numeroOcorrencia": 49,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: AUXILIAR DE MECANICO CALDEREIRO",
+          "dataInicio": "02/03/2020 00:00:00",
+          "dataFinal": "02/03/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 160,
+            "nome": "RODRIGO SILVA PONTES DE AZEVEDO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "17/04/2020 10:11:30"
+        },
+        {
+          "numeroOcorrencia": 53,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: ELETRICISTA IV",
+          "dataInicio": "14/01/2019 00:00:00",
+          "dataFinal": "14/01/2019 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 92,
+            "nome": "VALDIR MARTINS DE ARAUJO "
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "22/04/2020 09:59:23"
+        },
+        {
+          "numeroOcorrencia": 87,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: MECANICO CALDEREIRO II",
+          "dataInicio": "25/04/2017 00:00:00",
+          "dataFinal": "25/04/2017 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 31,
+            "nome": "TULIO TAVARES DA SILVA"
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "04/05/2020 23:39:31"
+        },
+        {
+          "numeroOcorrencia": 120,
+          "descricao": "LOTAÇÃO DO FUNCIONÁRIO NO MOMENTO DA ADMISSÃO. CARGO: <SEM CARGO>",
+          "dataInicio": "01/11/2019 00:00:00",
+          "dataFinal": "01/11/2019 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 4,
+            "nome": "SELECAO SEMENTES LTDA"
+          },
+          "funcionario": {
+            "codigo": 1,
+            "nome": "LEIDMILA PEREIRA DA SILVA"
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "18/05/2020 09:54:30"
+        },
+        {
+          "numeroOcorrencia": 128,
+          "descricao": " (Anterior: 500,00/Mensal Novo: 0,00/Mensal)",
+          "dataInicio": "01/04/2020 00:00:00",
+          "dataFinal": "01/04/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 4,
+            "nome": "SELECAO SEMENTES LTDA"
+          },
+          "funcionario": {
+            "codigo": 1,
+            "nome": "LEIDMILA PEREIRA DA SILVA"
+          },
+          "historicoOcorrencia": {
+            "codigo": 600,
+            "descricao": "AUMENTO POR PROMOÇÃO"
+          },
+          "dtAlteracao": "18/05/2020 15:18:02"
+        },
+        {
+          "numeroOcorrencia": 127,
+          "descricao": "Alteração de Cargo: <SEM CARGO> para: ENGENHEIRO AGRONOMO",
+          "dataInicio": "01/04/2020 00:00:00",
+          "dataFinal": "01/04/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 4,
+            "nome": "SELECAO SEMENTES LTDA"
+          },
+          "funcionario": {
+            "codigo": 1,
+            "nome": "LEIDMILA PEREIRA DA SILVA"
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "18/05/2020 15:17:22"
+        },
+        {
+          "numeroOcorrencia": 137,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: ENCARREGADO DE MANUTENCAO",
+          "dataInicio": "15/12/2015 00:00:00",
+          "dataFinal": "15/12/2015 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 281,
+            "nome": "ELIAS FERREIRA  NASCIMENTO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "19/05/2020 13:10:57"
+        },
+        {
+          "numeroOcorrencia": 141,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: DESENHISTA II",
+          "dataInicio": "11/12/2018 00:00:00",
+          "dataFinal": "11/12/2018 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 138,
+            "nome": "RAUL HENRIQUE NASCIMENTO FELIX"
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "19/05/2020 14:17:41"
+        },
+        {
+          "numeroOcorrencia": 145,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: AUXILIAR REFRIGERISTA",
+          "dataInicio": "23/04/2020 00:00:00",
+          "dataFinal": "23/04/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 147,
+            "nome": "CARLOS HENRIQUE DE FREITAS "
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "19/05/2020 14:35:38"
+        },
+        {
+          "numeroOcorrencia": 153,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: REFRIGERISTA II",
+          "dataInicio": "23/04/2020 00:00:00",
+          "dataFinal": "23/04/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 146,
+            "nome": "GERSON DA SILVA COSTA "
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "19/05/2020 14:45:26"
+        },
+        {
+          "numeroOcorrencia": 159,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: AUXILIAR REFRIGERISTA",
+          "dataInicio": "04/02/2020 00:00:00",
+          "dataFinal": "04/02/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 139,
+            "nome": "IAGO FERNANDES DE ARAUJO "
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "19/05/2020 14:49:24"
+        },
+        {
+          "numeroOcorrencia": 160,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: AUXILIAR ELETRICISTA",
+          "dataInicio": "26/11/2019 00:00:00",
+          "dataFinal": "26/11/2019 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 127,
+            "nome": "IGOR PINHEIRO NUNES "
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "19/05/2020 14:49:40"
+        },
+        {
+          "numeroOcorrencia": 161,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: AUXILIAR BOBINADOR ELETRICISTA A MAO",
+          "dataInicio": "11/04/2017 00:00:00",
+          "dataFinal": "11/04/2017 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 25,
+            "nome": "JEFERSON APARECIDO ALVES"
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "19/05/2020 14:49:58"
+        },
+        {
+          "numeroOcorrencia": 169,
+          "descricao": "LOTAÇÃO INICIAL DO FUNCIONÁRIO. CARGO: AUXILIAR REFRIGERISTA",
+          "dataInicio": "07/04/2020 00:00:00",
+          "dataFinal": "07/04/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 145,
+            "nome": "LEVI PAULINO DE OLIVEIRA"
+          },
+          "historicoOcorrencia": {
+            "codigo": 603,
+            "descricao": "MUDANÇA DE CARGO"
+          },
+          "dtAlteracao": "19/05/2020 14:53:47"
+        },
+        {
+          "numeroOcorrencia": 204,
+          "descricao": "atestado normal",
+          "dataInicio": "27/05/2020 00:00:00",
+          "dataFinal": "28/05/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "29/05/2020 00:00:00",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 118,
+            "nome": "JOSE ANSELMO DA SILVA"
+          },
+          "historicoOcorrencia": {
+            "codigo": 18,
+            "descricao": "ATESTADO MÉDICO GERAL (DIAS)"
+          },
+          "dtAlteracao": "28/05/2020 14:32:26"
+        },
+        {
+          "numeroOcorrencia": 202,
+          "descricao": "atestado acidente",
+          "dataInicio": "08/05/2020 00:00:00",
+          "dataFinal": "22/05/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "23/05/2020 00:00:00",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 130,
+            "nome": "GUILHERME DA SILVA BOENSO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 29,
+            "descricao": "ATESTADO < 15 - ACIDENT/DOENÇA REL TRAB"
+          },
+          "dtAlteracao": "28/05/2020 14:25:11"
+        },
+        {
+          "numeroOcorrencia": 203,
+          "descricao": "atestado acidente",
+          "dataInicio": "23/05/2020 00:00:00",
+          "dataFinal": "27/05/2020 00:00:00",
+          "recorrencia": true,
+          "numeroRecorrencia": 202,
+          "dataPrevistaRetorno": "28/05/2020 00:00:00",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 130,
+            "nome": "GUILHERME DA SILVA BOENSO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 4,
+            "descricao": "ACID. TRABALHO TÍPICO"
+          },
+          "dtAlteracao": "28/05/2020 14:27:43"
+        },
+        {
+          "numeroOcorrencia": 205,
+          "descricao": "atestado normal",
+          "dataInicio": "07/05/2020 00:00:00",
+          "dataFinal": "08/05/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "09/05/2020 00:00:00",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 128,
+            "nome": "MATEUS MODESTO BERNADELLI"
+          },
+          "historicoOcorrencia": {
+            "codigo": 18,
+            "descricao": "ATESTADO MÉDICO GERAL (DIAS)"
+          },
+          "dtAlteracao": "28/05/2020 14:35:29"
+        },
+        {
+          "numeroOcorrencia": 219,
+          "descricao": "MUDANÇA DE FUNÇÃO A PARTIR DE 15/05/2020(ANTERIOR: 1.689,16 NOVO:2.069,30)",
+          "dataInicio": "01/05/2020 00:00:00",
+          "dataFinal": "01/05/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 355,
+            "nome": "IAN CRISTIAN ANDRADE GOIS"
+          },
+          "historicoOcorrencia": {
+            "codigo": 600,
+            "descricao": "AUMENTO POR PROMOÇÃO"
+          },
+          "dtAlteracao": "29/05/2020 09:24:10"
+        },
+        {
+          "numeroOcorrencia": 213,
+          "descricao": "Aquisitivo 03/06/2019 a 02/06/2020",
+          "dataInicio": "27/04/2020 00:00:00",
+          "dataFinal": "26/05/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 114,
+            "nome": "FABIOLA MARIA DA SILVA DE QUEIROZ"
+          },
+          "historicoOcorrencia": {
+            "codigo": 27,
+            "descricao": "FERIAS"
+          },
+          "dtAlteracao": "28/05/2020 17:25:46"
+        },
+        {
+          "numeroOcorrencia": 215,
+          "descricao": "MUDANÇA DE FUNÇÃO A PARTIR DE  07/05/2020(ANTERIOR: 1.689,16 NOVO:2.069,30)",
+          "dataInicio": "01/05/2020 00:00:00",
+          "dataFinal": "01/05/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 138,
+            "nome": "RAUL HENRIQUE NASCIMENTO FELIX"
+          },
+          "historicoOcorrencia": {
+            "codigo": 600,
+            "descricao": "AUMENTO POR PROMOÇÃO"
+          },
+          "dtAlteracao": "29/05/2020 09:09:13"
+        },
+        {
+          "numeroOcorrencia": 228,
+          "descricao": "AQUISITIVO 08/10/2019 A 07/10/2020  ",
+          "dataInicio": "06/04/2020 00:00:00",
+          "dataFinal": "05/05/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 352,
+            "nome": "WILLIAM JUNIO GUIMARAES FRANCO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 27,
+            "descricao": "FERIAS"
+          },
+          "dtAlteracao": "29/05/2020 17:28:40"
+        },
+        {
+          "numeroOcorrencia": 344,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "21/05/2020 13:00:00",
+          "dataFinal": "21/05/2020 17:48:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 138,
+            "nome": "RAUL HENRIQUE NASCIMENTO FELIX"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 13:23:34"
+        },
+        {
+          "numeroOcorrencia": 259,
+          "descricao": "AQUISITIVO 18/12/2018 A 17/12/2019  ",
+          "dataInicio": "16/06/2020 00:00:00",
+          "dataFinal": "27/06/2020 00:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 139,
+            "nome": "ALAN HUDSON DE MIRANDA"
+          },
+          "historicoOcorrencia": {
+            "codigo": 27,
+            "descricao": "FERIAS"
+          },
+          "dtAlteracao": "09/06/2020 08:35:10"
+        },
+        {
+          "numeroOcorrencia": 342,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "22/05/2020 07:20:00",
+          "dataFinal": "22/05/2020 12:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 90,
+            "nome": "IGOR FERNANDES DE ARAUJO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 13:13:19"
+        },
+        {
+          "numeroOcorrencia": 343,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "12/06/2020 12:15:00",
+          "dataFinal": "12/06/2020 13:15:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 90,
+            "nome": "IGOR FERNANDES DE ARAUJO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 13:14:01"
+        },
+        {
+          "numeroOcorrencia": 345,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "22/05/2020 07:00:00",
+          "dataFinal": "22/05/2020 11:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 138,
+            "nome": "RAUL HENRIQUE NASCIMENTO FELIX"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 13:23:46"
+        },
+        {
+          "numeroOcorrencia": 346,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "22/05/2020 12:00:00",
+          "dataFinal": "22/05/2020 17:48:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 138,
+            "nome": "RAUL HENRIQUE NASCIMENTO FELIX"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 13:23:51"
+        },
+        {
+          "numeroOcorrencia": 347,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "07/06/2020 06:00:00",
+          "dataFinal": "07/06/2020 12:15:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 138,
+            "nome": "RAUL HENRIQUE NASCIMENTO FELIX"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 13:29:10"
+        },
+        {
+          "numeroOcorrencia": 349,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "08/06/2020 06:00:00",
+          "dataFinal": "08/06/2020 11:45:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 138,
+            "nome": "RAUL HENRIQUE NASCIMENTO FELIX"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 13:29:33"
+        },
+        {
+          "numeroOcorrencia": 350,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "08/06/2020 12:45:00",
+          "dataFinal": "08/06/2020 20:30:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 138,
+            "nome": "RAUL HENRIQUE NASCIMENTO FELIX"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 13:29:42"
+        },
+        {
+          "numeroOcorrencia": 351,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "09/06/2020 07:00:00",
+          "dataFinal": "09/06/2020 12:15:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 138,
+            "nome": "RAUL HENRIQUE NASCIMENTO FELIX"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 13:29:54"
+        },
+        {
+          "numeroOcorrencia": 353,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "10/06/2020 07:00:00",
+          "dataFinal": "10/06/2020 12:15:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 138,
+            "nome": "RAUL HENRIQUE NASCIMENTO FELIX"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 13:30:13"
+        },
+        {
+          "numeroOcorrencia": 354,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "10/06/2020 13:45:00",
+          "dataFinal": "10/06/2020 17:50:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 138,
+            "nome": "RAUL HENRIQUE NASCIMENTO FELIX"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 13:30:20"
+        },
+        {
+          "numeroOcorrencia": 355,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "09/06/2020 11:00:00",
+          "dataFinal": "09/06/2020 12:10:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 119,
+            "nome": "JOAO ARAUJO FILHO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 14:00:05"
+        },
+        {
+          "numeroOcorrencia": 356,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "10/06/2020 11:00:00",
+          "dataFinal": "10/06/2020 12:25:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 119,
+            "nome": "JOAO ARAUJO FILHO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 14:00:19"
+        },
+        {
+          "numeroOcorrencia": 358,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "03/06/2020 18:53:00",
+          "dataFinal": "03/06/2020 18:53:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 120,
+            "nome": "EDERVAL COELHO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 14:53:33"
+        },
+        {
+          "numeroOcorrencia": 359,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "04/06/2020 07:15:00",
+          "dataFinal": "04/06/2020 07:15:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 120,
+            "nome": "EDERVAL COELHO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 14:53:43"
+        },
+        {
+          "numeroOcorrencia": 360,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "10/06/2020 12:01:00",
+          "dataFinal": "10/06/2020 12:01:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 120,
+            "nome": "EDERVAL COELHO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 14:53:53"
+        },
+        {
+          "numeroOcorrencia": 366,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "26/05/2020 07:00:00",
+          "dataFinal": "26/05/2020 07:00:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 296,
+            "nome": "CARLOS HENRIQUE SALES"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 15:01:43"
+        },
+        {
+          "numeroOcorrencia": 362,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "10/06/2020 13:02:00",
+          "dataFinal": "10/06/2020 13:02:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 120,
+            "nome": "EDERVAL COELHO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 14:53:58"
+        },
+        {
+          "numeroOcorrencia": 363,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "17/06/2020 12:35:00",
+          "dataFinal": "17/06/2020 12:35:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 120,
+            "nome": "EDERVAL COELHO"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 14:54:11"
+        },
+        {
+          "numeroOcorrencia": 364,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "23/05/2020 07:31:00",
+          "dataFinal": "23/05/2020 07:31:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 296,
+            "nome": "CARLOS HENRIQUE SALES"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 15:01:05"
+        },
+        {
+          "numeroOcorrencia": 365,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "25/05/2020 17:45:00",
+          "dataFinal": "25/05/2020 18:50:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 296,
+            "nome": "CARLOS HENRIQUE SALES"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 15:01:33"
+        },
+        {
+          "numeroOcorrencia": 367,
+          "descricao": "AJUSTE DE PONTO",
+          "dataInicio": "27/05/2020 11:32:00",
+          "dataFinal": "27/05/2020 11:32:00",
+          "recorrencia": false,
+          "numeroRecorrencia": "",
+          "dataPrevistaRetorno": "",
+          "dataInterrupcaoFerias": "",
+          "cid": "",
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 296,
+            "nome": "CARLOS HENRIQUE SALES"
+          },
+          "historicoOcorrencia": {
+            "codigo": 24,
+            "descricao": "INCLUSÃO DE REGISTRO DE PONTO"
+          },
+          "dtAlteracao": "17/06/2020 15:01:51"
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

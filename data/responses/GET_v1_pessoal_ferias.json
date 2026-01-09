@@ -1,0 +1,1187 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/pessoal/ferias",
+    "url": "https://api.sankhya.com.br/v1/pessoal/ferias"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:41 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "21034",
+      "Connection": "keep-alive",
+      "X-RateLimit-Remaining-Minute": "1982",
+      "X-RateLimit-Limit-Minute": "2000",
+      "RateLimit-Remaining": "1982",
+      "RateLimit-Reset": "20",
+      "RateLimit-Limit": "2000",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "21378ea3-e12f-4813-aca5-0e31a375aa14",
+      "X-Kong-Upstream-Latency": "343",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "735b0c42718d6f7529b9d27b33566f0e"
+    },
+    "json": {
+      "ferias": [
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 327,
+            "nome": "DANIEL EVANGELISTA DA SILVA"
+          },
+          "dataInicioAquisitivo": "14/02/2019",
+          "dataFimAquisitivo": "13/02/2020",
+          "dataPrevista": "25/03/2020",
+          "sequencia": 1,
+          "dataGozo": "25/03/2020",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "11/05/2020 10:37:33"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 321,
+            "nome": "LUCIANA DA SILVA"
+          },
+          "dataInicioAquisitivo": "15/12/2018",
+          "dataFimAquisitivo": "14/12/2019",
+          "dataPrevista": "30/03/2020",
+          "sequencia": 1,
+          "dataGozo": "30/03/2020",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "11/05/2020 14:29:50"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 348,
+            "nome": "BRENO JUSTINO SILVA"
+          },
+          "dataInicioAquisitivo": "21/05/2019",
+          "dataFimAquisitivo": "20/05/2020",
+          "dataPrevista": "01/06/2020",
+          "sequencia": 1,
+          "dataGozo": "01/06/2020",
+          "referencia": "01/06/2020",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "24/06/2020 14:57:55"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 100,
+            "nome": "FLORIANO SILVA DE OLIVEIRA"
+          },
+          "dataInicioAquisitivo": "02/04/2019",
+          "dataFimAquisitivo": "01/04/2020",
+          "dataPrevista": "25/03/2020",
+          "sequencia": 1,
+          "dataGozo": "25/03/2020",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "08/05/2020 16:07:32"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 121,
+            "nome": "HILTON CARLOS BEZERRA "
+          },
+          "dataInicioAquisitivo": "08/10/2019",
+          "dataFimAquisitivo": "07/10/2020",
+          "dataPrevista": "25/03/2020",
+          "sequencia": 1,
+          "dataGozo": "25/03/2020",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "08/05/2020 16:17:52"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 116,
+            "nome": "IRAN SERGIO MOREIRA"
+          },
+          "dataInicioAquisitivo": "22/02/2018",
+          "dataFimAquisitivo": "21/02/2019",
+          "dataPrevista": "30/01/2019",
+          "sequencia": 1,
+          "dataGozo": "30/01/2019",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 7,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "09/05/2020 09:28:20"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 101,
+            "nome": "JOANAS ELIAS DE MEDEIROS"
+          },
+          "dataInicioAquisitivo": "13/06/2018",
+          "dataFimAquisitivo": "12/06/2019",
+          "dataPrevista": "25/03/2020",
+          "sequencia": 1,
+          "dataGozo": "25/03/2020",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "09/05/2020 09:34:16"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 119,
+            "nome": "JOAO ARAUJO FILHO"
+          },
+          "dataInicioAquisitivo": "19/04/2018",
+          "dataFimAquisitivo": "18/04/2019",
+          "dataPrevista": "02/12/2019",
+          "sequencia": 1,
+          "dataGozo": "02/12/2019",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "09/05/2020 09:36:41"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 137,
+            "nome": "LINDAMAR NOGUEIRA BORGES"
+          },
+          "dataInicioAquisitivo": "14/11/2018",
+          "dataFimAquisitivo": "13/11/2019",
+          "dataPrevista": "19/12/2019",
+          "sequencia": 1,
+          "dataGozo": "19/12/2019",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 18,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "09/05/2020 09:43:08"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 85,
+            "nome": "JOSE DIVINO DE ARAUJO "
+          },
+          "dataInicioAquisitivo": "03/11/2018",
+          "dataFimAquisitivo": "02/11/2019",
+          "dataPrevista": "17/02/2020",
+          "sequencia": 1,
+          "dataGozo": "17/02/2020",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "08/05/2020 16:40:38"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 142,
+            "nome": "KLAYBERT GOMES MACHADO JUNIOR"
+          },
+          "dataInicioAquisitivo": "11/02/2020",
+          "dataFimAquisitivo": "10/02/2021",
+          "dataPrevista": "25/03/2020",
+          "sequencia": 1,
+          "dataGozo": "25/03/2020",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "13/05/2020 09:50:00"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 125,
+            "nome": "LUIZ ANTONIO DE MORAIS FILHO "
+          },
+          "dataInicioAquisitivo": "04/11/2019",
+          "dataFimAquisitivo": "03/11/2020",
+          "dataPrevista": "08/06/2020",
+          "sequencia": 1,
+          "dataGozo": "08/06/2020",
+          "referencia": "01/06/2020",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "03/06/2020 16:04:46"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 93,
+            "nome": "MATEUS HENRIQUE SILVA"
+          },
+          "dataInicioAquisitivo": "21/01/2019",
+          "dataFimAquisitivo": "20/01/2020",
+          "dataPrevista": "30/03/2020",
+          "sequencia": 1,
+          "dataGozo": "30/03/2020",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "08/05/2020 17:32:47"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 128,
+            "nome": "MATEUS MODESTO BERNADELLI"
+          },
+          "dataInicioAquisitivo": "26/11/2019",
+          "dataFimAquisitivo": "25/11/2020",
+          "dataPrevista": "25/03/2020",
+          "sequencia": 1,
+          "dataGozo": "25/03/2020",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "08/05/2020 17:34:28"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 89,
+            "nome": "ROBERTO PEREIRA FILHO "
+          },
+          "dataInicioAquisitivo": "04/12/2018",
+          "dataFimAquisitivo": "03/12/2019",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "09/05/2020 08:23:40"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 94,
+            "nome": "CAMILA SILVA XAVIER"
+          },
+          "dataInicioAquisitivo": "28/01/2020",
+          "dataFimAquisitivo": "27/01/2021",
+          "dataPrevista": "06/01/2021",
+          "sequencia": 1,
+          "dataGozo": "06/01/2021",
+          "referencia": "01/01/2021",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "28/12/2020 10:12:14"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 132,
+            "nome": "CARLOS EDUARDO COSTA ALMEIDA"
+          },
+          "dataInicioAquisitivo": "14/01/2021",
+          "dataFimAquisitivo": "13/01/2022",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "08/05/2020 13:09:17"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 223,
+            "nome": "CLOVIS ARAUJO PONTES"
+          },
+          "dataInicioAquisitivo": "01/01/2018",
+          "dataFimAquisitivo": "01/01/2019",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "12/05/2020 09:30:57"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 142,
+            "nome": "KLAYBERT GOMES MACHADO JUNIOR"
+          },
+          "dataInicioAquisitivo": "11/02/2021",
+          "dataFimAquisitivo": "10/02/2022",
+          "dataPrevista": "20/12/2021",
+          "sequencia": 1,
+          "dataGozo": "20/12/2021",
+          "referencia": "01/12/2021",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 14,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "07/12/2021 14:26:23"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 102,
+            "nome": "MURILO ALVES DIAS "
+          },
+          "dataInicioAquisitivo": "12/04/2019",
+          "dataFimAquisitivo": "11/04/2020",
+          "dataPrevista": "16/11/2020",
+          "sequencia": 1,
+          "dataGozo": "16/11/2020",
+          "referencia": "01/11/2020",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 9,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "13/11/2020 10:34:22"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 37,
+            "nome": "CARMENS APARECIDA BERNARDES DA SILVA "
+          },
+          "dataInicioAquisitivo": "01/12/2018",
+          "dataFimAquisitivo": "30/11/2019",
+          "dataPrevista": "02/03/2020",
+          "sequencia": 1,
+          "dataGozo": "02/03/2020",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "13/05/2020 13:00:19"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 247,
+            "nome": "JOSE TADEU DE ALMEIDA JUNIOR"
+          },
+          "dataInicioAquisitivo": "05/05/2019",
+          "dataFimAquisitivo": "04/05/2020",
+          "dataPrevista": "22/02/2021",
+          "sequencia": 1,
+          "dataGozo": "22/02/2021",
+          "referencia": "01/02/2021",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "03/02/2021 08:16:46"
+        },
+        {
+          "empresa": {
+            "codigo": 4,
+            "nome": "SELECAO SEMENTES LTDA"
+          },
+          "funcionario": {
+            "codigo": 1,
+            "nome": "LEIDMILA PEREIRA DA SILVA"
+          },
+          "dataInicioAquisitivo": "01/11/2019",
+          "dataFimAquisitivo": "31/10/2020",
+          "dataPrevista": "01/11/2020",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "18/05/2020 09:54:30"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 148,
+            "nome": "VANESSA MARTINS SOARES"
+          },
+          "dataInicioAquisitivo": "09/03/2020",
+          "dataFimAquisitivo": "09/03/2021",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "15/05/2020 16:22:21"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 142,
+            "nome": "DANIEL ALVES BATISTA"
+          },
+          "dataInicioAquisitivo": "02/01/2020",
+          "dataFimAquisitivo": "01/01/2021",
+          "dataPrevista": "12/07/2021",
+          "sequencia": 1,
+          "dataGozo": "12/07/2021",
+          "referencia": "01/07/2021",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "26/06/2021 08:34:27"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 149,
+            "nome": "LUCAS SARTORELLO"
+          },
+          "dataInicioAquisitivo": "02/03/2020",
+          "dataFimAquisitivo": "02/03/2021",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "18/05/2020 10:48:38"
+        },
+        {
+          "empresa": {
+            "codigo": 4,
+            "nome": "SELECAO SEMENTES LTDA"
+          },
+          "funcionario": {
+            "codigo": 2,
+            "nome": "MARIANA CARVALHO DOMINGUES PONTES"
+          },
+          "dataInicioAquisitivo": "01/01/2019",
+          "dataFimAquisitivo": "01/01/2020",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "19/05/2020 09:02:45"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 142,
+            "nome": "DANIEL ALVES BATISTA"
+          },
+          "dataInicioAquisitivo": "02/01/2019",
+          "dataFimAquisitivo": "01/01/2020",
+          "dataPrevista": "27/04/2020",
+          "sequencia": 1,
+          "dataGozo": "27/04/2020",
+          "referencia": "01/04/2020",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "02/06/2020 09:45:57"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 114,
+            "nome": "FABIOLA MARIA DA SILVA DE QUEIROZ"
+          },
+          "dataInicioAquisitivo": "03/06/2020",
+          "dataFimAquisitivo": "02/06/2021",
+          "dataPrevista": "01/02/2022",
+          "sequencia": 1,
+          "dataGozo": "01/02/2022",
+          "referencia": "01/02/2022",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "24/01/2022 09:55:50"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 352,
+            "nome": "WILLIAM JUNIO GUIMARAES FRANCO"
+          },
+          "dataInicioAquisitivo": "08/10/2020",
+          "dataFimAquisitivo": "07/10/2021",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "29/05/2020 17:28:44"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 357,
+            "nome": "ROBERTO PEREIRA FILHO "
+          },
+          "dataInicioAquisitivo": "19/06/2020",
+          "dataFimAquisitivo": "18/06/2021",
+          "dataPrevista": "28/06/2021",
+          "sequencia": 1,
+          "dataGozo": "28/06/2021",
+          "referencia": "01/06/2021",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "21/06/2021 16:05:36"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 139,
+            "nome": "ALAN HUDSON DE MIRANDA"
+          },
+          "dataInicioAquisitivo": "18/12/2019",
+          "dataFimAquisitivo": "17/12/2020",
+          "dataPrevista": "17/12/2020",
+          "sequencia": 1,
+          "dataGozo": "17/12/2020",
+          "referencia": "01/12/2020",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 18,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "10/12/2020 13:34:48"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 150,
+            "nome": "FERNANDO NOGUEIRA ALVES "
+          },
+          "dataInicioAquisitivo": "19/06/2020",
+          "dataFimAquisitivo": "18/06/2021",
+          "dataPrevista": "17/12/2020",
+          "sequencia": 1,
+          "dataGozo": "17/12/2020",
+          "referencia": "01/12/2020",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "10/12/2020 14:19:03"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 348,
+            "nome": "BRENO JUSTINO SILVA"
+          },
+          "dataInicioAquisitivo": "21/05/2020",
+          "dataFimAquisitivo": "20/05/2021",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "24/06/2020 14:57:55"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 278,
+            "nome": "CAIRO AMARILDO  BATISTA MARTINS"
+          },
+          "dataInicioAquisitivo": "10/11/2019",
+          "dataFimAquisitivo": "09/11/2020",
+          "dataPrevista": "04/01/2021",
+          "sequencia": 1,
+          "dataGozo": "04/01/2021",
+          "referencia": "01/01/2021",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "28/12/2020 08:03:45"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 37,
+            "nome": "CARMENS APARECIDA BERNARDES DA SILVA "
+          },
+          "dataInicioAquisitivo": "01/12/2019",
+          "dataFimAquisitivo": "30/11/2020",
+          "dataPrevista": "29/03/2021",
+          "sequencia": 1,
+          "dataGozo": "29/03/2021",
+          "referencia": "01/03/2021",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "05/03/2021 16:40:39"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 151,
+            "nome": "GUSTAVO APARECIDO BRAGA "
+          },
+          "dataInicioAquisitivo": "07/07/2020",
+          "dataFimAquisitivo": "06/07/2021",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "13/07/2020 17:18:48"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 163,
+            "nome": "MANOEL MARTINS DE LIMA NETO "
+          },
+          "dataInicioAquisitivo": "22/09/2020",
+          "dataFimAquisitivo": "21/09/2021",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "15/10/2020 10:33:41"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 9,
+            "nome": "ELTON ALVES DE ALMEIDA "
+          },
+          "dataInicioAquisitivo": "03/08/2020",
+          "dataFimAquisitivo": "02/08/2021",
+          "dataPrevista": "03/08/2021",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "30/07/2020 12:56:43"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 168,
+            "nome": "JOAO VITOR DA CRUZ RODRIGUES "
+          },
+          "dataInicioAquisitivo": "05/10/2020",
+          "dataFimAquisitivo": "04/10/2021",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "15/10/2020 10:12:37"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 169,
+            "nome": "LUIZ RAMALHO DE SOUZA "
+          },
+          "dataInicioAquisitivo": "06/10/2020",
+          "dataFimAquisitivo": "05/10/2021",
+          "dataPrevista": "20/12/2021",
+          "sequencia": 1,
+          "dataGozo": "20/12/2021",
+          "referencia": "01/12/2021",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "07/12/2021 15:00:21"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 168,
+            "nome": "MARCIEL OLIVEIRA MEDEIROS "
+          },
+          "dataInicioAquisitivo": "05/10/2020",
+          "dataFimAquisitivo": "04/10/2021",
+          "dataPrevista": "10/08/2022",
+          "sequencia": 1,
+          "dataGozo": "10/08/2022",
+          "referencia": "01/08/2022",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "05/08/2022 07:27:00"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 167,
+            "nome": "DANILO JULIO LUNGUIM "
+          },
+          "dataInicioAquisitivo": "05/10/2020",
+          "dataFimAquisitivo": "04/10/2021",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "15/10/2020 13:45:00"
+        },
+        {
+          "empresa": {
+            "codigo": 3,
+            "nome": "TERMO ELETRO AUTOMACAO"
+          },
+          "funcionario": {
+            "codigo": 171,
+            "nome": "JOAO CARLOS DAMACENO "
+          },
+          "dataInicioAquisitivo": "21/10/2020",
+          "dataFimAquisitivo": "20/10/2021",
+          "dataPrevista": "03/11/2021",
+          "sequencia": 1,
+          "dataGozo": "03/11/2021",
+          "referencia": "01/11/2021",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "26/10/2021 08:15:49"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 371,
+            "nome": "PAULO ROBERTO CALAÇA PINHO "
+          },
+          "dataInicioAquisitivo": "24/11/2020",
+          "dataFimAquisitivo": "23/11/2021",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": "",
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "26/10/2021 10:51:49"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 364,
+            "nome": "VICTOR IZIDORIO NETO DA SILVA "
+          },
+          "dataInicioAquisitivo": "26/10/2020",
+          "dataFimAquisitivo": "25/10/2021",
+          "dataPrevista": "14/09/2022",
+          "sequencia": 1,
+          "dataGozo": "14/09/2022",
+          "referencia": "01/09/2022",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "16/08/2022 07:11:25"
+        },
+        {
+          "empresa": {
+            "codigo": 4,
+            "nome": "SELECAO SEMENTES LTDA"
+          },
+          "funcionario": {
+            "codigo": 38,
+            "nome": "LARISSA GONÇALVES DA SILVA "
+          },
+          "dataInicioAquisitivo": "21/12/2020",
+          "dataFimAquisitivo": "20/12/2021",
+          "dataPrevista": "14/02/2022",
+          "sequencia": 1,
+          "dataGozo": "14/02/2022",
+          "referencia": "01/02/2022",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "09/02/2022 08:12:08"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 156,
+            "nome": "ARTUR MOREIRA DE MEDEIROS"
+          },
+          "dataInicioAquisitivo": "26/11/2019",
+          "dataFimAquisitivo": "25/11/2020",
+          "dataPrevista": "",
+          "sequencia": 2,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 12,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "23/11/2020 11:37:16"
+        },
+        {
+          "empresa": {
+            "codigo": 2,
+            "nome": "TERMO ELETRO LTDA"
+          },
+          "funcionario": {
+            "codigo": 333,
+            "nome": "PAULO ROBERTO SANTANA DE ARAUJO"
+          },
+          "dataInicioAquisitivo": "20/10/2020",
+          "dataFimAquisitivo": "19/10/2021",
+          "dataPrevista": "",
+          "sequencia": 1,
+          "dataGozo": "",
+          "referencia": "",
+          "abonoPecuniario": 0,
+          "faltasPeriodo": 0,
+          "numeroDias": 30,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "11/06/2021 16:35:27"
+        },
+        {
+          "empresa": {
+            "codigo": 1,
+            "nome": "TERMO ELETRO INDUSTRIA"
+          },
+          "funcionario": {
+            "codigo": 122,
+            "nome": "GUSTAVO JUNIOR FELIPE FEITOSA"
+          },
+          "dataInicioAquisitivo": "18/06/2019",
+          "dataFimAquisitivo": "17/06/2020",
+          "dataPrevista": "31/05/2021",
+          "sequencia": 2,
+          "dataGozo": "31/05/2021",
+          "referencia": "01/05/2021",
+          "abonoPecuniario": 7,
+          "faltasPeriodo": 0,
+          "numeroDias": 5,
+          "adianta13": false,
+          "dataInterrupcao": "",
+          "dataLimiteGozo": "",
+          "dataAlteracao": "28/05/2021 12:58:02"
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

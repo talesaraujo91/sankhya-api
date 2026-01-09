@@ -1,0 +1,301 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/regioes",
+    "url": "https://api.sankhya.com.br/v1/regioes"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:29 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "3585",
+      "Connection": "keep-alive",
+      "X-RateLimit-Remaining-Minute": "1985",
+      "X-RateLimit-Limit-Minute": "2000",
+      "RateLimit-Remaining": "1985",
+      "RateLimit-Reset": "31",
+      "RateLimit-Limit": "2000",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "42fb6e11-6925-418c-9156-9fa0c69f1005",
+      "X-Kong-Upstream-Latency": "179",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "0e68e30971c82b4efe3c27520a1fa14d"
+    },
+    "json": {
+      "regioes": [
+        {
+          "codigoRegiao": 0,
+          "codigoRegiaoPai": 0,
+          "nome": "<SEM REGIAO>",
+          "grau": 0,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 20003,
+          "codigoRegiaoPai": 20000,
+          "nome": "Rio Grande do Sul",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 40002,
+          "codigoRegiaoPai": 40000,
+          "nome": "Bahia",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 50005,
+          "codigoRegiaoPai": 50000,
+          "nome": "Rondônia",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 50007,
+          "codigoRegiaoPai": 50000,
+          "nome": "Tocantins",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 20001,
+          "codigoRegiaoPai": 20000,
+          "nome": "Paraná",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 20002,
+          "codigoRegiaoPai": 20000,
+          "nome": "Santa Catarina",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 30002,
+          "codigoRegiaoPai": 30000,
+          "nome": "Goiás",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 40004,
+          "codigoRegiaoPai": 40000,
+          "nome": "Maranhão",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 40007,
+          "codigoRegiaoPai": 40000,
+          "nome": "Piauí",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 10002,
+          "codigoRegiaoPai": 10000,
+          "nome": "São Paulo",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 10003,
+          "codigoRegiaoPai": 10000,
+          "nome": "Espírito Santo",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 10004,
+          "codigoRegiaoPai": 10000,
+          "nome": "Rio de Janeiro",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 20000,
+          "codigoRegiaoPai": -999999999,
+          "nome": "Sul",
+          "grau": 1,
+          "analitica": false,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 30000,
+          "codigoRegiaoPai": -999999999,
+          "nome": "Centro-Oeste",
+          "grau": 1,
+          "analitica": false,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 30001,
+          "codigoRegiaoPai": 30000,
+          "nome": "Distrito Federal",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 30003,
+          "codigoRegiaoPai": 30000,
+          "nome": "Mato Grosso",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 30004,
+          "codigoRegiaoPai": 30000,
+          "nome": "Mato Grosso do Sul",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 40006,
+          "codigoRegiaoPai": 40000,
+          "nome": "Pernambuco",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 40008,
+          "codigoRegiaoPai": 40000,
+          "nome": "Rio Grande do Norte",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 40009,
+          "codigoRegiaoPai": 40000,
+          "nome": "Sergipe",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 50000,
+          "codigoRegiaoPai": -999999999,
+          "nome": "Norte",
+          "grau": 1,
+          "analitica": false,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 50001,
+          "codigoRegiaoPai": 50000,
+          "nome": "Acre",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 50002,
+          "codigoRegiaoPai": 50000,
+          "nome": "Amapá",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 50004,
+          "codigoRegiaoPai": 50000,
+          "nome": "Pará",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 10000,
+          "codigoRegiaoPai": -999999999,
+          "nome": "Sudeste",
+          "grau": 1,
+          "analitica": false,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 10001,
+          "codigoRegiaoPai": 10000,
+          "nome": "Minas Gerais",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 40000,
+          "codigoRegiaoPai": -999999999,
+          "nome": "Nordeste",
+          "grau": 1,
+          "analitica": false,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 40001,
+          "codigoRegiaoPai": 40000,
+          "nome": "Alagoas",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 40003,
+          "codigoRegiaoPai": 40000,
+          "nome": "Ceará",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 40005,
+          "codigoRegiaoPai": 40000,
+          "nome": "Paraíba",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 50003,
+          "codigoRegiaoPai": 50000,
+          "nome": "Amazonas",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        },
+        {
+          "codigoRegiao": 50006,
+          "codigoRegiaoPai": 50000,
+          "nome": "Roraima",
+          "grau": 2,
+          "analitica": true,
+          "ativa": true
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "33",
+        "hasMore": "false"
+      }
+    }
+  }
+}

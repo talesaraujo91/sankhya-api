@@ -1,0 +1,91 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/pessoal/tomadores",
+    "url": "https://api.sankhya.com.br/v1/pessoal/tomadores"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:39 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "991",
+      "Connection": "keep-alive",
+      "X-RateLimit-Remaining-Minute": "1984",
+      "X-RateLimit-Limit-Minute": "2000",
+      "RateLimit-Remaining": "1984",
+      "RateLimit-Reset": "22",
+      "RateLimit-Limit": "2000",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "3ce5cb3a-5076-4e8a-bdc5-d230a2b2c44b",
+      "X-Kong-Upstream-Latency": "187",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "e5c4a02333614163b3609b0da4161216"
+    },
+    "json": {
+      "tomadores": [
+        {
+          "empresa": {
+            "codigo": 7,
+            "nome": "SELECAO SEMENTES - OBRA"
+          },
+          "funcionario": {
+            "codigo": 1,
+            "nome": "VALDIR PEREIRA SILVA"
+          },
+          "parceiro": {
+            "codigo": 4607,
+            "nome": "SELECAO SEMENTES LTDA OBRA"
+          },
+          "dataInicio": "01/01/2024 00:00:00",
+          "dataFim": "31/01/2024 00:00:00",
+          "observacao": "",
+          "dataAlteracao": "07/02/2024 16:39:12"
+        },
+        {
+          "empresa": {
+            "codigo": 7,
+            "nome": "SELECAO SEMENTES - OBRA"
+          },
+          "funcionario": {
+            "codigo": 2,
+            "nome": "JOAO BATISTA DO NASCIMENTO"
+          },
+          "parceiro": {
+            "codigo": 4607,
+            "nome": "SELECAO SEMENTES LTDA OBRA"
+          },
+          "dataInicio": "01/01/2024 00:00:00",
+          "dataFim": "31/01/2024 00:00:00",
+          "observacao": "",
+          "dataAlteracao": "07/02/2024 16:39:13"
+        },
+        {
+          "empresa": {
+            "codigo": 7,
+            "nome": "SELECAO SEMENTES - OBRA"
+          },
+          "funcionario": {
+            "codigo": 3,
+            "nome": "DIEGO RIBEIRO DOS SANTOS"
+          },
+          "parceiro": {
+            "codigo": 4607,
+            "nome": "SELECAO SEMENTES LTDA OBRA"
+          },
+          "dataInicio": "01/01/2024 00:00:00",
+          "dataFim": "31/01/2024 00:00:00",
+          "observacao": "",
+          "dataAlteracao": "07/02/2024 16:39:13"
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "3",
+        "hasMore": "false"
+      }
+    }
+  }
+}

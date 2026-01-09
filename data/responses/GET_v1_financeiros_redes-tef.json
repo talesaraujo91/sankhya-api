@@ -1,0 +1,237 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/financeiros/redes-tef",
+    "url": "https://api.sankhya.com.br/v1/financeiros/redes-tef"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:09 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "2006",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "51",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1995",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1995",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "51c5558c-4711-4ac9-90d7-58610651a172",
+      "X-Kong-Upstream-Latency": "187",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "8a925b5f45291e6e0c88053e86f8903f"
+    },
+    "json": {
+      "data": [
+        {
+          "codigoRede": "1",
+          "nome": "TECBAN"
+        },
+        {
+          "codigoRede": "2",
+          "nome": "ITAÚ"
+        },
+        {
+          "codigoRede": "3",
+          "nome": "BRADESCO"
+        },
+        {
+          "codigoRede": "4",
+          "nome": "VISA"
+        },
+        {
+          "codigoRede": "5",
+          "nome": "CREDCARD/REDESHOP"
+        },
+        {
+          "codigoRede": "6",
+          "nome": "AMEX"
+        },
+        {
+          "codigoRede": "7",
+          "nome": "SOLLO"
+        },
+        {
+          "codigoRede": "8",
+          "nome": "DINNERS"
+        },
+        {
+          "codigoRede": "9",
+          "nome": "SERASA"
+        },
+        {
+          "codigoRede": "10",
+          "nome": "PÃO DE AÇÚCAR"
+        },
+        {
+          "codigoRede": "11",
+          "nome": "SERASA DETALHADO"
+        },
+        {
+          "codigoRede": "12",
+          "nome": "TELEDATA"
+        },
+        {
+          "codigoRede": "13",
+          "nome": "ASSOCIAÇÃO COM. SÃO PAULO"
+        },
+        {
+          "codigoRede": "14",
+          "nome": "ACSP DETALHADO"
+        },
+        {
+          "codigoRede": "15",
+          "nome": "FACILITA"
+        },
+        {
+          "codigoRede": "16",
+          "nome": "\"CDL (BH"
+        },
+        {
+          "codigoRede": "17",
+          "nome": "TICKET"
+        },
+        {
+          "codigoRede": "18",
+          "nome": "BOM PREÇO"
+        },
+        {
+          "codigoRede": "19",
+          "nome": "EDMCARD"
+        },
+        {
+          "codigoRede": "20",
+          "nome": "BRETÃS"
+        },
+        {
+          "codigoRede": "21",
+          "nome": "BANRISUL"
+        },
+        {
+          "codigoRede": "22",
+          "nome": "ACC_CARD"
+        },
+        {
+          "codigoRede": "23",
+          "nome": "CANDIA"
+        },
+        {
+          "codigoRede": "24",
+          "nome": "ACPR"
+        },
+        {
+          "codigoRede": "25",
+          "nome": "CSS"
+        },
+        {
+          "codigoRede": "26",
+          "nome": "BEM"
+        },
+        {
+          "codigoRede": "27",
+          "nome": "EDIGUAY"
+        },
+        {
+          "codigoRede": "28",
+          "nome": "CARREFOUR"
+        },
+        {
+          "codigoRede": "29",
+          "nome": "SOFTWAY"
+        },
+        {
+          "codigoRede": "30",
+          "nome": "MULTI-CHEQUE"
+        },
+        {
+          "codigoRede": "31",
+          "nome": "TICKET COMBUSTÍVEL"
+        },
+        {
+          "codigoRede": "32",
+          "nome": "YAMADA"
+        },
+        {
+          "codigoRede": "33",
+          "nome": "RESERVADO"
+        },
+        {
+          "codigoRede": "34",
+          "nome": "CIRO"
+        },
+        {
+          "codigoRede": "35",
+          "nome": "BESC"
+        },
+        {
+          "codigoRede": "36",
+          "nome": "CCS"
+        },
+        {
+          "codigoRede": "37",
+          "nome": "CHEQUE CASH"
+        },
+        {
+          "codigoRede": "38",
+          "nome": "CENTRAL CARD"
+        },
+        {
+          "codigoRede": "39",
+          "nome": "VALE REFEIÇÃO"
+        },
+        {
+          "codigoRede": "40",
+          "nome": "OUTRO SERVIÇO"
+        },
+        {
+          "codigoRede": "41",
+          "nome": "BANCO SANTOS"
+        },
+        {
+          "codigoRede": "42",
+          "nome": "EPAYGIFT"
+        },
+        {
+          "codigoRede": "43",
+          "nome": "PARATI"
+        },
+        {
+          "codigoRede": "44",
+          "nome": "TOKORO"
+        },
+        {
+          "codigoRede": "45",
+          "nome": "CHEQUE CARDÁPIO"
+        },
+        {
+          "codigoRede": "46",
+          "nome": "SERVCEL"
+        },
+        {
+          "codigoRede": "47",
+          "nome": "SOROCRED"
+        },
+        {
+          "codigoRede": "48",
+          "nome": "VITAL"
+        },
+        {
+          "codigoRede": "49",
+          "nome": "MARISA"
+        },
+        {
+          "codigoRede": "50",
+          "nome": "FORMOSA"
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

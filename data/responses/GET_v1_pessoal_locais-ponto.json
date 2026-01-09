@@ -1,0 +1,35 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/pessoal/locais-ponto",
+    "url": "https://api.sankhya.com.br/v1/pessoal/locais-ponto"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:14 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "201",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "46",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1991",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1991",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "4ac94068-f575-46f2-b5d6-24086c1b2571",
+      "X-Kong-Upstream-Latency": "170",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "07cc8506c89fdc2d859f3a1ba8f43a51"
+    },
+    "json": {
+      "statusCode": 404,
+      "error": {
+        "code": "RESOURCE_NOT_FOUND",
+        "message": "Recurso solicitado não foi encontrado!",
+        "details": "Nenhum registro da entidade LocalPontoPessoalMais com o identificador informado!"
+      }
+    }
+  }
+}

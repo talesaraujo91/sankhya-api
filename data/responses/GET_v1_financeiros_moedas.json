@@ -1,0 +1,44 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/financeiros/moedas",
+    "url": "https://api.sankhya.com.br/v1/financeiros/moedas"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:07 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "206",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "53",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1997",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1997",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "9034484b-e532-4412-ba23-68c22ff13774",
+      "X-Kong-Upstream-Latency": "190",
+      "X-Kong-Proxy-Latency": "1",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "e0fb915d1d01674809912362c47b7e3e"
+    },
+    "json": {
+      "data": {
+        "codigoMoeda": 1,
+        "nome": "IPCA",
+        "codigoTabelaInternacional": "",
+        "codigoTabelaBCB": "",
+        "tipoAcumulo": "",
+        "tipoTaxa": "",
+        "tipoMoeda": 2
+      },
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "1",
+        "hasMore": "false"
+      }
+    }
+  }
+}

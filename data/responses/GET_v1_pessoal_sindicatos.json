@@ -1,0 +1,587 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/pessoal/sindicatos",
+    "url": "https://api.sankhya.com.br/v1/pessoal/sindicatos"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:18 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "9390",
+      "Connection": "keep-alive",
+      "X-RateLimit-Remaining-Minute": "1992",
+      "X-RateLimit-Limit-Minute": "2000",
+      "RateLimit-Remaining": "1992",
+      "RateLimit-Reset": "43",
+      "RateLimit-Limit": "2000",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "df7175f8-abfc-4b59-a8f9-6ddf65668411",
+      "X-Kong-Upstream-Latency": "178",
+      "X-Kong-Proxy-Latency": "1",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "7da171042e76fc54255a5b13bffbc449"
+    },
+    "json": {
+      "sindicatos": [
+        {
+          "codigoSindicato": 2,
+          "nome": "SIND. OF ALFAIATES C TRAB IND CONF ROUPAS EST GOIAS",
+          "cnpj": "01666783000100",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 3,
+          "nome": "SIND. TRAB. IND. CONST. CIVIL MOB. PATOS DE MINAS",
+          "cnpj": "22235048000111",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 4,
+          "nome": "SIND. TRAB. IND. MET. MEC. MAT. ELET. PATOS DE MINAS",
+          "cnpj": "23089162000143",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 5,
+          "nome": "SIND. DAS SECRETARIAS DO ESTADO DE SAO PAULO",
+          "cnpj": "58415274000121",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 6,
+          "nome": "SIND. DOS AUX E TEC DE ENFERMAGEM DE SERV SAUDE DE SP",
+          "cnpj": "60890928000110",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 7,
+          "nome": "SIND. TRAB.IND. DA ALIMENTACAO E AFINS DE ARCOS E REGIAO",
+          "cnpj": "20939229000101",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 8,
+          "nome": "SIND. TRABALHADORES RURAIS",
+          "cnpj": "10329266000136",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 9,
+          "nome": "FED. TRABS AGRICOLAS DO ESTADO DE TO",
+          "cnpj": "01785997000103",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 10,
+          "nome": "SINDIMETAL",
+          "cnpj": "12318085000130",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 11,
+          "nome": "FEDERACAO TRAB INDS META MEC MAT ELETRICO ESTADO DE MG",
+          "cnpj": "17447509000180",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": 1,
+            "nome": "REGRAS MODELO"
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 12,
+          "nome": "SIND. DOS TRABALHADORES RURAIS DE SAO GOTARDO",
+          "cnpj": "04304295000140",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 13,
+          "nome": "FED TRAB IND QUIM FARM EST MG",
+          "cnpj": "25469198000188",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 14,
+          "nome": "SIND.DOS TRAB.RURAIS DE BRASILÁNDIA DE MINAS",
+          "cnpj": "01812069000182",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 15,
+          "nome": "SINTAPPI",
+          "cnpj": "85267080000107",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 16,
+          "nome": "SEAACOM",
+          "cnpj": "69637737000116",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 17,
+          "nome": "SINDCOMERCIO FILIAL",
+          "cnpj": "37218733000107",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 18,
+          "nome": "SINDIBARES",
+          "cnpj": "68551360000115",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 19,
+          "nome": "FENERC",
+          "cnpj": "37509928000106",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 20,
+          "nome": "SESCON SP",
+          "cnpj": "57712610000135",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 21,
+          "nome": "SIND. DOS EMPREG. DO COMÁRCIO DE BELO HORIZONTE",
+          "cnpj": "17093287000144",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 22,
+          "nome": "SIND DOS CONDUTORES DE VEICULOS RODOVIARIOS",
+          "cnpj": "09355553000131",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 23,
+          "nome": "SIND METAL - SAO JOSE DO RIO PRETO",
+          "cnpj": "56359110000107",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 24,
+          "nome": "SIND. DOS TRANSPORTES",
+          "cnpj": "13432953000170",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 25,
+          "nome": "SIND. INTERMUNICIPAL DOS HOTEIS, RESTAURANTES, BARES",
+          "cnpj": "14938021000167",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 26,
+          "nome": "SINDMAQ/SINAEES",
+          "cnpj": "11786913000100",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 27,
+          "nome": "SIND. TRAB. COM. MIN. DER. PETR. URA",
+          "cnpj": "23370570000179",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 28,
+          "nome": "MINASPETRO PATRONAL",
+          "cnpj": "17409988000140",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 29,
+          "nome": "SITRAMICO - MG",
+          "cnpj": "17430851000177",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 30,
+          "nome": "SID. TRAB. RURAIS DE ANGELANDIA - MG",
+          "cnpj": "09060854000138",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 31,
+          "nome": "SINBIOMED-SIND. DOS BIOMEDICOS NO ESTADO DE GOIAS",
+          "cnpj": "04344275000101",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 32,
+          "nome": "SEESA-SIND. DOS EMPREG. EM ESTABELECIMENTO DA SAUDE",
+          "cnpj": "00045179000101",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 33,
+          "nome": "SIMEA-SIND. DOS MEDICOS DE ANAPOLIS",
+          "cnpj": "26642967000160",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 34,
+          "nome": "SINTRACOM BA",
+          "cnpj": "05899306000145",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 35,
+          "nome": "SIND. TRABALHADORES RURAIS",
+          "cnpj": "02207314000195",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 36,
+          "nome": "SIND. DOS TRABALHADORES RURAIS DE TAQUARITINGA",
+          "cnpj": "52390010000184",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 37,
+          "nome": "SIND. DOS TRABALHADORES RURAIS JABOTICABAL",
+          "cnpj": "50387752000125",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 38,
+          "nome": "SIND. DOS TRABALHADORES EM INDUSTRIA DA CONSTRUÇÃO",
+          "cnpj": "50387521000111",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 39,
+          "nome": "SIND. DOS TRABALHADORES EM TRANSPORTE RODOVIARIOS DE JAB",
+          "cnpj": "57713471000164",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 40,
+          "nome": "SINTRAL IND",
+          "cnpj": "16897076000100",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 41,
+          "nome": "SIND. DOS EMPREG. NO COMERCIO DE FLORIANO",
+          "cnpj": "41535287000131",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 42,
+          "nome": "SIND. DOS EMP NO COMERCIO DE TIMON PARNARAMA E MATOES",
+          "cnpj": "10143322000143",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 43,
+          "nome": "SIND DOS TRABALHADORES EM OFIC MEC E METALUG DE TERESINA",
+          "cnpj": "06654008000158",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 44,
+          "nome": "SITESCI",
+          "cnpj": "31723661000179",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 45,
+          "nome": "SIND. DOS ENFERMEIROS",
+          "cnpj": "30778641000132",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 46,
+          "nome": "SINDISAUDE - BA",
+          "cnpj": "28540565000180",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 47,
+          "nome": "SIND. TRES LAGOAS MS (SETA)",
+          "cnpj": "11462220000153",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 48,
+          "nome": "SIND. DOS FARMACEUTICOS",
+          "cnpj": "30955355000103",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 49,
+          "nome": "SINTRASADES",
+          "cnpj": "32478349000120",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 50,
+          "nome": "SIND. DOS MEDICOS SANTOS",
+          "cnpj": "58255803000177",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoSindicato": 51,
+          "nome": "SINDSAUDE SANTOS",
+          "cnpj": "58195058000118",
+          "codigoSindical": "",
+          "regraCalculo": {
+            "codigo": "",
+            "nome": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

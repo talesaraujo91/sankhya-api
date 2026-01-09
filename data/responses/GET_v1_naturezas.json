@@ -1,0 +1,537 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/naturezas",
+    "url": "https://api.sankhya.com.br/v1/naturezas"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:02 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "8471",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "58",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1999",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1999",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "61f2c054-5190-4734-a4f5-8e83ac1f10d8",
+      "X-Kong-Upstream-Latency": "249",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "95a2a74f3e0eb163cdf5fc3e9ae99073"
+    },
+    "json": {
+      "data": [
+        {
+          "codigoNatureza": 3014300,
+          "nome": "PROGRAMAS OCUPACIONAIS",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3010000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 1040000,
+          "nome": "RECEITA DE OBRAS E MANUTENCOES",
+          "analitica": true,
+          "grau": 2,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 1000000,
+          "tipoNatureza": 1
+        },
+        {
+          "codigoNatureza": 3040600,
+          "nome": "LAVANDERIA",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3040000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3070800,
+          "nome": "EMPRESTIMOS",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3070000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 1060000,
+          "nome": "RECEITA DE SERVIÇOS DE ARMAZENAMENTO",
+          "analitica": true,
+          "grau": 2,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 1000000,
+          "tipoNatureza": 1
+        },
+        {
+          "codigoNatureza": 3040900,
+          "nome": "QUILOMETRAGEM",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3040000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3071000,
+          "nome": "LAUDOS E BOOKS",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3070000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3031800,
+          "nome": "COMBUSTIVEL - EMPILHADEIRA",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3030000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 2040200,
+          "nome": "GAS PARA QUEIMADORES (TESTES INDUST)",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 2040000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 2040400,
+          "nome": "INSUMOS PARA OBRA",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 2040000,
+          "tipoNatureza": ""
+        },
+        {
+          "codigoNatureza": 3014200,
+          "nome": "EXAMES OCUPACIONAIS",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3010000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3031600,
+          "nome": "ART ",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3030000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3031700,
+          "nome": "PLATAFORMAS DE NEGOCIAÇÃO",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3030000,
+          "tipoNatureza": ""
+        },
+        {
+          "codigoNatureza": 5110000,
+          "nome": "IRPJ",
+          "analitica": true,
+          "grau": 2,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 5000000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3040700,
+          "nome": "BALSA",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3040000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 1050000,
+          "nome": "RECEITA DE SERVIÇOS DE BENEFICAMENTO",
+          "analitica": true,
+          "grau": 2,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 1000000,
+          "tipoNatureza": 1
+        },
+        {
+          "codigoNatureza": 3070900,
+          "nome": "MAO DE OBRA PROPRIA",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3070000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 2040100,
+          "nome": "GASES PARA SOLDA (OXI - GLP)",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 2040000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 2040000,
+          "nome": "INSUMOS",
+          "analitica": false,
+          "grau": 2,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 2000000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 2040300,
+          "nome": "GAS PARA SECADOR BENEFICIAMENTO",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 2040000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3031400,
+          "nome": "Mão-de-obra de terceiros",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3030000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3040100,
+          "nome": "Passagens",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3040000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3040200,
+          "nome": "HOSPEDAGEM",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3040000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3040300,
+          "nome": "TAXI - UBER",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3040000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3040400,
+          "nome": "ALIMENTACAO",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3040000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3040500,
+          "nome": "Despesas de representação em viagem",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3040000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3050100,
+          "nome": "Manutenção de automóveis",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3050000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3050200,
+          "nome": "Combustíveis",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3050000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3050300,
+          "nome": "Seguros de automóveis",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3050000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3050400,
+          "nome": "IPVA / Licenciamentos",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3050000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3050500,
+          "nome": "Multas de trânsito",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3050000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3050600,
+          "nome": "Reparos em automóveis",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3050000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3060100,
+          "nome": "CPMF",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3060000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3060200,
+          "nome": "IOF",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3060000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3060300,
+          "nome": "Títulos / Cotas / Fundos",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3060000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3060400,
+          "nome": "Despesas de cobrança",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3060000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3060500,
+          "nome": "Tarifas bancárias",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3060000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3060600,
+          "nome": "Taxas e encargos financeiros",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3060000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3060700,
+          "nome": "Outras despesas financeiras",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3060000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3070100,
+          "nome": "Amortizações de empréstimos",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3070000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3070200,
+          "nome": "Juros e taxas sobre empréstimos",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3070000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3070300,
+          "nome": "Provisões financeiras",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3070000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 3070400,
+          "nome": "Depreciações",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 3070000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 4030100,
+          "nome": "Material impresso",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 4030000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 4030200,
+          "nome": "Anúncios TV / rádio / jornais / revistas",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 4030000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 4030300,
+          "nome": "Brindes / Presentes",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 4030000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 4030400,
+          "nome": "Patrocínios",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 4030000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 4030500,
+          "nome": "Participações em feiras / eventos",
+          "analitica": true,
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": 4030000,
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 0,
+          "nome": "<SEM NATUREZA>",
+          "analitica": true,
+          "grau": "",
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": "",
+          "tipoNatureza": 2
+        },
+        {
+          "codigoNatureza": 1000000,
+          "nome": "Receitas",
+          "analitica": false,
+          "grau": 1,
+          "ativo": true,
+          "codigoCentroResultado": "",
+          "codigoNaturezaPai": -999999999,
+          "tipoNatureza": 1
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

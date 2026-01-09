@@ -1,0 +1,175 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/financeiros/tipos-pagamento",
+    "url": "https://api.sankhya.com.br/v1/financeiros/tipos-pagamento"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:06 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "2012",
+      "Connection": "keep-alive",
+      "X-RateLimit-Remaining-Minute": "1997",
+      "X-RateLimit-Limit-Minute": "2000",
+      "RateLimit-Remaining": "1997",
+      "RateLimit-Reset": "54",
+      "RateLimit-Limit": "2000",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "0d562c5f-fd0a-4035-8b35-7200fa1a9e8a",
+      "X-Kong-Upstream-Latency": "195",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "85ab062dcc91f3209131146a8195cd09"
+    },
+    "json": {
+      "data": [
+        {
+          "codigoTipoPagamento": 23,
+          "nome": "RENDIMENTOS",
+          "ativo": true,
+          "subTipoPagamento": 1
+        },
+        {
+          "codigoTipoPagamento": 15,
+          "nome": "TRANSFERÊNCIA BANCÁRIA",
+          "ativo": true,
+          "subTipoPagamento": 1
+        },
+        {
+          "codigoTipoPagamento": 18,
+          "nome": "DARF",
+          "ativo": true,
+          "subTipoPagamento": 1
+        },
+        {
+          "codigoTipoPagamento": 20,
+          "nome": "GPS",
+          "ativo": true,
+          "subTipoPagamento": 1
+        },
+        {
+          "codigoTipoPagamento": 22,
+          "nome": "TARIFA",
+          "ativo": true,
+          "subTipoPagamento": 1
+        },
+        {
+          "codigoTipoPagamento": 0,
+          "nome": "<SEM TIPO DE TITULO>",
+          "ativo": true,
+          "subTipoPagamento": 0
+        },
+        {
+          "codigoTipoPagamento": 2,
+          "nome": "DINHEIRO",
+          "ativo": true,
+          "subTipoPagamento": 0
+        },
+        {
+          "codigoTipoPagamento": 3,
+          "nome": "CHEQUE",
+          "ativo": true,
+          "subTipoPagamento": 0
+        },
+        {
+          "codigoTipoPagamento": 4,
+          "nome": "BOLETO",
+          "ativo": true,
+          "subTipoPagamento": 0
+        },
+        {
+          "codigoTipoPagamento": 5,
+          "nome": "CHEQUE PRÉ-DATADO",
+          "ativo": true,
+          "subTipoPagamento": 0
+        },
+        {
+          "codigoTipoPagamento": 6,
+          "nome": "PIX",
+          "ativo": true,
+          "subTipoPagamento": 0
+        },
+        {
+          "codigoTipoPagamento": 7,
+          "nome": "CARTÃO DE CRÉDITO VISA",
+          "ativo": true,
+          "subTipoPagamento": 0
+        },
+        {
+          "codigoTipoPagamento": 8,
+          "nome": "CARTAO - VENDA",
+          "ativo": true,
+          "subTipoPagamento": 1
+        },
+        {
+          "codigoTipoPagamento": 9,
+          "nome": "CARTÃO DE CRÉDITO SICOOB",
+          "ativo": true,
+          "subTipoPagamento": 0
+        },
+        {
+          "codigoTipoPagamento": 10,
+          "nome": "CARTÃO DE CRÉDITO CREDICARD",
+          "ativo": true,
+          "subTipoPagamento": 0
+        },
+        {
+          "codigoTipoPagamento": 12,
+          "nome": "DÉBITO AUTOMÁTICO",
+          "ativo": true,
+          "subTipoPagamento": 0
+        },
+        {
+          "codigoTipoPagamento": 1,
+          "nome": "ACERTO DE VIAGEM",
+          "ativo": true,
+          "subTipoPagamento": 0
+        },
+        {
+          "codigoTipoPagamento": 16,
+          "nome": "TED",
+          "ativo": true,
+          "subTipoPagamento": 1
+        },
+        {
+          "codigoTipoPagamento": 19,
+          "nome": "DARF SIMPLES",
+          "ativo": true,
+          "subTipoPagamento": 1
+        },
+        {
+          "codigoTipoPagamento": 17,
+          "nome": "DOC",
+          "ativo": true,
+          "subTipoPagamento": 1
+        },
+        {
+          "codigoTipoPagamento": 21,
+          "nome": "CONTAS E TRIBUTOS C/COD BARRAS",
+          "ativo": true,
+          "subTipoPagamento": 1
+        },
+        {
+          "codigoTipoPagamento": 24,
+          "nome": "GNRE DIFAL",
+          "ativo": true,
+          "subTipoPagamento": 1
+        },
+        {
+          "codigoTipoPagamento": 25,
+          "nome": "DIFERENCA ICMS",
+          "ativo": true,
+          "subTipoPagamento": 1
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "23",
+        "hasMore": "false"
+      }
+    }
+  }
+}

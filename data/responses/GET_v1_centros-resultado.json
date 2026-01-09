@@ -1,0 +1,235 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/centros-resultado",
+    "url": "https://api.sankhya.com.br/v1/centros-resultado"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:03 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "3726",
+      "Connection": "keep-alive",
+      "X-RateLimit-Remaining-Minute": "1999",
+      "X-RateLimit-Limit-Minute": "2000",
+      "RateLimit-Remaining": "1999",
+      "RateLimit-Reset": "57",
+      "RateLimit-Limit": "2000",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "ce95f5ee-86d1-4a8a-a769-ab947da0dbaa",
+      "X-Kong-Upstream-Latency": "197",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "66f031258c6b657e4efc9c5b1132371f"
+    },
+    "json": {
+      "data": [
+        {
+          "codigoCentroResultado": 10102,
+          "nome": "FISCAL / CONTABIL",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10100,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10104,
+          "nome": "ENGENHARIA",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10100,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10201,
+          "nome": "INDUSTRIA",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10200,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10202,
+          "nome": "MANUTENCAO",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10200,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10204,
+          "nome": "REVENDA",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10200,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10401,
+          "nome": "INSTITUCIONAL",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10400,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10207,
+          "nome": "COMERCIAL",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10200,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10103,
+          "nome": "RECURSOS HUMANOS",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10100,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10107,
+          "nome": "COMPRAS",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10100,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10500,
+          "nome": "INVESTIMENTOS",
+          "grau": 2,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10000,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10000,
+          "nome": "TERMO ELETRO",
+          "grau": 1,
+          "ativo": true,
+          "codigoCentroResultadoPai": -999999999,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10100,
+          "nome": "ADMINISTRATIVO",
+          "grau": 2,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10000,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10101,
+          "nome": "ADMINISTRATIVO",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10100,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10105,
+          "nome": "TRANSPORTE",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10100,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10400,
+          "nome": "INSTITUCIONAL",
+          "grau": 2,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10000,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10106,
+          "nome": "DIRETORIA",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10100,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 0,
+          "nome": "<SEM CENTRO DE RESULTADO>",
+          "grau": 0,
+          "ativo": true,
+          "codigoCentroResultadoPai": 0,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10200,
+          "nome": "COMERCIAL",
+          "grau": 2,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10000,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10203,
+          "nome": "OBRAS",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10200,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10205,
+          "nome": "OFICINA",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10200,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10206,
+          "nome": "LOCACAO",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10200,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        },
+        {
+          "codigoCentroResultado": 10208,
+          "nome": "UBS",
+          "grau": 3,
+          "ativo": true,
+          "codigoCentroResultadoPai": 10200,
+          "codigoTabelaPreco": 0,
+          "nomeTabelaPreco": "<TABELA PADRAO>"
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "22",
+        "hasMore": "false"
+      }
+    }
+  }
+}

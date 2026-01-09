@@ -1,0 +1,337 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/bairros",
+    "url": "https://api.sankhya.com.br/v1/bairros"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:32 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "4594",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "28",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1983",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1983",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "84e1c572-23b4-4df6-9b8f-92a7ccaddb4c",
+      "X-Kong-Upstream-Latency": "174",
+      "X-Kong-Proxy-Latency": "1",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "e97aff00bb980e262828f15d3b95cf79"
+    },
+    "json": {
+      "bairros": [
+        {
+          "codigoBairro": 8,
+          "nome": "BRASILIA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 10,
+          "nome": "DANIEL FONSECA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 28,
+          "nome": "JARDIM CIDADE PIRITUBA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 31,
+          "nome": "BELENZINHO",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 33,
+          "nome": "BARRO PRETO",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 35,
+          "nome": "NOSSA SENHORA APARECIDA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 45,
+          "nome": "JARDIM PALESTINA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 46,
+          "nome": "TIBERY",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 47,
+          "nome": "SAO JOSE/INDUSTRIAL",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 48,
+          "nome": "PROGRESSO",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 54,
+          "nome": "RESIDENCIAL MONTE VERDE",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 83,
+          "nome": "DO LIMAO",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 118,
+          "nome": "EIXO MONUMENTAL",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 131,
+          "nome": "AREA RURAL DE TRINDADE",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 134,
+          "nome": "CIDADE NOVA I",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 135,
+          "nome": "DUQUE DE CAXIAS I",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 145,
+          "nome": "JARDIM NOVO HORIZONTE",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 154,
+          "nome": "SETOR SUL",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 155,
+          "nome": "VILA MUTIRAO",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 157,
+          "nome": "ALCIDES JUNQUEIRA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 163,
+          "nome": "JARDIM SAO CARLOS",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 164,
+          "nome": "GLEBA 35 AM",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 165,
+          "nome": "FAZENDA CAPOTE",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 166,
+          "nome": "ZONA RUAL",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 167,
+          "nome": "JARDIM HORIZONTE",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 169,
+          "nome": "NOVO HORIZONTE",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 171,
+          "nome": "VILA BARUEL",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 172,
+          "nome": "STA EFIGEN",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 176,
+          "nome": "JARDIM AURORA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 184,
+          "nome": "JUSSARA NUCLEO COLONIAL JUSSARA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 198,
+          "nome": "RODOVIARIO",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 199,
+          "nome": "SAMAMBAIA SUL (SAMAMBAIA)",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 200,
+          "nome": "SANTA CECILIA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 203,
+          "nome": "ALPHAVILLE",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 204,
+          "nome": "NOSSA SRA CONCEICAO",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 206,
+          "nome": "VILA ELISA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 210,
+          "nome": "JARAGUA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 221,
+          "nome": "VILA PARQUE JABAQUARA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 222,
+          "nome": "SITIO DE RECREIO MANSOES BERNARDO SAYAO",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 225,
+          "nome": "VILA ROCHA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 226,
+          "nome": "BOM RETIRO",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 230,
+          "nome": "GUAJUVIRAS",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 238,
+          "nome": "CARAJAS",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 239,
+          "nome": "VILA MILITAR",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 245,
+          "nome": "VILA AURORA OESTE",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 261,
+          "nome": "ASA NORTE",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 265,
+          "nome": "COLONIA (ZONA LESTE)",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 279,
+          "nome": "PRIMAVERA II",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 280,
+          "nome": "MARACANA",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        },
+        {
+          "codigoBairro": 283,
+          "nome": "PQUE INDUST III",
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": ""
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

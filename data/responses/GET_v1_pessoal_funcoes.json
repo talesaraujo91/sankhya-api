@@ -1,0 +1,487 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/pessoal/funcoes",
+    "url": "https://api.sankhya.com.br/v1/pessoal/funcoes"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:12 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "8469",
+      "Connection": "keep-alive",
+      "X-RateLimit-Remaining-Minute": "1996",
+      "X-RateLimit-Limit-Minute": "2000",
+      "RateLimit-Remaining": "1996",
+      "RateLimit-Reset": "48",
+      "RateLimit-Limit": "2000",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "a89eb459-7598-4b63-9893-b6e5bd10b1fd",
+      "X-Kong-Upstream-Latency": "181",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "fbb632173e7752143843b0793ccd4a67"
+    },
+    "json": {
+      "funcoes": [
+        {
+          "codigoFuncao": 1,
+          "descricao": "ENCARREGADO DE CUSTOS IV",
+          "cbo": {
+            "codigo": 410105,
+            "descricao": "SUPERVISOR ADMINISTRATIVO"
+          },
+          "dataAlteracao": "23/12/2025 16:39:26"
+        },
+        {
+          "codigoFuncao": 0,
+          "descricao": "<SEM FUNCAO>",
+          "cbo": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "dataAlteracao": "11/09/2003 09:46:20"
+        },
+        {
+          "codigoFuncao": 2,
+          "descricao": "ASSISTENTE DE RH",
+          "cbo": {
+            "codigo": 411010,
+            "descricao": "ASSISTENTE ADMINISTRATIVO"
+          },
+          "dataAlteracao": "23/12/2025 16:39:30"
+        },
+        {
+          "codigoFuncao": 3,
+          "descricao": "ESPECIALISTA TECNICO",
+          "cbo": {
+            "codigo": 313120,
+            "descricao": "TÉCNICO DE MANUTENÇÃO ELÉTRICA"
+          },
+          "dataAlteracao": "23/12/2025 16:39:34"
+        },
+        {
+          "codigoFuncao": 5,
+          "descricao": "MECANICO CALDEREIRO",
+          "cbo": {
+            "codigo": 911325,
+            "descricao": "MECÂNICO DE MANUTENÇÃO DE MÁQUINAS-FERRAMENTAS (USINAGEM DE METAIS)"
+          },
+          "dataAlteracao": "23/12/2025 16:39:41"
+        },
+        {
+          "codigoFuncao": 15,
+          "descricao": "ENCARREGADO ADMINISTRATIVO",
+          "cbo": {
+            "codigo": 410105,
+            "descricao": "SUPERVISOR ADMINISTRATIVO"
+          },
+          "dataAlteracao": "23/12/2025 16:40:11"
+        },
+        {
+          "codigoFuncao": 16,
+          "descricao": "ASSISTENTE DE ENGENHARIA",
+          "cbo": {
+            "codigo": 715615,
+            "descricao": "ELETRICISTA DE INSTALAÇÕES"
+          },
+          "dataAlteracao": "23/12/2025 16:40:17"
+        },
+        {
+          "codigoFuncao": 17,
+          "descricao": "FAXINEIRA",
+          "cbo": {
+            "codigo": 514320,
+            "descricao": "FAXINEIRO"
+          },
+          "dataAlteracao": "23/12/2025 16:40:19"
+        },
+        {
+          "codigoFuncao": 18,
+          "descricao": "AUXILIAR DE OFICIAL MANUTENCAO",
+          "cbo": {
+            "codigo": 514310,
+            "descricao": "AUXILIAR DE MANUTENÇÃO PREDIAL"
+          },
+          "dataAlteracao": "10/01/2025 16:46:49"
+        },
+        {
+          "codigoFuncao": 22,
+          "descricao": "ASSISTENTE FISCAL",
+          "cbo": {
+            "codigo": 411010,
+            "descricao": "ASSISTENTE ADMINISTRATIVO"
+          },
+          "dataAlteracao": "23/12/2025 16:40:29"
+        },
+        {
+          "codigoFuncao": 26,
+          "descricao": "ASSISTENTE FINANCEIRO",
+          "cbo": {
+            "codigo": 411010,
+            "descricao": "ASSISTENTE ADMINISTRATIVO"
+          },
+          "dataAlteracao": "23/12/2025 16:43:38"
+        },
+        {
+          "codigoFuncao": 28,
+          "descricao": "ENCARREGADO DE CUSTOS",
+          "cbo": {
+            "codigo": 410105,
+            "descricao": "SUPERVISOR ADMINISTRATIVO"
+          },
+          "dataAlteracao": "23/12/2025 16:43:44"
+        },
+        {
+          "codigoFuncao": 29,
+          "descricao": "AUXILIAR DE VENDAS",
+          "cbo": {
+            "codigo": 354125,
+            "descricao": "ASSISTENTE DE VENDAS"
+          },
+          "dataAlteracao": "23/12/2025 16:43:46"
+        },
+        {
+          "codigoFuncao": 31,
+          "descricao": "MECANICO DE USINAGEM",
+          "cbo": {
+            "codigo": 911325,
+            "descricao": "MECÂNICO DE MANUTENÇÃO DE MÁQUINAS-FERRAMENTAS (USINAGEM DE METAIS)"
+          },
+          "dataAlteracao": "23/12/2025 16:43:50"
+        },
+        {
+          "codigoFuncao": 35,
+          "descricao": "SUPERVISOR DE MANUTENCAO",
+          "cbo": {
+            "codigo": 910110,
+            "descricao": "Supervisor de manutenção de aparel"
+          },
+          "dataAlteracao": "10/01/2025 16:52:51"
+        },
+        {
+          "codigoFuncao": 39,
+          "descricao": "AUXILIAR BOBINADOR ELETRICISTA A MAO",
+          "cbo": {
+            "codigo": 731165,
+            "descricao": "BOBINADOR ELETRICISTA, À MÃO"
+          },
+          "dataAlteracao": "23/12/2025 16:44:02"
+        },
+        {
+          "codigoFuncao": 43,
+          "descricao": "GERENTE DE MANUTENCAO",
+          "cbo": {
+            "codigo": 142705,
+            "descricao": "Gerente de projetos e serv manutenção"
+          },
+          "dataAlteracao": "10/01/2025 16:24:35"
+        },
+        {
+          "codigoFuncao": 45,
+          "descricao": "ASSISTENTE VENDAS",
+          "cbo": {
+            "codigo": 354125,
+            "descricao": "ASSISTENTE DE VENDAS"
+          },
+          "dataAlteracao": "23/12/2025 16:44:28"
+        },
+        {
+          "codigoFuncao": 46,
+          "descricao": "ENCARREGADO FACILITES",
+          "cbo": {
+            "codigo": 411010,
+            "descricao": "ASSISTENTE ADMINISTRATIVO"
+          },
+          "dataAlteracao": "23/12/2025 16:44:30"
+        },
+        {
+          "codigoFuncao": 51,
+          "descricao": "TRANSPORTADOR DE CARGA",
+          "cbo": {
+            "codigo": 782505,
+            "descricao": "Caminhoneiro autônomo (rotas region"
+          },
+          "dataAlteracao": "23/12/2025 16:44:35"
+        },
+        {
+          "codigoFuncao": 54,
+          "descricao": "AUXILIAR DE TI",
+          "cbo": {
+            "codigo": 212410,
+            "descricao": "ANALISTA DE REDES E DE COMUNICAÇÃO DE DADOS"
+          },
+          "dataAlteracao": "23/12/2025 16:44:42"
+        },
+        {
+          "codigoFuncao": 55,
+          "descricao": "AUXILIAR DE RECURSOS HUMANOS",
+          "cbo": {
+            "codigo": 411030,
+            "descricao": "AUXILIAR DE PESSOAL"
+          },
+          "dataAlteracao": "23/12/2025 16:44:44"
+        },
+        {
+          "codigoFuncao": 57,
+          "descricao": "GERENTE DE OPERACOES E PRODUCAO",
+          "cbo": {
+            "codigo": 141205,
+            "descricao": "GERENTE DE PRODUÇÃO E OPERAÇÕES"
+          },
+          "dataAlteracao": "03/01/2025 14:41:23"
+        },
+        {
+          "codigoFuncao": 111,
+          "descricao": "ANALISTA DE CUSTOS SENIOR",
+          "cbo": {
+            "codigo": 410105,
+            "descricao": "SUPERVISOR ADMINISTRATIVO"
+          },
+          "dataAlteracao": "10/01/2025 16:36:51"
+        },
+        {
+          "codigoFuncao": 62,
+          "descricao": "ASSISTENTE ADMINISTRATIVO PLENO",
+          "cbo": {
+            "codigo": 411010,
+            "descricao": "ASSISTENTE ADMINISTRATIVO"
+          },
+          "dataAlteracao": "06/01/2025 15:07:12"
+        },
+        {
+          "codigoFuncao": 67,
+          "descricao": "SUPERVISOR ADMINISTRATIVO JUNIOR",
+          "cbo": {
+            "codigo": 410105,
+            "descricao": "SUPERVISOR ADMINISTRATIVO"
+          },
+          "dataAlteracao": "10/01/2025 16:36:56"
+        },
+        {
+          "codigoFuncao": 73,
+          "descricao": "ASSISTENTE FISCAL JUNIOR",
+          "cbo": {
+            "codigo": 411010,
+            "descricao": "ASSISTENTE ADMINISTRATIVO"
+          },
+          "dataAlteracao": "10/01/2025 16:42:26"
+        },
+        {
+          "codigoFuncao": 82,
+          "descricao": "AUXILIAR FINANCEIRO JUNIOR",
+          "cbo": {
+            "codigo": 411005,
+            "descricao": "AUXILIAR DE ESCRITÓRIO"
+          },
+          "dataAlteracao": "10/01/2025 16:37:59"
+        },
+        {
+          "codigoFuncao": 116,
+          "descricao": "ASSISTENTE DE FACILITIES PLENO",
+          "cbo": {
+            "codigo": 411010,
+            "descricao": "ASSISTENTE ADMINISTRATIVO"
+          },
+          "dataAlteracao": "06/01/2025 15:37:07"
+        },
+        {
+          "codigoFuncao": 117,
+          "descricao": "ASSISTENTE DE FACILITIES SENIOR",
+          "cbo": {
+            "codigo": 411010,
+            "descricao": "ASSISTENTE ADMINISTRATIVO"
+          },
+          "dataAlteracao": "10/01/2025 16:42:31"
+        },
+        {
+          "codigoFuncao": 133,
+          "descricao": "AUXILIAR DE RECURSOS HUMANOS JUNIOR",
+          "cbo": {
+            "codigo": 411030,
+            "descricao": "AUXILIAR DE PESSOAL"
+          },
+          "dataAlteracao": "10/01/2025 16:45:40"
+        },
+        {
+          "codigoFuncao": 141,
+          "descricao": "ANALISTA DE RECURSOS HUMANOS SENIOR",
+          "cbo": {
+            "codigo": 252405,
+            "descricao": "ANALISTA DE RECURSOS HUMANOS"
+          },
+          "dataAlteracao": "10/01/2025 16:25:11"
+        },
+        {
+          "codigoFuncao": 152,
+          "descricao": "ANALISTA JURIDICO PLENO",
+          "cbo": {
+            "codigo": 241005,
+            "descricao": "ADVOGADO"
+          },
+          "dataAlteracao": "10/01/2025 16:20:03"
+        },
+        {
+          "codigoFuncao": 154,
+          "descricao": "ASSISTENTE DE VENDAS JUNIOR",
+          "cbo": {
+            "codigo": 354125,
+            "descricao": "ASSISTENTE DE VENDAS"
+          },
+          "dataAlteracao": "10/01/2025 16:31:36"
+        },
+        {
+          "codigoFuncao": 158,
+          "descricao": "ANALISTA DE VENDAS PLENO",
+          "cbo": {
+            "codigo": 142330,
+            "descricao": "ANALISTA DE NEGÓCIOS"
+          },
+          "dataAlteracao": "06/01/2025 16:02:16"
+        },
+        {
+          "codigoFuncao": 159,
+          "descricao": "ANALISTA DE VENDAS SENIOR",
+          "cbo": {
+            "codigo": 142330,
+            "descricao": "ANALISTA DE NEGÓCIOS"
+          },
+          "dataAlteracao": "10/01/2025 16:24:16"
+        },
+        {
+          "codigoFuncao": 160,
+          "descricao": "TECNICO EM SEGURANÇA DO TRABALHO JUNIOR",
+          "cbo": {
+            "codigo": 351605,
+            "descricao": "TÉCNICO EM SEGURANÇA DO TRABALHO"
+          },
+          "dataAlteracao": "10/01/2025 16:31:00"
+        },
+        {
+          "codigoFuncao": 166,
+          "descricao": "ALMOXARIFE JUNIOR",
+          "cbo": {
+            "codigo": 414105,
+            "descricao": "ALMOXARIFE"
+          },
+          "dataAlteracao": "10/01/2025 16:45:51"
+        },
+        {
+          "codigoFuncao": 176,
+          "descricao": "AUXILIAR DE ELETRICISTA PLENO",
+          "cbo": {
+            "codigo": 715615,
+            "descricao": "ELETRICISTA DE INSTALAÇÕES"
+          },
+          "dataAlteracao": "06/01/2025 16:14:38"
+        },
+        {
+          "codigoFuncao": 177,
+          "descricao": "AUXILIAR DE ELETRICISTA SENIOR",
+          "cbo": {
+            "codigo": 715615,
+            "descricao": "ELETRICISTA DE INSTALAÇÕES"
+          },
+          "dataAlteracao": "10/01/2025 16:48:39"
+        },
+        {
+          "codigoFuncao": 178,
+          "descricao": "AUXILIAR DE PINTOR INDUSTRIAL JUNIOR",
+          "cbo": {
+            "codigo": 723315,
+            "descricao": "PINTOR DE ESTRUTURAS METÁLICAS"
+          },
+          "dataAlteracao": "10/01/2025 16:48:52"
+        },
+        {
+          "codigoFuncao": 181,
+          "descricao": "AUXILIAR REFRIGERISTA JUNIOR",
+          "cbo": {
+            "codigo": 911205,
+            "descricao": "MECÂNICO DE MANUTENÇÃO E INSTALAÇÃO DE APARELHOS DE CLIMATIZAÇÃO E REFRIGERAÇÃO"
+          },
+          "dataAlteracao": "10/01/2025 16:53:01"
+        },
+        {
+          "codigoFuncao": 183,
+          "descricao": "AUXILIAR REFRIGERISTA SENIOR",
+          "cbo": {
+            "codigo": 911205,
+            "descricao": "MECÂNICO DE MANUTENÇÃO E INSTALAÇÃO DE APARELHOS DE CLIMATIZAÇÃO E REFRIGERAÇÃO"
+          },
+          "dataAlteracao": "10/01/2025 16:53:06"
+        },
+        {
+          "codigoFuncao": 185,
+          "descricao": "AUXILIAR DE DESENHISTA PLENO",
+          "cbo": {
+            "codigo": 318005,
+            "descricao": "DESENHISTA TÉCNICO"
+          },
+          "dataAlteracao": "06/01/2025 16:17:05"
+        },
+        {
+          "codigoFuncao": 186,
+          "descricao": "AUXILIAR DE DESENHISTA SENIOR",
+          "cbo": {
+            "codigo": 318005,
+            "descricao": "DESENHISTA TÉCNICO"
+          },
+          "dataAlteracao": "10/01/2025 16:29:46"
+        },
+        {
+          "codigoFuncao": 189,
+          "descricao": "AUXILIAR DE PRODUCAO SENIOR",
+          "cbo": {
+            "codigo": 784205,
+            "descricao": "ALIMENTADOR DE LINHA DE PRODUÇÃO"
+          },
+          "dataAlteracao": "10/01/2025 16:51:46"
+        },
+        {
+          "codigoFuncao": 191,
+          "descricao": "AUXILIAR DE OFICIAL DE MANUTENCAO PLENO",
+          "cbo": {
+            "codigo": 514310,
+            "descricao": "AUXILIAR DE MANUTENÇÃO PREDIAL"
+          },
+          "dataAlteracao": "10/01/2025 16:46:54"
+        },
+        {
+          "codigoFuncao": 197,
+          "descricao": "BOBINADOR DE ELETRICISTA A MAO PLENO",
+          "cbo": {
+            "codigo": 731165,
+            "descricao": "BOBINADOR ELETRICISTA, À MÃO"
+          },
+          "dataAlteracao": "10/01/2025 16:50:47"
+        },
+        {
+          "codigoFuncao": 203,
+          "descricao": "ELETRICISTA PLENO",
+          "cbo": {
+            "codigo": 951105,
+            "descricao": "ELETRICISTA DE MANUTENÇÃO ELETROELETRÔNICA"
+          },
+          "dataAlteracao": "06/01/2025 16:23:22"
+        },
+        {
+          "codigoFuncao": 206,
+          "descricao": "PINTOR INDUSTRIAL PLENO",
+          "cbo": {
+            "codigo": 723315,
+            "descricao": "PINTOR DE ESTRUTURAS METÁLICAS"
+          },
+          "dataAlteracao": "06/01/2025 16:24:03"
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

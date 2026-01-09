@@ -1,0 +1,173 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/estoque/locais",
+    "url": "https://api.sankhya.com.br/v1/estoque/locais"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:24 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "2257",
+      "Connection": "keep-alive",
+      "X-RateLimit-Remaining-Minute": "1989",
+      "X-RateLimit-Limit-Minute": "2000",
+      "RateLimit-Remaining": "1989",
+      "RateLimit-Reset": "36",
+      "RateLimit-Limit": "2000",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "da6497e8-3b4b-43fa-84ed-8db4492e3c66",
+      "X-Kong-Upstream-Latency": "171",
+      "X-Kong-Proxy-Latency": "1",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "efab0361d4b673772e40364fbb63a07c"
+    },
+    "json": {
+      "locais": [
+        {
+          "codigoLocal": 1002000,
+          "codigoLocalPai": 1000000,
+          "descricaoLocal": "ALMOXARIFADOS",
+          "grau": 2,
+          "analitico": false,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1004000,
+          "codigoLocalPai": 1000000,
+          "descricaoLocal": "CLIMATIZADO - UBS",
+          "grau": 2,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1001000,
+          "codigoLocalPai": 1000000,
+          "descricaoLocal": "ITENS DE CONSUMO",
+          "grau": 2,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1002002,
+          "codigoLocalPai": 1002000,
+          "descricaoLocal": "ALMOX IND - MATÉRIA PRIMA",
+          "grau": 3,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1000000,
+          "codigoLocalPai": -999999999,
+          "descricaoLocal": "INTERNO",
+          "grau": 1,
+          "analitico": false,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1002004,
+          "codigoLocalPai": 1002000,
+          "descricaoLocal": "ALMOX IND - INSUMOS",
+          "grau": 3,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1002006,
+          "codigoLocalPai": 1002000,
+          "descricaoLocal": "ALMOXARIFADO - PRODUTOS INDUSTRIALIZADOS",
+          "grau": 3,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1002003,
+          "codigoLocalPai": 1002000,
+          "descricaoLocal": "ALMOXARIFADO - IMOBILIZADO",
+          "grau": 3,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1002005,
+          "codigoLocalPai": 1002000,
+          "descricaoLocal": "ALMOXARIFADO - TERCEIROS",
+          "grau": 3,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 0,
+          "codigoLocalPai": 0,
+          "descricaoLocal": "<SEM LOCAL>",
+          "grau": 0,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1003000,
+          "codigoLocalPai": 1000000,
+          "descricaoLocal": "PISO SUPERIOR",
+          "grau": 2,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1002001,
+          "codigoLocalPai": 1002000,
+          "descricaoLocal": "ALMOXARIFADO - REVENDA",
+          "grau": 3,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1005000,
+          "codigoLocalPai": 1000000,
+          "descricaoLocal": "ALMOX IND - SNF",
+          "grau": 2,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1002007,
+          "codigoLocalPai": 1002000,
+          "descricaoLocal": "ALMOXARIFADO - WEG",
+          "grau": 3,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1002008,
+          "codigoLocalPai": 1002000,
+          "descricaoLocal": "ALMOXARIFADO - ITENS EM TRANSFERENCIA",
+          "grau": 3,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1002009,
+          "codigoLocalPai": 1002000,
+          "descricaoLocal": "ALMOXARIFADO - EM PRODUCAO",
+          "grau": 3,
+          "analitico": true,
+          "ativo": true
+        },
+        {
+          "codigoLocal": 1002010,
+          "codigoLocalPai": 1002000,
+          "descricaoLocal": "ALMOX IND - EPIS",
+          "grau": 3,
+          "analitico": true,
+          "ativo": true
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "17",
+        "hasMore": "false"
+      }
+    }
+  }
+}

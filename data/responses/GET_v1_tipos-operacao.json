@@ -1,0 +1,337 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/tipos-operacao",
+    "url": "https://api.sankhya.com.br/v1/tipos-operacao"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:05 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "4901",
+      "Connection": "keep-alive",
+      "X-RateLimit-Remaining-Minute": "1998",
+      "X-RateLimit-Limit-Minute": "2000",
+      "RateLimit-Remaining": "1998",
+      "RateLimit-Reset": "55",
+      "RateLimit-Limit": "2000",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "5012a956-bedd-43a5-a840-db9b96df9380",
+      "X-Kong-Upstream-Latency": "291",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "20872f1931014024aba8420dee417e70"
+    },
+    "json": {
+      "data": [
+        {
+          "codigoTipoOperacao": 4300,
+          "nome": "RECEBIMENTO",
+          "tipoMovimento": 21,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 1402,
+          "nome": "TRANSFERÊNCIA PRODUÇÃO (LOCAIS)",
+          "tipoMovimento": 22,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 4101,
+          "nome": "TAXAS E TARIFAS BANCÁRIAS",
+          "tipoMovimento": 12,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 1601,
+          "nome": "DESMONTE DE PRODUÇÃO",
+          "tipoMovimento": 10,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 0,
+          "nome": "<SEM TOP>",
+          "tipoMovimento": 19,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 4200,
+          "nome": "PAGAMENTO",
+          "tipoMovimento": 11,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 4100,
+          "nome": "LANÇAMENTO FINANCEIRO",
+          "tipoMovimento": 12,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 4000,
+          "nome": "MOV. BANCÁRIA",
+          "tipoMovimento": 6,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 1600,
+          "nome": "APONTAMENTO DE PRODUÇÃO",
+          "tipoMovimento": 10,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 1401,
+          "nome": "TRANSFERÊNCIA ENTRE EMPRESAS",
+          "tipoMovimento": 22,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 4103,
+          "nome": "LANÇAMENTO CTE - FRETE",
+          "tipoMovimento": 12,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2195,
+          "nome": "AJUSTE DE ESTOQUE - ENTRADA (NFE)",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2001,
+          "nome": "ORÇAMENTO COMPRA CONSUMO",
+          "tipoMovimento": 18,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2000,
+          "nome": "ORÇAMENTO COMPRA REVENDA",
+          "tipoMovimento": 18,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2002,
+          "nome": "ORÇAMENTO COMPRA P/ UTIL SERVICO",
+          "tipoMovimento": 18,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2003,
+          "nome": "ORÇAMENTO COMPRA IMOBILIZADO",
+          "tipoMovimento": 18,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 4102,
+          "nome": "FINANCEIRO (ADIANTAMENTOS)",
+          "tipoMovimento": 12,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2197,
+          "nome": "AJUSTE DE ESTOQUE - ENTRADA",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 3210,
+          "nome": "INDUSTRIALIZAÇAO EFETUADA PARA OUTRA EMP",
+          "tipoMovimento": 23,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2005,
+          "nome": "ORÇAMENTO COMPRA INDUSTRIALIZACAO",
+          "tipoMovimento": 18,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 3153,
+          "nome": "PEDIDO VENDA SERVIÇO MEDIÇÃO (OS AVULSA)",
+          "tipoMovimento": 19,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 1003,
+          "nome": "PEDIDO DE REQUISICAO DE EPI",
+          "tipoMovimento": 13,
+          "ativo": false
+        },
+        {
+          "codigoTipoOperacao": 2004,
+          "nome": "ORÇAMENTO EPI E FERRAMENTAS",
+          "tipoMovimento": 18,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2211,
+          "nome": "ENTRADA POR RECUSA DO DESTINATARIO",
+          "tipoMovimento": 8,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2207,
+          "nome": "RETORNO REMESSA ATIVO IMOBILIZADO",
+          "tipoMovimento": 8,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 1022,
+          "nome": "REQ. BAIXA MATERIAL PROCESSADO UBS",
+          "tipoMovimento": 20,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2203,
+          "nome": "RETORNO COMODATO TERCEIROS",
+          "tipoMovimento": 8,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2115,
+          "nome": "RETORNO DE LOCAÇÃO PRÓPRIA",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 1020,
+          "nome": "FECHAMENTO DE VIAGENS",
+          "tipoMovimento": 20,
+          "ativo": false
+        },
+        {
+          "codigoTipoOperacao": 3103,
+          "nome": "PRE VENDA",
+          "tipoMovimento": 19,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 9999,
+          "nome": "COMPRA NOTAS ANTIGAS",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2117,
+          "nome": "COMPRA SERVICO (PROJETO)",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 1002,
+          "nome": "REQUISICAO FERRAMENTAS",
+          "tipoMovimento": 20,
+          "ativo": false
+        },
+        {
+          "codigoTipoOperacao": 1004,
+          "nome": "REQUISICAO DE ENTREGA EPI",
+          "tipoMovimento": 20,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 47,
+          "nome": "COMPRA CT-E",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2123,
+          "nome": "COMPRA PARA CONSUMO - MODELO 1",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2121,
+          "nome": "COMPRA - S/ ESTOQUE S/ FINANCEIRO",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2126,
+          "nome": "COMPRA IMOBILIZADO E FERRAMENTAS S/FIN",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2119,
+          "nome": "COMPRA DE ENTREGA FUTURA",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2122,
+          "nome": "COMPRA - S/ FINANCEIRO",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 3220,
+          "nome": "ESPELHO NFE EMITIDAS ANTES DO SISTEMA",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2124,
+          "nome": "OUTRAS ENTRADAS (SEM ESTOQUE)",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2130,
+          "nome": "OUTRAS ENTRADAS S/EST C/ FIN",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2108,
+          "nome": "COMPRA DE COMBUSTIVEL E LUBRIFICANTES",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2128,
+          "nome": "COMPRA PARA MATERIA PRIMA IMPORTAÇÃO",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2134,
+          "nome": "ENTRADA P/ INDUSTR POR CONTA E ORDEM AD",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2132,
+          "nome": "RETORNO MERC REMET INDUST S/ TRANSITO AD",
+          "tipoMovimento": 7,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2300,
+          "nome": "NFE-DENEGADA - DEVOLUCAO",
+          "tipoMovimento": 8,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2202,
+          "nome": "RETORNO CONSERTO TERCEIROS",
+          "tipoMovimento": 8,
+          "ativo": true
+        },
+        {
+          "codigoTipoOperacao": 2107,
+          "nome": "ENTRADA PARA CONSERTO",
+          "tipoMovimento": 7,
+          "ativo": true
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

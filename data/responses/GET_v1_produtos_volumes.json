@@ -1,0 +1,35 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/produtos/volumes",
+    "url": "https://api.sankhya.com.br/v1/produtos/volumes"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:19 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "133",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "41",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1989",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1989",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "405cfad6-ff48-43e9-8a32-4ad2fda07036",
+      "X-Kong-Upstream-Latency": "181",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "d651035001e1c52763af79110b7cf758"
+    },
+    "json": {
+      "statusCode": 400,
+      "error": {
+        "code": "BAD_REQUEST",
+        "message": "Ocorreu algum erro inesperado!",
+        "details": "ORA-01722: número inválido"
+      }
+    }
+  }
+}

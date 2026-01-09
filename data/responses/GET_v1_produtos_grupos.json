@@ -1,0 +1,35 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/produtos/grupos",
+    "url": "https://api.sankhya.com.br/v1/produtos/grupos"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:28 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "133",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "32",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1986",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1986",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "00acb9db-4b0b-4b0c-aaa1-31bb935139ef",
+      "X-Kong-Upstream-Latency": "178",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "ec223a35f2cc085598801520f43e626c"
+    },
+    "json": {
+      "statusCode": 400,
+      "error": {
+        "code": "BAD_REQUEST",
+        "message": "Ocorreu algum erro inesperado!",
+        "details": "ORA-01722: número inválido"
+      }
+    }
+  }
+}

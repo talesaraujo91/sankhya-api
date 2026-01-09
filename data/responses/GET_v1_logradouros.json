@@ -1,0 +1,337 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/logradouros",
+    "url": "https://api.sankhya.com.br/v1/logradouros"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:31 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "4266",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "29",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1984",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1984",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "dcb8b22b-c6cd-4b74-a942-0a1d4318d4fd",
+      "X-Kong-Upstream-Latency": "178",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "13fd323beaa06139377484486864852d"
+    },
+    "json": {
+      "logradouros": [
+        {
+          "codigoLogradouro": 10,
+          "nome": "119",
+          "tipo": "AV",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 12,
+          "nome": "VARGINHA",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 21,
+          "nome": "ANTONIO THOMAZ FERREIRA REZENDE",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 28,
+          "nome": "ENGENHEIRO IVANIL FRANCISCHINI",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 34,
+          "nome": "DR FELIPE PINEL",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 38,
+          "nome": "SAO LEOPOLDO",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 41,
+          "nome": "BIAS FORTES",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 42,
+          "nome": "QUINZE",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 59,
+          "nome": "JOAO TRAFICANTE",
+          "tipo": "Rod",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 60,
+          "nome": "JOAO NAVES DE AVILA",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 62,
+          "nome": "CORONEL JOSE TEOFILO CARNEIRO",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 63,
+          "nome": "JOSE JOAO DIB",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 70,
+          "nome": "NAPOLEAO FAISSOL",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 77,
+          "nome": "JOAO PINHEIRO",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 78,
+          "nome": "ARAGUARI",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 86,
+          "nome": "JUSCELINO KUBITSCHEK",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 113,
+          "nome": "CEL MARIO DE AZEVEDO",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 174,
+          "nome": "DEA CHAMOUN",
+          "tipo": "Tv",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 178,
+          "nome": "DOS MINISTERIOS BLOCO",
+          "tipo": "Esp",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 179,
+          "nome": "101",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 184,
+          "nome": "BR 070, KM 386",
+          "tipo": "Rod",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 190,
+          "nome": "DEZENOVE",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 198,
+          "nome": "VICENTE FERREIRA MARQUES",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 209,
+          "nome": "GO-060",
+          "tipo": "Rod",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 213,
+          "nome": "JOSE MONTEIRO DE FIGUEIREDO",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 214,
+          "nome": "MG 154 , KM 30, MARGEM DIREITA",
+          "tipo": "Rod",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 240,
+          "nome": "ARNALDO ECKERT",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 244,
+          "nome": "CENTO E ONZE",
+          "tipo": "AV",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 262,
+          "nome": "DO PINHO",
+          "tipo": "AV",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 263,
+          "nome": "TRINTA E TRÊS",
+          "tipo": "Rua",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 264,
+          "nome": "TRINTA E TRES",
+          "tipo": "AV",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 265,
+          "nome": "2-A",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 268,
+          "nome": "FAUSTO DE ANDRADE CARVALHO",
+          "tipo": "Rua",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 270,
+          "nome": "FAUSTO DE CARVALHO",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 272,
+          "nome": "MARIA SILVERIO PRADO",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 276,
+          "nome": "ALCIDES JUNQUEIRA",
+          "tipo": "Rua",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 286,
+          "nome": "SEIS",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 288,
+          "nome": "NOVENTA E SEIS",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 296,
+          "nome": "LOTES RURAIS 42C, 44, 46, 47, 48 E 50 DA GLEBA 35",
+          "tipo": "Lot",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 299,
+          "nome": "AGROCERES",
+          "tipo": "Faz",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 301,
+          "nome": "MAJOR BARBOSA FERRAZ JR.",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 311,
+          "nome": "LUCILA",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 314,
+          "nome": "DANTAS",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 315,
+          "nome": "STA IFIGENIA",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 320,
+          "nome": "NOVENTA E CINCO",
+          "tipo": "AV",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 322,
+          "nome": "CENTO E QUATORZE",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 324,
+          "nome": "CENTO E QUINZE A",
+          "tipo": "A",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 365,
+          "nome": "PIO XII",
+          "tipo": "Av",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 368,
+          "nome": "ADE CONJUNTO",
+          "tipo": "",
+          "descricaoCorreio": ""
+        },
+        {
+          "codigoLogradouro": 369,
+          "nome": "TUTOIA",
+          "tipo": "R",
+          "descricaoCorreio": ""
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

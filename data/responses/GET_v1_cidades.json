@@ -1,0 +1,437 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/cidades",
+    "url": "https://api.sankhya.com.br/v1/cidades"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:30 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "6916",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "30",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1985",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1985",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "897e316a-e787-4af6-ab25-6f3b7328514a",
+      "X-Kong-Upstream-Latency": "224",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "164c016e674b666cef7c6a1bf6f17246"
+    },
+    "json": {
+      "cidades": [
+        {
+          "codigoCidade": 1,
+          "nome": "ABADIA DE GOIAS",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABADIA DE GOIAS",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 2,
+          "nome": "ABADIA DOS DOURADOS",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABADIA DOS DOURADOS",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 3,
+          "nome": "ABADIANIA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABADIANIA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 4,
+          "nome": "ABAETE",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABAETE",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 5,
+          "nome": "ABAETETUBA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABAETETUBA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 6,
+          "nome": "ABAIARA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABAIARA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 7,
+          "nome": "ABAIRA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABAIRA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 8,
+          "nome": "ABARE",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABARE",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 9,
+          "nome": "ABATIA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABATIA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 10,
+          "nome": "ABDON BATISTA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABDON BATISTA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 11,
+          "nome": "ABEL FIGUEIREDO",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABEL FIGUEIREDO",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 12,
+          "nome": "ABELARDO LUZ",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABELARDO LUZ",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 13,
+          "nome": "ABRE CAMPO",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABRE CAMPO",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 14,
+          "nome": "ABREU E LIMA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABREU E LIMA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 15,
+          "nome": "ABREULANDIA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ABREULANDIA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 16,
+          "nome": "ACAIACA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACAIACA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 17,
+          "nome": "ACAILANDIA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACAILANDIA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 18,
+          "nome": "ACAJUTIBA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACAJUTIBA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 19,
+          "nome": "ACARA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACARA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 20,
+          "nome": "ACARAPE",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACARAPE",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 21,
+          "nome": "ACARAU",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACARAU",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 22,
+          "nome": "ACARI",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACARI",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 23,
+          "nome": "ACAUA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACAUA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 24,
+          "nome": "ACEGUA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACEGUA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 25,
+          "nome": "ACOPIARA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACOPIARA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 26,
+          "nome": "ACORIZAL",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACORIZAL",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 27,
+          "nome": "ACRELANDIA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACRELANDIA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 28,
+          "nome": "ACREUNA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACREUNA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 29,
+          "nome": "ACU",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACU",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 30,
+          "nome": "ACUCENA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ACUCENA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 31,
+          "nome": "ADAMANTINA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ADAMANTINA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 32,
+          "nome": "ADELANDIA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ADELANDIA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 33,
+          "nome": "ADOLFO",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ADOLFO",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 34,
+          "nome": "ADRIANOPOLIS",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ADRIANOPOLIS",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 35,
+          "nome": "ADUSTINA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "ADUSTINA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 36,
+          "nome": "AFOGADOS INGAZEIRA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AFOGADOS DA INGAZEIRA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 37,
+          "nome": "AFONSO BEZERRA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AFONSO BEZERRA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 38,
+          "nome": "AFONSO CLAUDIO",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AFONSO CLAUDIO",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 39,
+          "nome": "AFONSO CUNHA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AFONSO CUNHA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 40,
+          "nome": "AFRANIO",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AFRANIO",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 41,
+          "nome": "AFUA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AFUA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 42,
+          "nome": "AGRESTINA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AGRESTINA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 43,
+          "nome": "AGRICOLANDIA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AGRICOLANDIA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 44,
+          "nome": "AGROLANDIA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AGROLANDIA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 45,
+          "nome": "AGRONOMICA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AGRONOMICA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 46,
+          "nome": "AGUA AZUL DO NORTE",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AGUA AZUL DO NORTE",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 47,
+          "nome": "AGUA BOA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AGUA BOA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 48,
+          "nome": "AGUA BOA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AGUA BOA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 49,
+          "nome": "AGUA BRANCA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AGUA BRANCA",
+          "codigoMunicipioFiscal": 0
+        },
+        {
+          "codigoCidade": 50,
+          "nome": "AGUA BRANCA",
+          "codigoRegiao": 0,
+          "nomeRegiao": "<SEM REGIAO>",
+          "nomeCorreio": "AGUA BRANCA",
+          "codigoMunicipioFiscal": 0
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "50",
+        "hasMore": "true"
+      }
+    }
+  }
+}

@@ -1,0 +1,1129 @@
+{
+  "request": {
+    "method": "GET",
+    "path": "/v1/pessoal/departamentos",
+    "url": "https://api.sankhya.com.br/v1/pessoal/departamentos"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Date": "Fri, 26 Dec 2025 06:35:13 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "14378",
+      "Connection": "keep-alive",
+      "RateLimit-Reset": "47",
+      "X-RateLimit-Limit-Minute": "2000",
+      "X-RateLimit-Remaining-Minute": "1992",
+      "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1992",
+      "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "GTW-REQUEST-ID": "e722e4f8-b8d0-4f4f-8c2d-0c995556bd53",
+      "X-Kong-Upstream-Latency": "229",
+      "X-Kong-Proxy-Latency": "0",
+      "Via": "kong/3.5.0",
+      "X-Kong-Request-Id": "e42df115891d6661ba4fb240bd4f8351"
+    },
+    "json": {
+      "departamentos": [
+        {
+          "codigoDepartamento": 1002001,
+          "nome": "ADMINISTRATIVO INDUSTRIA",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10201,
+            "descricao": "INDUSTRIA"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1002002,
+          "nome": "ALMOXARIFADO",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10201,
+            "descricao": "INDUSTRIA"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1003004,
+          "nome": "LONGPING",
+          "ativo": false,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10202,
+            "descricao": "MANUTENCAO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1005000,
+          "nome": "OFICINA",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10205,
+            "descricao": "OFICINA"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1001008,
+          "nome": "FINANCEIRO",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10101,
+            "descricao": "ADMINISTRATIVO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1003005,
+          "nome": "TECNOSEEDS",
+          "ativo": false,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10202,
+            "descricao": "MANUTENCAO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1001009,
+          "nome": "FERIAS",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10101,
+            "descricao": "ADMINISTRATIVO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1001007,
+          "nome": "RECURSOS HUMANOS",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10103,
+            "descricao": "RECURSOS HUMANOS"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1001001,
+          "nome": "COMPRAS",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10101,
+            "descricao": "ADMINISTRATIVO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "17/06/2025 17:27:05"
+        },
+        {
+          "codigoDepartamento": 1001002,
+          "nome": "CUSTOS",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10101,
+            "descricao": "ADMINISTRATIVO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1002004,
+          "nome": "ELÉTRICA",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10201,
+            "descricao": "INDUSTRIA"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1002005,
+          "nome": "ENGENHARIA",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10201,
+            "descricao": "INDUSTRIA"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1003003,
+          "nome": "BP-BUNGE",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10202,
+            "descricao": "MANUTENCAO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1007000,
+          "nome": "VENDAS",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10204,
+            "descricao": "REVENDA"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1003006,
+          "nome": "SYNGENTA",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10202,
+            "descricao": "MANUTENCAO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "20/08/2025 10:49:49"
+        },
+        {
+          "codigoDepartamento": 1002003,
+          "nome": "CUSTOS INDUSTRIA",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10201,
+            "descricao": "INDUSTRIA"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1001005,
+          "nome": "FACILITIES",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10101,
+            "descricao": "ADMINISTRATIVO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1002006,
+          "nome": "PINTURA",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10201,
+            "descricao": "INDUSTRIA"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1002007,
+          "nome": "PRODUÇÃO",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10201,
+            "descricao": "INDUSTRIA"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1003001,
+          "nome": "BAYER PSQ",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10202,
+            "descricao": "MANUTENCAO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1004000,
+          "nome": "OBRAS",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10203,
+            "descricao": "OBRAS"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1001004,
+          "nome": "ESH",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10103,
+            "descricao": "RECURSOS HUMANOS"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1001006,
+          "nome": "FISCAL",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10102,
+            "descricao": "FISCAL / CONTABIL"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1001003,
+          "nome": "DIRETORIA",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10106,
+            "descricao": "DIRETORIA"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1003002,
+          "nome": "BAYER UBS",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10202,
+            "descricao": "MANUTENCAO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1008000,
+          "nome": "LOCAÇÕES",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10206,
+            "descricao": "LOCACAO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1003009,
+          "nome": "VALOREN - PARACATU",
+          "ativo": false,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10202,
+            "descricao": "MANUTENCAO"
+          },
+          "registroFiscal": {
+            "codigo": 3,
+            "descricao": "TERMO ELETRO AUTO"
+          },
+          "parceiro": {
+            "codigo": 5,
+            "nome": "TERMO ELETRO COM SERV AUT ELETRICA LTDA"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1001010,
+          "nome": "GERENCIA",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10101,
+            "descricao": "ADMINISTRATIVO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1009001,
+          "nome": "CONSTRUCÃO RUA 110",
+          "ativo": true,
+          "endereco": {
+            "codigo": 2511,
+            "descricao": "RUA 110",
+            "numero": 55,
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10500,
+            "descricao": "INVESTIMENTOS"
+          },
+          "registroFiscal": {
+            "codigo": 8,
+            "descricao": "SELECAO SEMENTES - OBRA"
+          },
+          "parceiro": {
+            "codigo": 4607,
+            "nome": "SELECAO SEMENTES LTDA OBRA"
+          },
+          "lotacao": {
+            "tipo": 2,
+            "descricao": "Obra de Constru¿¿o Civil - Empreitada Parcial ou Subempreitada"
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1001011,
+          "nome": "MARKETING",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10101,
+            "descricao": "ADMINISTRATIVO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1001012,
+          "nome": "ADMINISTRATIVO CORPORATIVO",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10101,
+            "descricao": "ADMINISTRATIVO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "08/08/2025 08:20:57"
+        },
+        {
+          "codigoDepartamento": 1003007,
+          "nome": "GDM",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10202,
+            "descricao": "MANUTENCAO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1003008,
+          "nome": "VALOREM",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10202,
+            "descricao": "MANUTENCAO"
+          },
+          "registroFiscal": {
+            "codigo": 3,
+            "descricao": "TERMO ELETRO AUTO"
+          },
+          "parceiro": {
+            "codigo": 5,
+            "nome": "TERMO ELETRO COM SERV AUT ELETRICA LTDA"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1003012,
+          "nome": "MANTIQUEIRA",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10202,
+            "descricao": "MANUTENCAO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1010000,
+          "nome": "TERCEIROS",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10101,
+            "descricao": "ADMINISTRATIVO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "08/08/2025 09:07:43"
+        },
+        {
+          "codigoDepartamento": 1003010,
+          "nome": "MANUTENCAO",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10202,
+            "descricao": "MANUTENCAO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1003011,
+          "nome": "UNIDAS",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10202,
+            "descricao": "MANUTENCAO"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "22/04/2025 16:01:11"
+        },
+        {
+          "codigoDepartamento": 1006001,
+          "nome": "UBS SAFRISTAS",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10208,
+            "descricao": "UBS"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "24/06/2025 20:21:51"
+        },
+        {
+          "codigoDepartamento": 1006002,
+          "nome": "UBS",
+          "ativo": true,
+          "endereco": {
+            "codigo": "",
+            "descricao": "",
+            "numero": "",
+            "complemento": ""
+          },
+          "centroResultado": {
+            "codigo": 10208,
+            "descricao": "UBS"
+          },
+          "registroFiscal": {
+            "codigo": "",
+            "descricao": ""
+          },
+          "parceiro": {
+            "codigo": 0,
+            "nome": "<SEM PARCEIRO>"
+          },
+          "lotacao": {
+            "tipo": 0,
+            "descricao": ""
+          },
+          "dataAlteracao": "11/07/2025 14:12:02"
+        }
+      ],
+      "pagination": {
+        "page": "0",
+        "offset": "0",
+        "total": "39",
+        "hasMore": "false"
+      }
+    }
+  }
+}
