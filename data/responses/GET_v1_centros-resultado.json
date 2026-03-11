@@ -7,21 +7,23 @@
   "response": {
     "status": 200,
     "headers": {
-      "Date": "Fri, 26 Dec 2025 06:35:03 GMT",
+      "Date": "Wed, 11 Mar 2026 18:51:11 GMT",
       "Content-Type": "application/json",
-      "Content-Length": "3726",
+      "Content-Length": "3762",
       "Connection": "keep-alive",
-      "X-RateLimit-Remaining-Minute": "1999",
+      "RateLimit-Reset": "49",
       "X-RateLimit-Limit-Minute": "2000",
-      "RateLimit-Remaining": "1999",
-      "RateLimit-Reset": "57",
+      "X-RateLimit-Remaining-Minute": "1999",
       "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1999",
       "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
-      "GTW-REQUEST-ID": "ce95f5ee-86d1-4a8a-a769-ab947da0dbaa",
-      "X-Kong-Upstream-Latency": "197",
-      "X-Kong-Proxy-Latency": "0",
+      "X-Upstream-elapsed-time": "153",
+      "X-Upstream-Robots-Tag": "noindex",
+      "GTW-REQUEST-ID": "6e455f20-751f-4cf8-bf5b-ce095aad854d",
+      "X-Kong-Upstream-Latency": "209",
+      "X-Kong-Proxy-Latency": "1",
       "Via": "kong/3.5.0",
-      "X-Kong-Request-Id": "66f031258c6b657e4efc9c5b1132371f"
+      "X-Kong-Request-Id": "eafc5c6dcd4fc847f6bb5e02ad2ad218"
     },
     "json": {
       "data": [
@@ -63,7 +65,7 @@
         },
         {
           "codigoCentroResultado": 10204,
-          "nome": "REVENDA",
+          "nome": "PECAS (REVENDA)",
           "grau": 3,
           "ativo": true,
           "codigoCentroResultadoPai": 10200,
@@ -72,7 +74,7 @@
         },
         {
           "codigoCentroResultado": 10401,
-          "nome": "INSTITUCIONAL",
+          "nome": "CORPORATIVO - INSTITUCIONAL",
           "grau": 3,
           "ativo": true,
           "codigoCentroResultadoPai": 10400,
@@ -153,7 +155,7 @@
         },
         {
           "codigoCentroResultado": 10400,
-          "nome": "INSTITUCIONAL",
+          "nome": "CORPORATIVO - INSTITUCIONAL",
           "grau": 2,
           "ativo": true,
           "codigoCentroResultadoPai": 10000,

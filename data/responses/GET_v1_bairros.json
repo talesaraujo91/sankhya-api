@@ -7,21 +7,23 @@
   "response": {
     "status": 200,
     "headers": {
-      "Date": "Fri, 26 Dec 2025 06:35:32 GMT",
+      "Date": "Wed, 11 Mar 2026 18:51:42 GMT",
       "Content-Type": "application/json",
       "Content-Length": "4594",
       "Connection": "keep-alive",
-      "RateLimit-Reset": "28",
+      "X-RateLimit-Remaining-Minute": "1988",
       "X-RateLimit-Limit-Minute": "2000",
-      "X-RateLimit-Remaining-Minute": "1983",
+      "RateLimit-Remaining": "1988",
+      "RateLimit-Reset": "19",
       "RateLimit-Limit": "2000",
-      "RateLimit-Remaining": "1983",
       "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
-      "GTW-REQUEST-ID": "84e1c572-23b4-4df6-9b8f-92a7ccaddb4c",
-      "X-Kong-Upstream-Latency": "174",
-      "X-Kong-Proxy-Latency": "1",
+      "X-Upstream-elapsed-time": "156",
+      "X-Upstream-Robots-Tag": "noindex",
+      "GTW-REQUEST-ID": "f1e66c7a-8bfa-474e-b40f-cff364e670e6",
+      "X-Kong-Upstream-Latency": "171",
+      "X-Kong-Proxy-Latency": "0",
       "Via": "kong/3.5.0",
-      "X-Kong-Request-Id": "e97aff00bb980e262828f15d3b95cf79"
+      "X-Kong-Request-Id": "f13e3166a5727a445b8c9e69b0013d31"
     },
     "json": {
       "bairros": [

@@ -83,8 +83,8 @@ def get_project_by_id(
       Sankhya's gateway commonly wraps responses as {"data": ...}. This helper
       accepts either a bare object or a {"data": {...}} wrapper.
     """
-
-    url = base_url.rstrip("/") + f"/v1/projetos/{int(project_id)}"
+    print(access_token)
+    url = base_url.rstrip("/") + f"/v1/precos/produto/{int(project_id)}"
     headers = {"Authorization": f"Bearer {access_token}"}
 
     resp = requests.get(url, headers=headers, timeout=timeout_s)

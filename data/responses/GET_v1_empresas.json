@@ -7,21 +7,23 @@
   "response": {
     "status": 200,
     "headers": {
-      "Date": "Fri, 26 Dec 2025 06:35:40 GMT",
+      "Date": "Wed, 11 Mar 2026 18:51:50 GMT",
       "Content-Type": "application/json",
       "Content-Length": "4941",
       "Connection": "keep-alive",
-      "X-RateLimit-Remaining-Minute": "1983",
+      "RateLimit-Reset": "11",
       "X-RateLimit-Limit-Minute": "2000",
-      "RateLimit-Remaining": "1983",
-      "RateLimit-Reset": "21",
+      "X-RateLimit-Remaining-Minute": "1977",
       "RateLimit-Limit": "2000",
+      "RateLimit-Remaining": "1977",
       "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
-      "GTW-REQUEST-ID": "7a923bc3-59db-4a09-8c6c-137e6e451301",
-      "X-Kong-Upstream-Latency": "215",
+      "X-Upstream-elapsed-time": "186",
+      "X-Upstream-Robots-Tag": "noindex",
+      "GTW-REQUEST-ID": "6368b6d5-861d-4d15-aa16-d5786be201b4",
+      "X-Kong-Upstream-Latency": "200",
       "X-Kong-Proxy-Latency": "0",
       "Via": "kong/3.5.0",
-      "X-Kong-Request-Id": "e05d51474f6df3244edee33a8da6d158"
+      "X-Kong-Request-Id": "5732d3582919241512ee4d1bcea2d023"
     },
     "json": {
       "empresas": [
@@ -165,7 +167,7 @@
           "cnpjCpf": "51506728000120",
           "inscricaoEstadual": "",
           "inscricaoMunicipal": "14897110013",
-          "telefone": "00343263 8011",
+          "telefone": "034 3263 8011",
           "email": "tecnologiaparticipacoes@gmail.com",
           "homepage": "",
           "codigoLogradouro": 2132,

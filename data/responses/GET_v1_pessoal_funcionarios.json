@@ -7,223 +7,425 @@
   "response": {
     "status": 200,
     "headers": {
-      "Date": "Fri, 26 Dec 2025 06:35:17 GMT",
+      "Date": "Wed, 11 Mar 2026 18:51:26 GMT",
       "Content-Type": "application/json",
-      "Content-Length": "2271",
+      "Content-Length": "8552",
       "Connection": "keep-alive",
-      "X-RateLimit-Remaining-Minute": "1993",
+      "X-RateLimit-Remaining-Minute": "1994",
       "X-RateLimit-Limit-Minute": "2000",
-      "RateLimit-Remaining": "1993",
-      "RateLimit-Reset": "44",
+      "RateLimit-Remaining": "1994",
+      "RateLimit-Reset": "35",
       "RateLimit-Limit": "2000",
       "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
-      "GTW-REQUEST-ID": "c537a458-3a83-40cc-8b17-9eec206c1707",
-      "X-Kong-Upstream-Latency": "210",
+      "X-Upstream-elapsed-time": "256",
+      "X-Upstream-Robots-Tag": "noindex",
+      "GTW-REQUEST-ID": "f7ee3405-d1f0-4f7b-b2fb-83cdb7a728fe",
+      "X-Kong-Upstream-Latency": "271",
       "X-Kong-Proxy-Latency": "1",
       "Via": "kong/3.5.0",
-      "X-Kong-Request-Id": "0644695435eece25ef694a521b309a7b"
+      "X-Kong-Request-Id": "24ada04a3d9e585f5bbbc047c8aecf4d"
     },
     "json": {
       "codigos": [
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 341
+          "codigoFuncionario": 341,
+          "nome": "LUIZMAR DE ALMEIDA DOS SANTOS",
+          "nomeMae": "MARIA GLORIA ALMEIDA DOS SANTOS",
+          "email": "francielerosilenefran@gmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 321
+          "codigoFuncionario": 321,
+          "nome": "LUCIANA DA SILVA",
+          "nomeMae": "MARIA DO CARMO FRANCA",
+          "email": "colaborador@termoeletro.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 332
+          "codigoFuncionario": 332,
+          "nome": "MARCELA CARNEIRO ARAUJO",
+          "nomeMae": "CLAUDIA BEATRIZ CARNEIRO ARAUJO",
+          "email": "marcelacarneiro.petmec@gmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 333
+          "codigoFuncionario": 333,
+          "nome": "PAULO ROBERTO SANTANA DE ARAUJO",
+          "nomeMae": "NEIDE MARIA SANTANA ARAUJO",
+          "email": "colaborador@termoeletro.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 354
+          "codigoFuncionario": 354,
+          "nome": "PEDRO HENRIQUE DE SOUSA COSTA",
+          "nomeMae": "FABIA PAULA DE SOUSA",
+          "email": "pedroiss.costa97@gmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 352
+          "codigoFuncionario": 352,
+          "nome": "WILLIAM JUNIO GUIMARAES FRANCO",
+          "nomeMae": "ALDA GUIMARAES FRANCO",
+          "email": "colaborador@termoeletro.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 350
+          "codigoFuncionario": 350,
+          "nome": "CLAYSON PONTES ",
+          "nomeMae": "VERA LUCIA DA SILVA PONTES",
+          "email": "clayson@termoeletro.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 4,
-          "codigoFuncionario": 3
+          "codigoFuncionario": 3,
+          "nome": "APARECIDO PEDRO DA SILVA ",
+          "nomeMae": "CICERA IRENE DE CARVALHO SILVA ",
+          "email": "",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 331
+          "codigoFuncionario": 331,
+          "nome": "ANA PAULA RODRIGUES ABRAO",
+          "nomeMae": "",
+          "email": "ANA.RODRIGUES@TERMOELETRO.COM.BR",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 37
+          "codigoFuncionario": 37,
+          "nome": "CARMENS APARECIDA BERNARDES DA SILVA ",
+          "nomeMae": "AURELIA CANDIDA BERNARDES",
+          "email": "carmensbernardes783@gmail.com",
+          "situacao": "1"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 343
+          "codigoFuncionario": 343,
+          "nome": "GUSTAVO DUTRA MAXIMIANO",
+          "nomeMae": "GILSA APARECIDA DUTRA MAXIMIANO",
+          "email": "gustavodutramaximiano@gmail.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 355
+          "codigoFuncionario": 355,
+          "nome": "IAN CRISTIAN ANDRADE GOIS",
+          "nomeMae": "IZA CLAUDIA ANDRADE FREITAS",
+          "email": "iancgois@gmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 281
+          "codigoFuncionario": 281,
+          "nome": "ELIAS FERREIRA  NASCIMENTO",
+          "nomeMae": "MARIA FERREIRA NASCIMENTO",
+          "email": "eliasnascimento.ptu@hotmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 316
+          "codigoFuncionario": 316,
+          "nome": "PAULA DANIELA DA SILVA SANTOS",
+          "nomeMae": "IRANI EUNICE DA SILVA",
+          "email": "paulad05@hotmail.com",
+          "situacao": "1"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 327
+          "codigoFuncionario": 327,
+          "nome": "DANIEL EVANGELISTA DA SILVA",
+          "nomeMae": "JESUINA MARIA DA SILVA",
+          "email": "danielsilvacap@hotmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 1,
-          "codigoFuncionario": 160
+          "codigoFuncionario": 160,
+          "nome": "RODRIGO SILVA PONTES DE AZEVEDO",
+          "nomeMae": "MARIA REGINA DA SILVA",
+          "email": "rgazevedo96@gmail.com",
+          "situacao": "8"
         },
         {
           "codigoEmpresa": 1,
-          "codigoFuncionario": 149
+          "codigoFuncionario": 149,
+          "nome": "ANA CARLA DE SOUZA ROCHA",
+          "nomeMae": "REGINA ALVES DE SOUZA ROCHA ",
+          "email": "a.carla_rocha@hotmail.com",
+          "situacao": "8"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 209
+          "codigoFuncionario": 209,
+          "nome": "ESLEI MARQUES RODRIGUES",
+          "nomeMae": "CELIA MARQUES RODRIGUES",
+          "email": "eslei@termoeletro.com.br",
+          "situacao": "1"
         },
         {
           "codigoEmpresa": 3,
-          "codigoFuncionario": 43
+          "codigoFuncionario": 43,
+          "nome": "LARISSA RANIELE  SILVA",
+          "nomeMae": "SIMONE JUSTINO DA SILVA",
+          "email": "larissar_s@icloud.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 3,
-          "codigoFuncionario": 84
+          "codigoFuncionario": 84,
+          "nome": "ADEILSON BARBOSA DE OLIVEIRA",
+          "nomeMae": "LEANDRA BARBOSA DA COSTA",
+          "email": "colaborador@termoeletro.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 3,
-          "codigoFuncionario": 13
+          "codigoFuncionario": 13,
+          "nome": "ALISSON CESAR DIAS",
+          "nomeMae": "JANETE MARIA DIAS ",
+          "email": "colaborador@termoeletro.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 3,
-          "codigoFuncionario": 140
+          "codigoFuncionario": 140,
+          "nome": "ARTUR COSTA",
+          "nomeMae": "APARECIDA DONIZETE DA COSTA",
+          "email": "artcostta@gmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 3,
-          "codigoFuncionario": 160
+          "codigoFuncionario": 160,
+          "nome": "IAN CRISTIAN ANDRADE GOIS ",
+          "nomeMae": "IZA CLAUDIA ANDRADE FREITAS ",
+          "email": "iancgois@gmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 271
+          "codigoFuncionario": 271,
+          "nome": "ODARIO DE OLIVEIRA",
+          "nomeMae": "JUDITH DE OLIVEIRA NICESIO",
+          "email": "odariodeoliveira@gmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 296
+          "codigoFuncionario": 296,
+          "nome": "CARLOS HENRIQUE SALES",
+          "nomeMae": "MAISA HELENA DOMINGOS SALES ",
+          "email": "carlos_h_sales@hotmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 349
+          "codigoFuncionario": 349,
+          "nome": "LEIDIMAR LUIZA DE ARAUJO",
+          "nomeMae": "SILVANIA DA ROCHA",
+          "email": "leidimarluiza@hotmail.com",
+          "situacao": "1"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 278
+          "codigoFuncionario": 278,
+          "nome": "CAIRO AMARILDO  BATISTA MARTINS",
+          "nomeMae": "FABIANA PIRES MARTINS",
+          "email": "cairo.martins@termoeletro.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 3,
-          "codigoFuncionario": 114
+          "codigoFuncionario": 114,
+          "nome": "FABIOLA MARIA DA SILVA DE QUEIROZ",
+          "nomeMae": "MARIA SANTA DE OLIVEIRA SILVA",
+          "email": "fabiola97968794@gmail.com",
+          "situacao": "8"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 356
+          "codigoFuncionario": 356,
+          "nome": "ALBERTO GABRIEL SILVA COSTA",
+          "nomeMae": "JULIANA APARECIDA  DA SIVA",
+          "email": "albertogabriel007@gmail.com",
+          "situacao": "1"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 346
+          "codigoFuncionario": 346,
+          "nome": "JONATHAN FERNANDO LOPES",
+          "nomeMae": "HILDA FRANCISCA DOS SANTOS LOPES",
+          "email": "jonathanlopes3175@hotmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 3,
-          "codigoFuncionario": 152
+          "codigoFuncionario": 152,
+          "nome": "DOUGLAS HENRIQUE CARMO SOARES ",
+          "nomeMae": "ROSANGELA ETERNA DO CARMO SOARES ",
+          "email": "douglascarlossoares@hotmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 360
+          "codigoFuncionario": 360,
+          "nome": "NEILA CRISTINA MORAIS SILVA ",
+          "nomeMae": "MARIA CRISTINA DA SILVA ",
+          "email": "neilacmorais@gmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 3,
-          "codigoFuncionario": 170
+          "codigoFuncionario": 170,
+          "nome": "TONY VINICIUS CANDIDO DA SILVA ",
+          "nomeMae": "MARIA JOSE CANDIDA",
+          "email": "colaborador@termoeletro.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 361
+          "codigoFuncionario": 361,
+          "nome": "HEITOR ALVES ZANUTO ",
+          "nomeMae": "RONILDA MARIA ALVES DAS DORES ZANUTO ",
+          "email": "heitorzanuto@gmail.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 362
+          "codigoFuncionario": 362,
+          "nome": "YASMIM MENDES DE SOUZA ",
+          "nomeMae": "CRISTIANE MENDES DA SILVA DE SOUZA",
+          "email": "yasmimmendes1810@gmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 364
+          "codigoFuncionario": 364,
+          "nome": "VICTOR IZIDORIO NETO DA SILVA ",
+          "nomeMae": "MARIA DAMIANA IZIDORIO SOTERO",
+          "email": "victor.psy@hotmail.com",
+          "situacao": "1"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 363
+          "codigoFuncionario": 363,
+          "nome": "JEFFERSON PEREIRA DE ARAUJO ",
+          "nomeMae": "MARIA DE FATIMA PEREIRA DE ARAUJO ",
+          "email": "jeffersontha83@hotmail.com",
+          "situacao": "1"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 365
+          "codigoFuncionario": 365,
+          "nome": "LUIZ FERNANDO COELHO",
+          "nomeMae": "MARIA DA GUIA ROBERTO GARCIA COELHO",
+          "email": "colaborador@termo.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 370
+          "codigoFuncionario": 370,
+          "nome": "RODRIGO DE MORAIS SANTANA ",
+          "nomeMae": "DENISA MARIA DE MORAIS SANTANA ",
+          "email": "colaborador@termoeletro.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 1,
-          "codigoFuncionario": 139
+          "codigoFuncionario": 139,
+          "nome": "ALAN HUDSON DE MIRANDA",
+          "nomeMae": "",
+          "email": "colaborador@termoeletro.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 348
+          "codigoFuncionario": 348,
+          "nome": "BRENO JUSTINO SILVA",
+          "nomeMae": "ELIANA JUSTINA SILVA",
+          "email": "breno@termoeletro.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 247
+          "codigoFuncionario": 247,
+          "nome": "JOSE TADEU DE ALMEIDA JUNIOR",
+          "nomeMae": "MARIA EMILIA CORREA DE ALMEIDA",
+          "email": "jose.junior@termoeletro.com.br",
+          "situacao": "1"
         },
         {
           "codigoEmpresa": 4,
-          "codigoFuncionario": 1
+          "codigoFuncionario": 1,
+          "nome": "LEIDMILA PEREIRA DA SILVA",
+          "nomeMae": "LUCIRLEY C PEREIRA DA SILVA",
+          "email": "colaborador@termoeletro.com.br",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 4,
-          "codigoFuncionario": 14
+          "codigoFuncionario": 14,
+          "nome": "RIAN ALVES DE JESUS ",
+          "nomeMae": "ROSANA ALVES DE JESUS",
+          "email": "rianalves2000jesus@gmail.com",
+          "situacao": "8"
         },
         {
           "codigoEmpresa": 3,
-          "codigoFuncionario": 100
+          "codigoFuncionario": 100,
+          "nome": "FLORIANO SILVA DE OLIVEIRA",
+          "nomeMae": "ALBENIZE MARIA DA SILVA OLIVEIRA",
+          "email": "florianooliveira725@gmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 3,
-          "codigoFuncionario": 85
+          "codigoFuncionario": 85,
+          "nome": "JOSE DIVINO DE ARAUJO ",
+          "nomeMae": "SEBASTIANA MARIA DE ARAUJO",
+          "email": "josedivino1223@gmail.com",
+          "situacao": "8"
         },
         {
           "codigoEmpresa": 2,
-          "codigoFuncionario": 353
+          "codigoFuncionario": 353,
+          "nome": "TALES VILARINHO ",
+          "nomeMae": "ELIANA CRISTINA VILARINHO ",
+          "email": "talesvilarinho.vv@gmail.com",
+          "situacao": "1"
         },
         {
           "codigoEmpresa": 3,
-          "codigoFuncionario": 120
+          "codigoFuncionario": 120,
+          "nome": "CLEBER SOARES CAMILO SOBRINHO ",
+          "nomeMae": "ALEXANDRA APARECIDA DE SOUZA",
+          "email": "clebercamilo1@outlook.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 3,
-          "codigoFuncionario": 14
+          "codigoFuncionario": 14,
+          "nome": "DIRAN SILVEIRA DOS SANTOS",
+          "nomeMae": "FRANCISCA SILVEIRA DA SILVA",
+          "email": "diran.silveira@hotmail.com",
+          "situacao": "0"
         },
         {
           "codigoEmpresa": 3,
-          "codigoFuncionario": 144
+          "codigoFuncionario": 144,
+          "nome": "FERNANDO CARDOSO SOUSA",
+          "nomeMae": "MARICELIA DO SOCORRO DE CARVALHO CARDOSO",
+          "email": "cardosonandosousa@gmail.com",
+          "situacao": "8"
         }
       ],
       "pagination": {

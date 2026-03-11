@@ -7,21 +7,23 @@
   "response": {
     "status": 200,
     "headers": {
-      "Date": "Fri, 26 Dec 2025 06:35:31 GMT",
+      "Date": "Wed, 11 Mar 2026 18:51:41 GMT",
       "Content-Type": "application/json",
       "Content-Length": "4266",
       "Connection": "keep-alive",
-      "RateLimit-Reset": "29",
+      "RateLimit-Reset": "19",
       "X-RateLimit-Limit-Minute": "2000",
-      "X-RateLimit-Remaining-Minute": "1984",
+      "X-RateLimit-Remaining-Minute": "1980",
       "RateLimit-Limit": "2000",
-      "RateLimit-Remaining": "1984",
+      "RateLimit-Remaining": "1980",
       "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
-      "GTW-REQUEST-ID": "dcb8b22b-c6cd-4b74-a942-0a1d4318d4fd",
-      "X-Kong-Upstream-Latency": "178",
-      "X-Kong-Proxy-Latency": "0",
+      "X-Upstream-elapsed-time": "175",
+      "X-Upstream-Robots-Tag": "noindex",
+      "GTW-REQUEST-ID": "c26219fc-dd68-4c2d-b4d3-42bea3a367c9",
+      "X-Kong-Upstream-Latency": "191",
+      "X-Kong-Proxy-Latency": "1",
       "Via": "kong/3.5.0",
-      "X-Kong-Request-Id": "13fd323beaa06139377484486864852d"
+      "X-Kong-Request-Id": "48400841c5270736b28c8f3b69896141"
     },
     "json": {
       "logradouros": [
